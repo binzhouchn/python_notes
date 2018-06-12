@@ -6,6 +6,8 @@
 
 [**3. 装饰器@**](#装饰器)
 
+[**4. python单例模式**](#单例模式)
+
 ---
 
 ### super函数使用基础
@@ -191,4 +193,25 @@ static_foo
 class_foo
 1
 foo
+```
+
+### 单例模式
+```python
+class Singleton(object):
+    __instance=None
+    def __init__(self):
+        pass
+    def __new__(cls, *args, **kwargs):
+        if not cls.__instance:
+            cls.__instance=super(Singleton, cls).__new__(cls,*args,**kwargs)
+        return cls.__instance
+```
+```python
+# 这个class是自己定义的class可以继承singleton实现单例模式
+# MyClass只加载一次
+class MyClass(Singleton):
+    def __init__(self):
+        print('ok')
+    def kk(self):
+        print('effwfwsefwefwef')
 ```
