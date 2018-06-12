@@ -1,0 +1,302 @@
+## 一级目录
+
+[**1. lambda函数**](#lambda函数)
+
+[**2. map函数**](#map函数)
+
+[**3. filter函数**](#filter函数)
+
+[**4. reduce函数**](#reduce函数)
+
+[**5. 装饰器**](#装饰器)
+
+[**6. dict转object**](#dict转object)
+
+[**7. 统计空缺率**](#统计空缺率)
+
+[**8. transform函数**](#transform函数)
+
+[**9. KFold函数**](#kfold函数)
+
+[**10. sys.defaultencoding**](#sys)
+
+[**11. pip install error _NamespacePath**](#pip_error)
+
+[**12. zip(\*xx)用法**](#zip)
+
+[**13. dataframe中某一列字符串长度为10的进行切片**](#切片)
+
+[**14. re模块**](#re模块)
+
+[**15. eval**](#eval)
+
+---
+```python
+%reload_ext autoreload
+%autoreload 2
+%matplotlib notebook
+
+import sys
+sys.path.append('..')
+```
+
+### lambda函数
+```python
+# lambda: 快速定义单行的最小函数，inline的匿名函数
+(lambda x : x ** 2)(3)  9
+# 或者
+f = lambda x : x ** 2
+f(3)  9
+```
+### map函数
+```python
+arr_str = ["hello", "this"]
+arr_num = [3,1,6,10,12]
+
+def f(x):
+    return x ** 2
+map(lambda x : x ** 2, arr_num) [9,1,36,100,144]
+map(f, arr_num) [9,1,36,100,144]
+map(len, arr_str) [5,4]
+map(lambda x : (x, 1), arr_str)  [('hello', 1), ('this', 1)]
+```
+
+### filter函数
+```python
+filter(lambda x : len(x) >= 5, arr_str) ['hello']
+filter(lambda x : x > 5, arr_num) [6,10,12]
+[(i.word, 'E') if i.flag =='n' else (i.word, 'P') for i in filter(lambda x: x.flag in ('n', 'v'), a) ]
+```
+
+### reduce函数
+```python
+reduce(lambda x, y : x + y, arr_num) 32
+```
+
+### 装饰器
+
+装饰器相当于一个高阶函数，传入函数，返回函数，返回的时候这个函数多了一些功能[(原文链接)](https://mp.weixin.qq.com/s/hsa-kYvL31c1pEtMpkr6bA)
+```python
+# 无参数的装饰器
+def use_logging(func):
+
+    def wrapper():
+        logging.warn("%s is running" % func.__name__)
+        return func()
+    return wrapper
+
+@use_logging
+def foo():
+    print("i am foo")
+
+foo()
+
+#----------------------------------------------------------
+# 带参数的装饰器
+def use_logging(level):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            if level == "warn":
+                logging.warn("%s is running" % func.__name__)
+            elif level == "info":
+                logging.info("%s is running" % func.__name__)
+            return func(*args, **kwargs)
+        return wrapper
+
+    return decorator
+
+@use_logging(level="warn") # 可以传参数进装饰器
+def foo(name, age=None, height=None):
+    print("I am %s, age %s, height %s" % (name, age, height))
+
+foo('John',9) [WARNING:root:foo is running]I am John, age 9, height None
+
+#---------------------------------------------------
+# 类装饰器
+class Foo(object):
+    def __init__(self, func):
+        self._func = func
+
+    def __call__(self):
+        print ('class decorator runing')
+        self._func()
+        print ('class decorator ending')
+
+@Foo
+def bar():
+    print ('test bar')
+
+bar() 
+输出
+class decorator runing
+test bar
+class decorator ending
+```
+### dict转object
+```python
+import json
+# json格式的str
+s = '{"name":{"0":"John","1":"Lily"},"phone_no":{"0":"189101","1":"234220"},"age":{"0":"11","1":"23"}}' 
+# load成dict
+dic = json.loads(s)
+dic
+# {"name":{"0":"John","1":"Lily"},"phone_no":{"0":"189101","1":"234220"},"age":{"0":"11","1":"23"}}
+# 不能使用dic.name, dic.age 只能dic['name'], dic['age']
+class p:
+    def __init__(self, d=None):
+        self.__dict__ = d
+p1 = p(dic)
+# 这个时候就可以用p1.name, p1.age了
+
+# 更详细一点
+import six
+import pprint
+# 现在有个字典
+conf = {'base':{'good','medium','bad'},'age':'24'}
+# conf.age是不行的
+定义一个class：
+class p:
+    def __init__(self, d=None):
+        self.__dict__ = d
+    def keys(self):
+        return self.__dict__.keys()
+    def items(self):
+        return six.iteritems(self.__dict__)
+    def __repr__(self):
+        return pprint.pformat(self.__dict__) # 将dict转成字符串
+p1 = p(conf)
+这个时候就可以p1.base和p1.age
+p1这个实例拥有的属性有：
+p.__doc__
+p.__init__
+p.__module__
+p.__repr__
+p.age * age和base这两个是字典加载进来以后多出来的属性
+p.base *
+p.items
+p.keys
+```
+
+### 统计空缺率
+两种方法统计空缺率：
+```python
+(1 - np.count_nonzero(np.array(data['col2']))*1.0 / data['col2'].count()) * 100
+
+(1 - data['col2'].apply(lambda x : x != '').sum() * 1.0 / data['col2'].count()) * 100
+```
+
+### transform函数
+由前面分析可以知道，Fare项在测试数据中缺少一个值，所以需要对该值进行填充。 
+我们按照一二三等舱各自的均价来填充： 
+下面transform将函数np.mean应用到各个group中。
+```python
+combined_train_test['Fare'] = combined_train_test[['Fare']].fillna(combined_train_test.groupby('Pclass').transform(np.mean))
+```
+
+### kfold函数
+新手用cross_val_score比较简单，后期可用KFold更灵活,
+```python
+from sklearn.model_selection import cross_val_score, StratifiedKFold, KFold
+forest = RandomForestClassifier(n_estimators = 120,max_depth=5, random_state=42)
+cross_val_score(forest,X=train_data_features,y=df.Score,scoring='neg_mean_squared_error',cv=3)
+# 这里的scoring可以自己写，比如我想用RMSE则
+from sklearn.metrics import scorer
+def ff(y,y_pred):
+    rmse = np.sqrt(sum((y-y_pred)**2)/len(y))
+    return rmse
+rmse_scoring = scorer.make_scorer(ff)
+cross_val_score(forest,X=train_data_features,y=df.Score,scoring=rmse_scoring,cv=3)
+```
+```python
+# Some useful parameters which will come in handy later on
+ntrain = titanic_train_data_X.shape[0]
+ntest = titanic_test_data_X.shape[0]
+SEED = 0 # for reproducibility
+NFOLDS = 7 # set folds for out-of-fold prediction
+kf = KFold(n_splits = NFOLDS, random_state=SEED, shuffle=False)
+
+def get_out_fold(clf, x_train, y_train, x_test): # 这里需要将dataframe转成array，用x_train.values即可
+    oof_train = np.zeros((ntrain,))
+    oof_test = np.zeros((ntest,))
+    oof_test_skf = np.empty((NFOLDS, ntest))
+
+    for i, (train_index, test_index) in enumerate(kf.split(x_train)):
+        x_tr = x_train[train_index]
+        y_tr = y_train[train_index]
+        x_te = x_train[test_index]
+
+        clf.fit(x_tr, y_tr)
+
+        oof_train[test_index] = clf.predict(x_te)
+        oof_test_skf[i, :] = clf.predict(x_test)
+
+    oof_test[:] = oof_test_skf.mean(axis=0)
+    return oof_train.reshape(-1, 1), oof_test.reshape(-1, 1)
+```
+
+### sys
+```python
+import sys 
+reload(sys) 
+sys.setdefaultencoding('utf-8') 
+#注意：使用此方式，有极大的可能导致print函数无法打印数据！
+
+#改进方式如下：
+import sys #这里只是一个对sys的引用，只能reload才能进行重新加载
+stdi,stdo,stde=sys.stdin,sys.stdout,sys.stderr 
+reload(sys) #通过import引用进来时,setdefaultencoding函数在被系统调用后被删除了，所以必须reload一次
+sys.stdin,sys.stdout,sys.stderr=stdi,stdo,stde 
+sys.setdefaultencoding('utf-8')
+```
+
+### pip_error
+
+使用pip时出现错误：
+AttributeError: '_NamespacePath' object has no attribute 'sort'
+
+解决方法：<br>
+1. 关于Anaconda3报错 AttributeError: '_NamespacePath' object has no attribute 'sort'  ，先参考下面这篇博客：<br>
+http://www.cnblogs.com/newP/p/7149155.html<br>
+按照文中的做法是可以解决conda报错的，总结一下就是：一，把文件夹 D:\ProgramData\Anaconda3\Lib\site-packages\conda\_vendor\auxlib 中的 path.py 中，“except ImportError: ”修改为“except Exception:“；二、找到D:\ProgramData\Anaconda3\lib\site-packages\setuptools-27.2.0-py3.6.egg，删除（不放心的话，剪切到别的地方）
+
+2.然而pip报错的问题还没解决。首先要安装setuptools模块，下载地址是：<br>
+https://pypi.python.org/pypi/setuptools#files<br>
+下载setuptools-36.5.0.zip解压，命令窗口进入到文件夹然后 python setup.py install
+
+3.安装好setuptools模块之后应该能用easy_install了，我们要借助它来重新安装pip。命令窗口输入命令：easy_install pip
+
+### zip
+```python
+s = '彩符和大汶口文化陶尊符号是第三阶段的语段文字'
+print(synonyms.seg(s))
+# (['彩符', '和', '大汶口', '文化', '陶尊', '符号', '是', '第三阶段', '的', '语段', '文字'], ['n', 'c', 'ns', 'n', 'nr', 'n', 'v', 't', 'uj', 'n', 'n'])
+[x for x in zip(*synonyms.seg(s))]
+# [('彩符', 'n'),
+  ('和', 'c'),
+  ('大汶口', 'ns'),
+  ('文化', 'n'),
+  ('陶尊', 'nr'),
+  ('符号', 'n'),
+  ('是', 'v'),
+  ('第三阶段', 't'),
+  ('的', 'uj'),
+  ('语段', 'n'),
+  ('文字', 'n')]
+```
+### 切片
+```python
+data.msg_from = data.msg_from.astype(str)
+data[data.msg_from.apply(len)==10]
+```
+
+### re模块
+```python
+# 需要把 你好+86 13534345690和iphone 6s在么中的电话号码和iphone这种空格替换掉
+reg = r'(?<=[a-zA-Z0-9])\s+(?=[a-zA-Z0-9])'
+```
+
+### eval
+```python
+eval("['一','二','三']")
+输出 ['一','二','三']
+```
