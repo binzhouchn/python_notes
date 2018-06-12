@@ -22,8 +22,15 @@
 或者[USTC](https://mirrors.ustc.edu.cn/)科大
 
 ```
-pip install镜像选择：
+# pip install镜像选择：
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --set show_channel_urls yes
 ```
 
+```
+# pip install镜像配置
+# 先在home的.pip文件夹下新建pip.conf配置文件然后把以后代码复制进去
+[global]
+trusted-host =  pypi.tuna.tsinghua.edu.cn
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+```
