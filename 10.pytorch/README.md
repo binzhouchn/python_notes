@@ -1,14 +1,19 @@
 ## 一级目录
 
-[**1. pytorch入门之Tensor**](#tensor)
+[**1. pytorch入门知乎**](#入门知乎网址)
 
-[**2. pytorch入门之Autograd**](#autograd)
+[**2. pytorch入门之Tensor**](#tensor)
 
-[**2. pytorch入门之构造一个小型CNN**](#lenet)
+[**3. pytorch入门之Autograd**](#autograd)
+
+[**4. pytorch入门之构造一个小型CNN**](#lenet)
 
 
 ---
 
+### 入门知乎网址
+
+https://www.zhihu.com/question/55720139
 
 ### Tensor
 
