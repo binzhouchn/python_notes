@@ -27,10 +27,20 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 conda config --set show_channel_urls yes
 ```
 
+pip install镜像配置（Linux）
 ```
-# pip install镜像配置
 # 先在home的.pip文件夹下新建pip.conf配置文件然后把以后代码复制进去
 [global]
 trusted-host =  pypi.tuna.tsinghua.edu.cn
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+```
+pip install镜像配置（Windows）
+```
+# 进入目录（C:\Users\当前用户名）新建一个 pip.ini 文本文件，内容如下：
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+index-url = http://mirrors.aliyun.com/pypi/simple/
+[install]
+trusted-host =  pypi.tuna.tsinghua.edu.cn
+trusted-host = mirrors.aliyun.com
 ```
