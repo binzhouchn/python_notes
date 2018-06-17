@@ -350,7 +350,7 @@ if __name__ == '__main__':
 
     print('processes done.')
 ```
-结果是
+结果是，四个四个差不多同时打印，因为设置了四个进程，四个进程之间的打印顺序是乱的
 ```python
 hello, 1
 hello, 3
@@ -366,3 +366,21 @@ processes done.
 CPU times: user 32.5 ms, sys: 49.9 ms, total: 82.4 ms
 Wall time: 3.13 s
 ```
+不加进程，单进程结果如下
+```python
+for x in range(10):
+    task(x)
+hello, 0
+hello, 1
+hello, 2
+hello, 3
+hello, 4
+hello, 5
+hello, 6
+hello, 7
+hello, 8
+hello, 9
+CPU times: user 45.5 ms, sys: 16.7 ms, total: 62.1 ms
+Wall time: 10 s
+```
+
