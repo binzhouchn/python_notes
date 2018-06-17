@@ -36,13 +36,16 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 pip install镜像配置（Windows）
 ```
-# 进入目录（C:\Users\当前用户名）新建一个 pip.ini 文本文件，内容如下：
+# 进入目录（C:\Users\Administrator）下新建一个pip文件夹，文件夹里建一个pip.ini 文本文件，内容如下：
 [global]
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-index-url = http://mirrors.aliyun.com/pypi/simple/
 [install]
 trusted-host =  pypi.tuna.tsinghua.edu.cn
+或者
+[global]
+index-url = http://mirrors.aliyun.com/pypi/simple/
+[install]
 trusted-host = mirrors.aliyun.com
-
-or pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy --upgrade
+或者
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy --upgrade
 ```
