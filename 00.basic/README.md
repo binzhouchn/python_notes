@@ -1,4 +1,4 @@
-## 一级目录
+## 目录
 
 [**1. lambda函数**](#lambda函数)
 
@@ -29,6 +29,8 @@
 [**14. re模块**](#re模块)
 
 [**15. eval**](#eval)
+
+[**16. global用法**](#global)
 
 ---
 ```python
@@ -302,3 +304,20 @@ eval("['一','二','三']")
 eval("{'a':1,'b':2}")
 输出 {'a':1,'b':2}
 ```
+
+### global
+```python
+a = None
+def f1():
+    a = 10
+    
+def f2():
+    global a
+    a = 10
+f1()
+print(a)
+f2()
+print(a)
+```
+运行完f1()后，a还是None；运行完f2()后，a变成了10
+
