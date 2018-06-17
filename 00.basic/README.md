@@ -308,6 +308,7 @@ eval("{'a':1,'b':2}")
 ### global
 ```python
 a = None
+
 def f1():
     a = 10
     
