@@ -62,6 +62,12 @@ map(f, arr_num) [9,1,36,100,144]
 map(len, arr_str) [5,4]
 map(lambda x : (x, 1), arr_str)  [('hello', 1), ('this', 1)]
 ```
+```python
+# 可以对每个列表对应的元素进行操作，比如加总
+f1 = lambda x,y,z:x+y+z
+list(map(f1,[1,2,10],[2,3,6],[4,3,5]))
+# [7,8,21]
+```
 
 ### filter函数
 ```python
