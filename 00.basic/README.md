@@ -32,6 +32,8 @@
 
 [**16. global用法**](#global)
 
+[**17. 多进程之pool用法**](#pool)
+
 ---
 ```python
 %reload_ext autoreload
@@ -328,3 +330,39 @@ print(a)
 ```
 运行完f1()后，a还是None；运行完f2()后，a变成了10。一般规范global变量用大写
 
+### pool
+```python
+from multiprocessing import Pool
+import time
+
+def task(msg):
+    print ('hello, %s' % msg)
+    time.sleep(1)
+
+if __name__ == '__main__':
+    pool = Pool(processes=4)
+
+    for x in range(10):
+        pool.apply_async(task, args=(x,))
+
+    pool.close()
+    pool.join() # 加入主进程中，不然processes done会提前打印
+
+    print('processes done.')
+```
+结果是
+```python
+hello, 1
+hello, 3
+hello, 0
+hello, 2
+hello, 5
+hello, 4
+hello, 6
+hello, 7
+hello, 8
+hello, 9
+processes done.
+CPU times: user 32.5 ms, sys: 49.9 ms, total: 82.4 ms
+Wall time: 3.13 s
+```
