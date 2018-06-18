@@ -9,6 +9,8 @@
 
 [**4. copy&deep copy**](#deep_copy)
 
+[**5. flatten和ravel的区别**](#flatten_ravel)
+
 ---
 
 ### numpy类型
@@ -71,4 +73,13 @@ a = rand(3,4)
 ```python
 a = np.array([1,2,3])
 b = a.copy() # deep copy
+```
+
+### flatten_ravel
+flatten是deep copy，而ravel是view
+```python
+a = np.arange(8).reshape(2,4)
+b1 = a.flatten()
+b2 = a.ravel()
+# 这里如果改变b1的值，a不会改变；而改变b2的值，a会改变！
 ```
