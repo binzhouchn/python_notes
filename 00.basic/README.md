@@ -34,6 +34,8 @@
 
 [**17. 多进程之pool用法**](#pool)
 
+[**18. 保存模型**](#保存模型)
+
 ---
 ```python
 %reload_ext autoreload
@@ -384,3 +386,31 @@ CPU times: user 45.5 ms, sys: 16.7 ms, total: 62.1 ms
 Wall time: 10 s
 ```
 
+### 保存模型
+1. 使用 pickle 保存
+```python
+import pickle #pickle模块
+
+#保存Model(注:save文件夹要预先建立，否则会报错)
+with open('save/clf.pickle', 'wb') as f:
+    pickle.dump(clf, f)
+
+#读取Model
+with open('save/clf.pickle', 'rb') as f:
+    clf2 = pickle.load(f)
+    #测试读取后的Model
+    print(clf2.predict(X[0:1]))
+```
+2. 使用joblib保存
+```python
+from sklearn.externals import joblib #jbolib模块
+
+#保存Model(注:save文件夹要预先建立，否则会报错)
+joblib.dump(clf, 'save/clf.pkl')
+
+#读取Model
+clf3 = joblib.load('save/clf.pkl')
+
+#测试读取后的Model
+print(clf3.predict(X[0:1]))
+```
