@@ -16,6 +16,8 @@
 
 [**8. pandas to_csv**](#to_csv)
 
+[**9. pd concat**](#concat)
+
 ---
 ### pandas_dataframe手动创建
 
@@ -119,3 +121,28 @@ to_csv中的参数quoting: int or csv.QUOTE_* instance, default 0
 控制csv中的引号常量。
 可选 QUOTE_MINIMAL(0), QUOTE_ALL(1), QUOTE_NONNUMERIC(2) OR QUOTE_NONE(3)
 
+### concat
+```python
+import pandas as pd
+df1 = pd.DataFrame(np.ones((3,4))*0, columns=['a','b','c','d'])
+df2 = pd.DataFrame(np.ones((3,4))*1, columns=['a','b','c','d'])
+df3 = pd.DataFrame(np.ones((3,4))*2, columns=['a','b','c','d'])
+pd.concat([df1, df2, df3], axis=0, ignore_index=True)
+#打印结果
+#     a    b    c    d
+# 0  0.0  0.0  0.0  0.0
+# 1  0.0  0.0  0.0  0.0
+# 2  0.0  0.0  0.0  0.0
+# 3  1.0  1.0  1.0  1.0
+# 4  1.0  1.0  1.0  1.0
+# 5  1.0  1.0  1.0  1.0
+# 6  2.0  2.0  2.0  2.0
+# 7  2.0  2.0  2.0  2.0
+# 8  2.0  2.0  2.0  2.0
+pd.concat([df1, df2, df3], axis=1, ignore_index=True)
+#打印结果
+#	0	1	2	3	4	5	6	7	8	9	10	11
+#0	0.0	0.0	0.0	0.0	1.0	1.0	1.0	1.0	2.0	2.0	2.0	2.0
+#1	0.0	0.0	0.0	0.0	1.0	1.0	1.0	1.0	2.0	2.0	2.0	2.0
+#2	0.0	0.0	0.0	0.0	1.0	1.0	1.0	1.0	2.0	2.0	2.0	2.0
+```
