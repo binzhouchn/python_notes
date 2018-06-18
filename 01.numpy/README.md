@@ -72,7 +72,8 @@ a = rand(3,4)
 ### deep_copy
 ```python
 a = np.array([1,2,3])
-b = a.copy() # deep copy
+b1 = a #简单说, b1的东西全部都是a的东西, 动b1的任何地方, a都会被动到, 因为他们在内存中的位置是一模一样的, 本质上就是自己
+b2 = a.copy() # deep copy;则是将a copy了一份, 然后把b2放在内存中的另外的地方
 ```
 
 ### flatten_ravel
