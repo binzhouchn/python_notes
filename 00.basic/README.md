@@ -1,4 +1,4 @@
-## 目录
+## python实用技巧
 
 [**1. lambda函数**](#lambda函数)
 
