@@ -7,7 +7,7 @@
 
 [**3. 数组方法**](#数组方法)
 
-[**4. copy&deep copy**](#copy)
+[**4. copy&deep copy**](#deep_copy)
 
 ---
 
@@ -67,7 +67,7 @@ a = rand(3,4)
 %precision 3 #这个修饰可以运用在整个IDE上
 ```
 
-### copy
+### deep_copy
 ```python
 a = np.array([1,2,3])
 b = a.copy() # deep copy
