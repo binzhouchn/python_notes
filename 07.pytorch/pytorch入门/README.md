@@ -58,6 +58,33 @@ net2 = torch.nn.Sequential(
 ```
 [快速搭建法 莫烦](https://morvanzhou.github.io/tutorials/machine-learning/torch/3-03-fast-nn/)
 
+**IV.保存提取**
+```python
+torch.save(net1, 'net.pkl')  # 保存整个网络
+torch.save(net1.state_dict(), 'net_params.pkl')   # 只保存网络中的参数 (速度快, 占内存少)
+```
+load之前保存的整个网络
+```python
+def restore_net():
+    # restore entire net1 to net2
+    net2 = torch.load('net.pkl')
+    prediction = net2(x)
+```
+load之前保存的网络中的参数
+```python
+def restore_params():
+    # 新建 net3
+    net3 = torch.nn.Sequential(
+        torch.nn.Linear(1, 10),
+        torch.nn.ReLU(),
+        torch.nn.Linear(10, 1)
+    )
+
+    # 将保存的参数复制到 net3
+    net3.load_state_dict(torch.load('net_params.pkl'))
+    prediction = net3(x)
+```
+
 ### LeNet
 
 [完整代码](lenet.py)
