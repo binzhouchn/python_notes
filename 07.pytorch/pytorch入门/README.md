@@ -2,7 +2,7 @@
 
 [**1. pytorch入门知乎**](#入门知乎网址)
 
-[**2. 用pytorch构建第一个回归神经网络**](#用pytorch构建第一个回归神经网络)
+[**2. 用pytorch构建第一个神经网络**](#用pytorch构建第一个神经网络)
 
 [**3. pytorch入门之构造一个小型CNN**](#lenet)
 
@@ -13,7 +13,9 @@
 
 https://www.zhihu.com/question/55720139
 
-### 用pytorch构建第一个回归神经网络
+### 用pytorch构建第一个神经网络
+
+**I.回归**
 
 [完整代码](simple_regression.py)
 
@@ -27,6 +29,34 @@ print(list(net.parameters()))
     注：最后两个(最后一层)是求完梯度后的权重和bias
 '''
 ```
+**II.分类**
+
+[完整代码](simple_classifier.py)
+
+**III.快速搭建**
+```python
+class Net(torch.nn.Module):
+    def __init__(self, n_feature, n_hidden, n_output):
+        super(Net, self).__init__()
+        self.hidden = torch.nn.Linear(n_feature, n_hidden)
+        self.predict = torch.nn.Linear(n_hidden, n_output)
+
+    def forward(self, x):
+        x = F.relu(self.hidden(x))
+        x = self.predict(x)
+        return x
+
+net1 = Net(1, 10, 1)   # 这是我们用这种方式搭建的 net1
+```
+我们用class继承了一个torch中的神经网络结构, 然后对其进行了修改, 不过还有更快的一招, 用一句话就概括了上面所有的内容！
+```python
+net2 = torch.nn.Sequential(
+    torch.nn.Linear(1, 10),
+    torch.nn.ReLU(),
+    torch.nn.Linear(10, 1)
+)
+```
+[快速搭建法](https://morvanzhou.github.io/tutorials/machine-learning/torch/3-03-fast-nn/)
 
 ### LeNet
 
