@@ -90,7 +90,9 @@ def restore_params():
     net3.load_state_dict(torch.load('net_params.pkl'))
     prediction = net3(x)
 ```
+
 --
+
 ### LeNet
 
 [完整代码](lenet.py)
