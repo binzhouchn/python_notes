@@ -422,4 +422,7 @@ print(clf3.predict(X[0:1]))
 tuples = [(2,3),(7,8),(12,25)]
 for step, tp in enumerate(tuples):
     print(step,tp)
+# 0 (2, 3)
+# 1 (7, 8)
+# 2 (12, 25)
 ```
