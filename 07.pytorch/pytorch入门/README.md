@@ -56,7 +56,7 @@ net2 = torch.nn.Sequential(
     torch.nn.Linear(10, 1)
 )
 ```
-[快速搭建法](https://morvanzhou.github.io/tutorials/machine-learning/torch/3-03-fast-nn/)
+[快速搭建法 莫烦](https://morvanzhou.github.io/tutorials/machine-learning/torch/3-03-fast-nn/)
 
 ### LeNet
 
