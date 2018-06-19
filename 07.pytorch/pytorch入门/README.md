@@ -18,7 +18,7 @@
 ### 入门知乎网址
 
 https://www.zhihu.com/question/55720139
---
+
 ### 用pytorch构建第一个神经网络
 
 **I.回归**
@@ -90,8 +90,6 @@ def restore_params():
     net3.load_state_dict(torch.load('net_params.pkl'))
     prediction = net3(x)
 ```
-
---
 
 ### LeNet
 
