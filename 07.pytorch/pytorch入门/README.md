@@ -17,6 +17,16 @@ https://www.zhihu.com/question/55720139
 
 [完整代码](simple_regression.py)
 
+这里构建了net以后
+```python
+net = Net(n_feature=1, n_hidden=10, n_output=1)
+print(list(net.parameters()))
+'''
+    这里net一共一个hidden layer，打印出四个参数，分别是Weight,Bias,gradWeight,GradBias
+    如果是两个hidden layer,那么会有六个参数，分别是Weight,Bias,Weight,Bias,gradWeight,GradBias
+    注：最后两个(最后一层)是求完梯度后的权重和bias
+'''
+```
 
 ### LeNet
 
