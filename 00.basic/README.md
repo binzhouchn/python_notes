@@ -8,7 +8,7 @@
 
 [**4. reduce函数**](#reduce函数)
 
-[**5. apply函数**](#apply函数)
+[**5. apply和applymap函数**](#apply函数)
 
 [**6. 装饰器**](#装饰器)
 
@@ -100,6 +100,7 @@ df.apply(np.sum,axis=0)
 df.apply(np.sum,axis=1)
 df.apply(lambda x : [1,2], axis=1)
 ```
+ > applymap是全局函数，elementwise，作用于dataframe中的每个元素
 
 ### 装饰器
 
