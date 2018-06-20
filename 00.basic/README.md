@@ -42,6 +42,8 @@
 
 [**21. label数值化方法**](#label数值化方法)
 
+[**22. 列表推导式中使用if else**](#列表推导式中使用if_else)
+
 ---
 ```python
 %reload_ext autoreload
@@ -507,6 +509,11 @@ data['label'] = LabelEncoder().fit_transform(data.categ_id)
 import pandas as pd
 pd.get_dummies(data.categ_id)
 ```
+
+### 列表推导式中使用if_else
+[x for x in data if condition] <br>
+[exp1 if condition else exp2 for x in data] <br>
+
 
 
 
