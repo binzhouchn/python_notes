@@ -36,6 +36,8 @@
 
 [**18. 保存模型**](#保存模型)
 
+[**19. enumerate用法**](#enumerate)
+
 ---
 ```python
 %reload_ext autoreload
@@ -413,4 +415,14 @@ clf3 = joblib.load('save/clf.pkl')
 
 #测试读取后的Model
 print(clf3.predict(X[0:1]))
+```
+
+### enumerate
+```python
+tuples = [(2,3),(7,8),(12,25)]
+for step, tp in enumerate(tuples):
+    print(step,tp)
+# 0 (2, 3)
+# 1 (7, 8)
+# 2 (12, 25)
 ```
