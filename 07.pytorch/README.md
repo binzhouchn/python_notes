@@ -6,4 +6,6 @@ torchvision 是辅模块, 有数据库, 还有一些已经训练好的神经网�
 
 # 目录
 
-[**1. pytorch入门**](pytorch入门)
+[**1. pytorch入门**](1.pytorch入门)
+
+[**2. pytorch进阶**](2.pytorch进阶)
