@@ -96,6 +96,7 @@ def restore_params():
 [完整代码](batch_train.py)
 
 > Torch中提供了一种帮你整理你的数据结构的好东西, 叫做DataLoader, 我们能用它来包装自己的数据, 进行批训练<br>
+
 > DataLoader是torch给你用来包装你的数据的工具。所以你要将自己的(numpy array或其他)数据形式装换成Tensor, 然后再放进这个包装器中。使用DataLoader有什么好处呢? 就是他们帮你有效地迭代数据<br>
 
 
