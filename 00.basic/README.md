@@ -40,6 +40,8 @@
 
 [**20. enumerate用法**](#enumerate)
 
+[**21. label数值化方法**](#label数值化方法)
+
 ---
 ```python
 %reload_ext autoreload
@@ -491,3 +493,26 @@ for step, tp in enumerate(tuples):
 # 1 (7, 8)
 # 2 (12, 25)
 ```
+
+### label数值化方法
+方法一<br>
+```python
+# 比如10个类别转成1到10
+from sklearn.preprocessing import LabelEncoder
+data['label'] = LabelEncoder().fit_transform(data.categ_id)
+```
+方法二<br>
+```python
+# 比如10个类别转成onehot形式
+import pandas as pd
+pd.get_dummies(data.categ_id)
+```
+
+
+
+
+
+
+
+
+
