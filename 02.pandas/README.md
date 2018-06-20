@@ -14,9 +14,11 @@
 
 [**7. reset_index用法**](#reset_index用法)
 
-[**8. pandas to_csv字段和值加引号操作**](#to_csv)
+[**8. pandas to_csv字段和值加引号操作**](#to_csv字段和值加引号操作)
 
 [**9. pd concat、merge、join来合并数据表**](#合并数据表)
+
+[**10. 数据透视表（Pivot Tables）**](#数据透视表)
 
 ---
 ### pandas_dataframe手动创建
@@ -116,7 +118,7 @@ data.merge(data1, how='left', on='id_code')
 data.reset_index(drop=True)
 ```
 
-### to_csv
+### to_csv字段和值加引号操作
 to_csv中的参数quoting: int or csv.QUOTE_* instance, default 0
 控制csv中的引号常量。
 可选 QUOTE_MINIMAL(0), QUOTE_ALL(1), QUOTE_NONNUMERIC(2) OR QUOTE_NONE(3)
@@ -140,3 +142,28 @@ merge()将会以用户指定的某个名字相同的列为主键进行对齐，�
 
 join()和merge()很相似，只不过join()是按数据表的索引进行对齐，而不是按某一个相同的列。当某个表缺少某个索引的时候，对应的值为空（NaN）<br>
 ![join.png](join.png)
+
+### 数据透视表
+最后也最重要的是数据透视表。如果你对微软的Excel有一定了解的话，你大概也用过（或听过）Excel里的“数据透视表”功能。Pandas里内建的pivot_table()函数的功能也差不多，它能帮你对一个数据表进行格式化，并输出一个像Excel工作表一样的表格。实际使用中，透视表将根据一个或多个键对数据进行分组统计，将函数传入参数aggfunc中，数据将会按你指定的函数进行统计，并将结果分配到表格中。<br>
+```python
+>>> df
+   A   B   C      D
+0  foo one small  1
+1  foo one large  2
+2  foo one large  2
+3  foo two small  3
+4  foo two small  3
+5  bar one large  4
+6  bar one small  5
+7  bar two small  6
+8  bar two large  7
+
+>>> table = pivot_table(df, values='D', index=['A', 'B'],
+...                     columns=['C'], aggfunc=np.sum)
+>>> table
+          small  large
+foo  one  1      4
+     two  6      NaN
+bar  one  5      4
+     two  6      7
+```
