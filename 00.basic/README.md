@@ -8,35 +8,37 @@
 
 [**4. reduce函数**](#reduce函数)
 
-[**5. 装饰器**](#装饰器)
+[**5. apply函数**](#apply函数)
 
-[**6. dict转object**](#dict转object)
+[**6. 装饰器**](#装饰器)
 
-[**7. 统计空缺率**](#统计空缺率)
+[**7. dict转object**](#dict转object)
 
-[**8. transform函数**](#transform函数)
+[**8. 统计空缺率**](#统计空缺率)
 
-[**9. KFold函数**](#kfold函数)
+[**9. transform函数**](#transform函数)
 
-[**10. sys.defaultencoding**](#sys)
+[**10. KFold函数**](#kfold函数)
 
-[**11. pip install error _NamespacePath**](#pip_error)
+[**11. sys.defaultencoding**](#sys)
 
-[**12. zip(\*xx)用法**](#zip)
+[**12. pip install error _NamespacePath**](#pip_error)
 
-[**13. dataframe中某一列字符串长度为10的进行切片**](#切片)
+[**13. zip(\*xx)用法**](#zip)
 
-[**14. re模块**](#re模块)
+[**14. dataframe中某一列字符串长度为10的进行切片**](#切片)
 
-[**15. eval**](#eval)
+[**15. re模块**](#re模块)
 
-[**16. global用法**](#global)
+[**16. eval**](#eval)
 
-[**17. 多进程之pool用法**](#pool)
+[**17. global用法**](#global)
 
-[**18. 保存模型**](#保存模型)
+[**18. 多进程之pool用法**](#pool)
 
-[**19. enumerate用法**](#enumerate)
+[**19. 保存模型**](#保存模型)
+
+[**20. enumerate用法**](#enumerate)
 
 ---
 ```python
@@ -85,6 +87,18 @@ filter(lambda x : x > 5, arr_num) [6,10,12]
 ### reduce函数
 ```python
 reduce(lambda x, y : x + y, arr_num) 32
+```
+
+### apply函数
+你可以把 apply() 当作是一个 map() 函数，只不过这个函数是专为 Pandas 的数据表和 series 对象打造的。对初学者来说，你可以把 series 对象想象成类似 NumPy 里的数组对象。它是一个一维带索引的数据表结构。<br>
+<br>
+apply() 函数作用是，将一个函数应用到某个数据表中你指定的一行或一列中的每一个元素上。是不是很方便？特别是当你需要对某一列的所有元素都进行格式化或修改的时候，你就不用再一遍遍地循环啦！<br>
+```python
+df = pd.DataFrame([[4,9],]*3,columns=['A','B'])
+df.apply(np.sqrt)
+df.apply(np.sum,axis=0)
+df.apply(np.sum,axis=1)
+df.apply(lambda x : [1,2], axis=1)
 ```
 
 ### 装饰器
@@ -280,6 +294,17 @@ https://pypi.python.org/pypi/setuptools#files<br>
 3.安装好setuptools模块之后应该能用easy_install了，我们要借助它来重新安装pip。命令窗口输入命令：easy_install pip
 
 ### zip
+zip基本用法<br>
+```python
+a = [1,2,3]
+b = [4,5,6]
+for i,j in zip(a,b):
+    print(i,j)
+# 1 4
+# 2 5
+# 3 6
+```
+
 ```python
 s = '彩符和大汶口文化陶尊符号是第三阶段的语段文字'
 print(synonyms.seg(s))
