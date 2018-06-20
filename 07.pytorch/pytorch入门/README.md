@@ -9,6 +9,7 @@
  - 快速搭建
  - 保存提取
  - 批训练
+ - Optimizer 优化器
 
 [**3. pytorch入门之构造一个小型CNN**](#lenet)
 
@@ -90,6 +91,9 @@ def restore_params():
     net3.load_state_dict(torch.load('net_params.pkl'))
     prediction = net3(x)
 ```
+**V. Optimizer 优化器**
+
+[完整代码](optimizer.py)
 
 ### LeNet
 
