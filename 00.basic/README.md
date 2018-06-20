@@ -90,7 +90,7 @@ reduce(lambda x, y : x + y, arr_num) 32
 ```
 
 ### apply函数
-你可以把 apply() 当作是一个 map() 函数，只不过这个函数是专为 Pandas 的数据表和 series 对象打造的。对初学者来说，你可以把 series 对象想象成类似 NumPy 里的数组对象。它是一个一维带索引的数据表结构。<br>
+你可以把apply()当作是一个map()函数，只不过这个函数是专为Pandas的dataframe和series对象打造的。对初学者来说，你可以把series对象想象成类似NumPy里的数组对象。它是一个一维带索引的数据表结构。<br>
 <br>
 apply() 函数作用是，将一个函数应用到某个数据表中你指定的一行或一列中的每一个元素上。是不是很方便？特别是当你需要对某一列的所有元素都进行格式化或修改的时候，你就不用再一遍遍地循环啦！<br>
 ```python
@@ -100,7 +100,7 @@ df.apply(np.sum,axis=0)
 df.apply(np.sum,axis=1)
 df.apply(lambda x : [1,2], axis=1)
 ```
- > applymap是全局函数，elementwise，作用于dataframe中的每个元素
+ > applymap和apply差不多，不过是全局函数，elementwise，作用于dataframe中的每个元素
 
 ### 装饰器
 
