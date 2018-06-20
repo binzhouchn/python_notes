@@ -511,8 +511,9 @@ pd.get_dummies(data.categ_id)
 ```
 
 ### 列表推导式中使用if_else
-[x for x in data if condition] <br>
-[exp1 if condition else exp2 for x in data] <br>
+两种方式：<br>
+1. [x for x in data if condition] <br>
+2. [exp1 if condition else exp2 for x in data]
 
 
 
