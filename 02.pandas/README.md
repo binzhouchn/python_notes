@@ -16,7 +16,7 @@
 
 [**8. pandas to_csv**](#to_csv)
 
-[**9. pd concat**](#concat)
+[**9. pd concat、merge、join来合并数据表**](#合并数据表)
 
 ---
 ### pandas_dataframe手动创建
@@ -121,30 +121,22 @@ to_csv中的参数quoting: int or csv.QUOTE_* instance, default 0
 控制csv中的引号常量。
 可选 QUOTE_MINIMAL(0), QUOTE_ALL(1), QUOTE_NONNUMERIC(2) OR QUOTE_NONE(3)
 
-### concat
+### 合并数据表
+如果你熟悉SQL，这几个概念对你来说就是小菜一碟。不过不管怎样，这几个函数从本质上来说不过就是合并多个数据表的不同方式而已。当然，要时刻记着什么情况下该用哪个函数也不是一件容易的事，所以，让我们一起再回顾一下吧。<br>
+<br>
+concat()可以把一个或多个数据表按行（或列）的方向简单堆叠起来（看你传入的axis参数是0还是1咯）。
 ```python
 import pandas as pd
 df1 = pd.DataFrame(np.ones((3,4))*0, columns=['a','b','c','d'])
 df2 = pd.DataFrame(np.ones((3,4))*1, columns=['a','b','c','d'])
 df3 = pd.DataFrame(np.ones((3,4))*2, columns=['a','b','c','d'])
-
 pd.concat([df1, df2, df3], axis=0, ignore_index=True)
-#打印结果1
-#     a    b    c    d
-# 0  0.0  0.0  0.0  0.0
-# 1  0.0  0.0  0.0  0.0
-# 2  0.0  0.0  0.0  0.0
-# 3  1.0  1.0  1.0  1.0
-# 4  1.0  1.0  1.0  1.0
-# 5  1.0  1.0  1.0  1.0
-# 6  2.0  2.0  2.0  2.0
-# 7  2.0  2.0  2.0  2.0
-# 8  2.0  2.0  2.0  2.0
-
 pd.concat([df1, df2, df3], axis=1, ignore_index=True)
-#打印结果2
-#	0	1	2	3	4	5	6	7	8	9	10	11
-#0	0.0	0.0	0.0	0.0	1.0	1.0	1.0	1.0	2.0	2.0	2.0	2.0
-#1	0.0	0.0	0.0	0.0	1.0	1.0	1.0	1.0	2.0	2.0	2.0	2.0
-#2	0.0	0.0	0.0	0.0	1.0	1.0	1.0	1.0	2.0	2.0	2.0	2.0
 ```
+![concat.png](concat.png)
+
+merge()将会以用户指定的某个名字相同的列为主键进行对齐，把两个或多个数据表融合到一起。<br>\
+![merge.png](merge.png)
+
+join()和merge()很相似，只不过join()是按数据表的索引进行对齐，而不是按某一个相同的列。当某个表缺少某个索引的时候，对应的值为空（NaN）<br>
+![join.png](join.png)
