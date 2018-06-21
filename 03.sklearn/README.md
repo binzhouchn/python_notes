@@ -9,9 +9,9 @@
  - [抽样方法一](#抽样方法一)
  - [抽样方法二](#抽样方法二)
 
-[**对结果进行评判，混淆矩阵**](#对结果进行评判用混淆矩阵)
+[**3. 对结果进行评判，混淆矩阵**](#对结果进行评判用混淆矩阵)
 
-[**4. xx用法**](#xx用法)
+[**4. 模型效果评价accuracy, precision, recall等**](#模型效果评价)
 
 ---
 
@@ -51,5 +51,18 @@ from sklearn.metrics import confusion_matrix
 confusion_matrix(y_true, y_pred)
 ```
 
-### xx用法
+### 模型效果评价
+```python
+# accuracy
+from sklearn.metrics import accuracy_score
+accuracy_score(y_true, y_pred)
+```
+```python
+# recall precision
+from sklearn.metrics import confusion_matrix
+confusion_matrix(y_true, y_pred)
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import f1_score
+```
 
