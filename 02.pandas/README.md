@@ -20,6 +20,8 @@
 
 [**10. 数据透视表（Pivot Tables）**](#数据透视表)
 
+[**11. shuffle**](#shuffle)
+
 ---
 ### pandas_dataframe手动创建
 
@@ -167,3 +169,27 @@ foo  one  1      4
 bar  one  5      4
      two  6      7
 ```
+
+### shuffle
+```python
+# 方法一
+from sklearn.utils import shuffle  
+df = shuffle(df)
+# 方法二
+df.sample(frac=1).reset_index(drop=True)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
