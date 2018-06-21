@@ -18,5 +18,6 @@
 
 [完整代码](cnn_morvanzhou.py)
 
+[我的第一个pytorch_cnn分类(11类别)]()
 
 ### 用pytorch构建一个简单的rnn卷积神经网络
