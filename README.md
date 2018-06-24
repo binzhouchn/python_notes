@@ -29,7 +29,7 @@ conda config --set show_channel_urls yes
 
 pip install镜像配置（Linux）
 ```
-# 先在home的.pip文件夹下新建pip.conf配置文件然后把以后代码复制进去
+# 先在home或者和anaconda文件夹平级的的.pip文件夹下新建pip.conf配置文件然后把以后代码复制进去
 [global]
 trusted-host =  pypi.tuna.tsinghua.edu.cn
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
