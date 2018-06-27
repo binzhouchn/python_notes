@@ -11,7 +11,7 @@
 
 [**3. 对结果进行评判，混淆矩阵**](#对结果进行评判用混淆矩阵)
 
-[**4. 模型效果评价accuracy, precision, recall等**](#模型效果评价)
+[**4. 模型效果评价accuracy, logloss, precision, recall等**](#模型效果评价)
 
 ---
 
@@ -53,9 +53,14 @@ confusion_matrix(y_true, y_pred)
 
 ### 模型效果评价
 ```python
-# accuracy
+# accuracy 准确率是针对y_true和y_pred都是类别的比如0和1
 from sklearn.metrics import accuracy_score
 accuracy_score(y_true, y_pred)
+```
+```python
+# log_loss 又叫交叉熵,y_true是类别比如0和1，y_pred是属于类别1的概率值
+from sklearn.metrics import log_loss
+logloss = log_loss(y_true, y_pred, eps=1e-15)
 ```
 ```python
 # recall precision
