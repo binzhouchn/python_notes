@@ -24,6 +24,6 @@
 
 (2)cnn_mojing<br>
 
-[魔镜杯问句相似度匹配cnn算法]()
+[魔镜杯问句相似度匹配cnn算法](https://nbviewer.jupyter.org/github/binzhouchn/python_notes/blob/master/07.pytorch/2.pytorch%E8%BF%9B%E9%98%B6/cnn_mojing/mojing3_conv1d.ipynb)
 
 ### 用pytorch构建一个简单的rnn卷积神经网络
