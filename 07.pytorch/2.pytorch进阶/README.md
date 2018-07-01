@@ -12,12 +12,18 @@
 
 ### 用pytorch构建一个简单的cnn卷积神经网络
 
+(1)cnn_movanzhou<br>
+
 [CNN 卷积神经网络 莫烦](https://morvanzhou.github.io/tutorials/machine-learning/torch/4-01-CNN/) <br>
  或 
-[CNN 卷积神经网络.md](cnn_movanzhou.md)
+[CNN 卷积神经网络.md](cnn_movanzhou/cnn_movanzhou.md)
 
-[完整代码](cnn_morvanzhou.py)
+[完整代码](cnn_movanzhou/cnn_morvanzhou.py)
 
 [我的第一个pytorch_cnn分类(11类别)](https://nbviewer.jupyter.org/github/binzhouchn/python_notes/blob/master/07.pytorch/2.pytorch%E8%BF%9B%E9%98%B6/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AApytorch_cnn%E5%88%86%E7%B1%BB%2811%E7%B1%BB%E5%88%AB%29.ipynb)
+
+(2)cnn_mojing<br>
+
+[魔镜杯问句相似度匹配cnn算法]()
 
 ### 用pytorch构建一个简单的rnn卷积神经网络
