@@ -20,7 +20,7 @@
 
 [完整代码](cnn_movanzhou/cnn_morvanzhou.py)
 
-[我的第一个pytorch_cnn分类(11类别)](https://nbviewer.jupyter.org/github/binzhouchn/python_notes/blob/master/07.pytorch/2.pytorch%E8%BF%9B%E9%98%B6/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AApytorch_cnn%E5%88%86%E7%B1%BB%2811%E7%B1%BB%E5%88%AB%29.ipynb)
+[我的第一个pytorch_cnn分类(11类别)](https://nbviewer.jupyter.org/github/binzhouchn/python_notes/blob/master/07.pytorch/2.pytorch%E8%BF%9B%E9%98%B6/cnn_movanzhou/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AApytorch_cnn%E5%88%86%E7%B1%BB%2811%E7%B1%BB%E5%88%AB%29.ipynb)
 
 (2)cnn_mojing<br>
 
