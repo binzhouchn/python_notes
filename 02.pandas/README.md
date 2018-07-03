@@ -22,6 +22,8 @@
 
 [**11. shuffle**](#shuffle)
 
+[**12. dataframe交换列的顺序**](#dataframe交换列的顺序)
+
 ---
 ### pandas_dataframe手动创建
 
@@ -179,7 +181,11 @@ df = shuffle(df)
 df.sample(frac=1).reset_index(drop=True)
 ```
 
-
+### dataframe交换列的顺序
+```python
+reorder_col = ['label','doc','query']
+df = df.loc[:, reorder_col]
+```
 
 
 
