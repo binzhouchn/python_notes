@@ -4,7 +4,7 @@
 
 [**2. 用pytorch构建一个简单的RNN卷积神经网络**](#用pytorch构建一个简单的rnn卷积神经网络)
 
-[**3. 用pytorch构建一个DSSM神经网络**](#用pytorch构建一个DSSM神经网络)
+[**3. 用pytorch构建一个DSSM神经网络**](#用pytorch构建一个dssm神经网络)
 
 
 ---
