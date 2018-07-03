@@ -4,7 +4,7 @@
 
 [**2. 用pytorch构建一个简单的RNN卷积神经网络**](#用pytorch构建一个简单的rnn卷积神经网络)
 
-
+[**3. 用pytorch构建一个DSSM神经网络**](#用pytorch构建一个DSSM神经网络)
 
 
 ---
@@ -37,3 +37,9 @@
 (2)lstm_mojing<br>
 
 [魔镜杯问句相似度匹配lstm算法](https://nbviewer.jupyter.org/github/binzhouchn/python_notes/blob/master/07.pytorch/2.pytorch%E8%BF%9B%E9%98%B6/lstm_mojing/mojing_lstm.ipynb)
+
+## 用pytorch构建一个DSSM神经网络
+
+[dssm参考资料](https://github.com/nishnik/Deep-Semantic-Similarity-Model-PyTorch)
+
+[魔镜杯问句相似度匹配dssm算法]()
