@@ -2,6 +2,8 @@
 
 [**2. sanic**](#sanic)
 
+[**3. python调用flask post方法(formdata)**](#python调用flask_post方法)
+
 # flask
 
 ## GET方法
@@ -140,4 +142,11 @@ async def post_form_data(request):
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8000)
+```
+# python调用flask_post方法
+
+postman工具右上方，点击Code->选Python Requests->复制代码即可
+
+```python
+
 ```

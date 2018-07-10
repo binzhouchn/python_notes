@@ -44,6 +44,8 @@
 
 [**22. 列表推导式中使用if else**](#列表推导式中使用if_else)
 
+[**23. 将numpy array中的最多的元素选出**](#将numpy_array中的最多的元素选出)
+
 ---
 ```python
 %reload_ext autoreload
@@ -515,8 +517,17 @@ pd.get_dummies(data.categ_id)
 1. [x for x in data if condition] <br>
 2. [exp1 if condition else exp2 for x in data]
 
+### 将numpy_array中的最多的元素选出
 
-
+将numpy array中的最多的元素选出，如果一样则取最小的那个
+```python
+arr = np.array([2,2,2,4,5])
+np.bincount(arr).argmax()
+# output: 2
+arr = np.array([1,2,1,4,2,8])
+np.bincount(arr).argmax()
+# output: 1
+```
 
 
 
