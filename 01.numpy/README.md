@@ -11,6 +11,10 @@
 
 [**5. flatten和ravel的区别**](#flatten_ravel)
 
+[**6. pandas一列数组转numpy二维数组**](#pandas一列数组转numpy二维数组)
+
+[**7. numpy array改dtype方法**](#numpy_array改dtype方法)
+
 ---
 
 ### numpy类型
@@ -83,4 +87,30 @@ a = np.arange(8).reshape(2,4)
 b1 = a.flatten()
 b2 = a.ravel()
 # 这里如果改变b1的值，a不会改变；而改变b2的值，a会改变！
+```
+
+### pandas一列数组转numpy二维数组
+```python
+print(df)
+# 	 nn
+# 0	[1,2,3]
+# 1	[4,5,6]
+# 2	[7,8,9]
+## 想把df.nn这一列转成二维数组
+np.array([df.nn])[0]
+# array([[1, 2, 3],
+#        [4, 5, 6],
+#        [7, 8, 9]], dtype=object)
+## 注意这里转换完以后array的dtype是object，需要根据需要转成相应的int,float等类型
+## 转换方法看numpy_array改dtype方法
+```
+
+### numpy_array改dtype方法
+```python
+###用astype方法
+print(arr)
+# array([[1, 2, 3],
+#        [4, 5, 6],
+#        [7, 8, 9]], dtype=object)
+arr.astype(np.float)
 ```
