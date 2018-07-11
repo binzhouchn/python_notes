@@ -1,6 +1,8 @@
 [**1. pycharm远程配置**](#pycharm远程配置)
 
-[**2. 远程ipython**](#远程ipython)
+[**2. 远程ipython http版**](#远程ipython_http版)
+
+[**3. 远程ipython https安全版**](#远程ipython_https安全版)
 
 # pycharm远程配置
 
@@ -16,8 +18,38 @@ Mappings选local path工程目录，其他的都为/ <br>
 
 done!
 
+# 远程ipython_http版
 
-# 远程ipython 
+1. 打开ipython
+```python
+from notebook.auth import passwd
+In [2] : passwd() # 输入密码
+Enter password:
+Verify password:
+Out[2]: 'sha1:f9...'
+```
+
+2. 新建jupyter_config.py，输入如下配置。
+```bash
+c.NotebookApp.password = u'sha1:f9...'
+c.NotebookApp.ip = '*'
+c.NotebookApp.open_browser = False
+c.NotebookApp.port = 8888
+```
+
+3. 启动jupyter notebook 并指定配置文件，输入如下命令。
+```bash
+jupyter notebook --config=jupyter_config.py
+```
+
+4. 若客户端浏览器无法打开jupyter，有可能是防火墙的缘故，输入如下命令开放对应的
+的端口（若使用IPv6，把命令iptables改成ip6tables）
+```bash
+iptables -I INPUT -p tcp --dport 8888 -j ACCEPT
+iptables save
+```
+
+# 远程ipython_https安全版
 
 通过mac终端登录： <br>
 sudo ssh -p 22 ubuntu@182.254.247.182 <br>
