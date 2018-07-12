@@ -48,6 +48,8 @@
 
 [**24. 函数中传入函数demo**](#函数中传入函数demo)
 
+[**25. getattr**](#getattr)
+
 ---
 ```python
 %reload_ext autoreload
@@ -554,7 +556,17 @@ no_loop_time = time_function(classifier.compute_distances_no_loops, X_test)
 print('No loop version took %f seconds' % no_loop_time)
 ```
 
-
+### getattr
+```python
+class A(object):
+    def __init__(self):
+        pass
+    def xx(self,x):
+        print('get xx func',x)
+a = A()
+getattr(a,'xx')(23213) ### 等同于a.xx(23213)
+#out[]: get xx func 23213
+```
 
 
 
