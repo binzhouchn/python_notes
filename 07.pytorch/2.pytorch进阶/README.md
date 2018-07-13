@@ -6,6 +6,7 @@
 
 [**3. 用pytorch构建一个DSSM神经网络**](#用pytorch构建一个dssm神经网络)
 
+[**4. 用pytorch构建一个GAN神经网络**](#用pytorch构建一个gan神经网络)
 
 ---
 
@@ -43,3 +44,9 @@
 [dssm参考资料](https://github.com/nishnik/Deep-Semantic-Similarity-Model-PyTorch)
 
 [魔镜杯问句相似度匹配dssm算法](https://nbviewer.jupyter.org/github/binzhouchn/python_notes/blob/master/07.pytorch/2.pytorch%E8%BF%9B%E9%98%B6/dssm_mojing/mojing_dssm.ipynb)
+
+## 用pytorch构建一个gan神经网络
+
+[原文链接地址](https://github.com/binzhouchn/pytorch-book/tree/master/chapter7-GAN%E7%94%9F%E6%88%90%E5%8A%A8%E6%BC%AB%E5%A4%B4%E5%83%8F)
+
+[GAN生成动漫头像demo](gan_dongman_demo)
