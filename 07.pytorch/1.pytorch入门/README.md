@@ -125,8 +125,8 @@ def restore_params():
 CrossEntropyLoss公式如下图片格式：<br>
 ![crossentropyloss_pic](crossentropyloss.png)<br>
 CrossEntropyLoss公式如下markdown格式：<br>
-$\text{loss}(x, class) = -\log\left(\frac{\exp(x[class])}{\sum_j \exp(x[j])}\right)
-                   = -x[class] + \log\left(\sum_j \exp(x[j])\right) $
+
+$\text{loss}(x, class) = -\log\left(\frac{\exp(x[class])}{\sum_j \exp(x[j])}\right) = -x[class] + \log\left(\sum_j \exp(x[j])\right) $
 
 ```python
 import torch
@@ -156,4 +156,5 @@ for i in range(3):
     res += first[i] +math.log(second[i])
 print("自己的计算结果：")
 print(res/3)
+#计算的结果是一样的
 ```
