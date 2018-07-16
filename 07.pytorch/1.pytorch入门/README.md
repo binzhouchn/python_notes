@@ -13,6 +13,8 @@
 
 [**3. pytorch入门之构造一个小型CNN**](#lenet)
 
+[**4. pytorch CrossEntropyLoss的计算过程**](#pytorch_crossentropyloss)
+
 
 ---
 
@@ -117,3 +119,41 @@ def restore_params():
 
 > 注意：torch.nn只接受mini-batch的输入，也就是说我们输入的时候是必须是好几张图片同时输入<br>
 > 例如：nn. Conv2d 允许输入4维的Tensor：n个样本 x n个色彩频道 x 高度 x 宽度<br>
+
+### pytorch_crossentropyloss
+
+CrossEntropyLoss公式如下图片格式：<br>
+![crossentropyloss_pic](crossentropyloss.png)<br>
+CrossEntropyLoss公式如下markdown格式：<br>
+$\text{loss}(x, class) = -\log\left(\frac{\exp(x[class])}{\sum_j \exp(x[j])}\right)
+                   = -x[class] + \log\left(\sum_j \exp(x[j])\right) $
+
+```python
+import torch
+import torch.nn as nn
+import math
+loss = nn.CrossEntropyLoss()
+input = torch.randn(3, 5, requires_grad=True) # 样本数是3个
+target = torch.empty(3, dtype=torch.long).random_(5) # 三个样本数对应三个label
+output = loss(input, target)
+
+print("输入为3个5类:")
+print(input)
+print("要计算loss的类别:")
+print(target)
+print("计算loss的结果:")
+print(output)
+
+first = [0,0,0]
+for i in range(3):
+    first[i] -= input[i][target[i]]
+second = [0,0,0]
+for i in range(3):
+    for j in range(5):
+        second[i] += math.exp(input[i][j])
+res = 0
+for i in range(3):
+    res += first[i] +math.log(second[i])
+print("自己的计算结果：")
+print(res/3)
+```
