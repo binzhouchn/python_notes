@@ -592,7 +592,7 @@ df = pd.DataFrame([[1, 'a b c'],
                    [2, 'a b'],
                    [3, np.nan]], columns=['id', 'col'])
 
-explode(df, 'col',pat=' ')
+explode(df, 'col', pat=' ')
 ```
 ```python
 #	id	col_explode
@@ -605,7 +605,7 @@ explode(df, 'col',pat=' ')
 ```
 (2) 一列变多列
 ```python
-df.col.str.split(' ',expand=True)
+df.col.str.split(' ', expand=True)
 ```
 ```python
 #	0	1	2
