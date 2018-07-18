@@ -50,6 +50,8 @@
 
 [**25. getattr**](#getattr)
 
+[**26. df宽变长及一列变多列**](#df宽变长及一列变多列)
+
 ---
 ```python
 %reload_ext autoreload
@@ -568,6 +570,48 @@ getattr(a,'xx')(23213) ### 等同于a.xx(23213)
 #out[]: get xx func 23213
 ```
 
+### df宽变长及一列变多列
 
+(1) df宽变长<br>
+```python
+def explode(df, col, pat=None, drop_col=True):
+    """
+    :param df:
+    :param col: col name
+    :param pat: String or regular expression to split on. If None, splits on whitespace
+    :param drop_col: drop col is Yes or No
+    :return: hive explode
+    """
+    data = df.copy()
+    data_temp = data[col].str.split(pat=pat, expand=True).stack().reset_index(level=1, drop=True).rename(col+'_explode')
+    if drop_col:
+        data.drop(col, 1, inplace=True)
+    return data.join(data_temp)
+    
+df = pd.DataFrame([[1, 'a b c'], 
+                   [2, 'a b'],
+                   [3, np.nan]], columns=['id', 'col'])
+
+explode(df, 'col',pat=' ')
+```
+```python
+#	id	col_explode
+#0	1	a
+#0	1	b
+#0	1	c
+#1	2	a
+#1	2	b
+#2 	3	NaN
+```
+(2) 一列变多列
+```python
+df.col.str.split(' ',expand=True)
+```
+```python
+#	0	1	2
+#0	a	b	c
+#1	a	b	None
+#2	NaN	NaN	NaN
+```
 
 
