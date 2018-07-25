@@ -8,7 +8,7 @@
 
 [**4. reduce函数**](#reduce函数)
 
-[**5. apply和applymap函数**](#apply函数)
+[**5. apply和applymap函数、transform/agg**](#apply函数)
 
 [**6. 装饰器**](#装饰器)
 
@@ -16,43 +16,41 @@
 
 [**8. 统计空缺率**](#统计空缺率)
 
-[**9. transform函数**](#transform函数)
+[**9. KFold函数**](#kfold函数)
 
-[**10. KFold函数**](#kfold函数)
+[**10. sys.defaultencoding**](#sys)
 
-[**11. sys.defaultencoding**](#sys)
+[**11. pip install error _NamespacePath**](#pip_error)
 
-[**12. pip install error _NamespacePath**](#pip_error)
+[**12. zip(\*xx)用法**](#zip)
 
-[**13. zip(\*xx)用法**](#zip)
+[**13. dataframe中某一列字符串长度为10的进行切片**](#切片)
 
-[**14. dataframe中某一列字符串长度为10的进行切片**](#切片)
+[**14. re模块**](#re模块)
 
-[**15. re模块**](#re模块)
+[**15. eval**](#eval)
 
-[**16. eval**](#eval)
+[**16. global用法**](#global)
 
-[**17. global用法**](#global)
+[**17. 多进程之pool用法**](#pool)
 
-[**18. 多进程之pool用法**](#pool)
+[**18. 保存模型**](#保存模型)
 
-[**19. 保存模型**](#保存模型)
+[**19. enumerate用法**](#enumerate)
 
-[**20. enumerate用法**](#enumerate)
+[**20. label数值化方法**](#label数值化方法)
 
-[**21. label数值化方法**](#label数值化方法)
+[**21. 列表推导式中使用if else**](#列表推导式中使用if_else)
 
-[**22. 列表推导式中使用if else**](#列表推导式中使用if_else)
+[**22. 将numpy array中的最多的元素选出**](#将numpy_array中的最多的元素选出)
 
-[**23. 将numpy array中的最多的元素选出**](#将numpy_array中的最多的元素选出)
+[**23. 函数中传入函数demo**](#函数中传入函数demo)
 
-[**24. 函数中传入函数demo**](#函数中传入函数demo)
+[**24. getattr**](#getattr)
 
-[**25. getattr**](#getattr)
+[**25. df宽变长及一列变多列**](#df宽变长及一列变多列)
 
-[**26. df宽变长及一列变多列**](#df宽变长及一列变多列)
-
-[**27. groupby使用**](#groupby使用)
+[**26. groupby使用**](#groupby使用)
 
 ---
 ```python
@@ -104,6 +102,9 @@ reduce(lambda x, y : x + y, arr_num) 32
 ```
 
 ### apply函数
+
+ - apply函数是对行进行操作
+
 你可以把apply()当作是一个map()函数，只不过这个函数是专为Pandas的dataframe和series对象打造的。对初学者来说，你可以把series对象想象成类似NumPy里的数组对象。它是一个一维带索引的数据表结构。<br>
 <br>
 apply() 函数作用是，将一个函数应用到某个数据表中你指定的一行或一列中的每一个元素上。是不是很方便？特别是当你需要对某一列的所有元素都进行格式化或修改的时候，你就不用再一遍遍地循环啦！<br>
@@ -115,6 +116,15 @@ df.apply(np.sum,axis=1)
 df.apply(lambda x : [1,2], axis=1)
 ```
  > applymap和apply差不多，不过是全局函数，elementwise，作用于dataframe中的每个元素
+
+ - transform/agg是对一列进行操作
+
+由前面分析可以知道，Fare项在测试数据中缺少一个值，所以需要对该值进行填充。 
+我们按照一二三等舱各自的均价来填充： 
+下面transform将函数np.mean应用到各个group中。
+```python
+combined_train_test['Fare'] = combined_train_test[['Fare']].fillna(combined_train_test.groupby('Pclass').transform(np.mean))
+```
 
 ### 装饰器
 
@@ -226,14 +236,6 @@ p.keys
 (1 - np.count_nonzero(np.array(data['col2']))*1.0 / data['col2'].count()) * 100
 
 (1 - data['col2'].apply(lambda x : x != '').sum() * 1.0 / data['col2'].count()) * 100
-```
-
-### transform函数
-由前面分析可以知道，Fare项在测试数据中缺少一个值，所以需要对该值进行填充。 
-我们按照一二三等舱各自的均价来填充： 
-下面transform将函数np.mean应用到各个group中。
-```python
-combined_train_test['Fare'] = combined_train_test[['Fare']].fillna(combined_train_test.groupby('Pclass').transform(np.mean))
 ```
 
 ### kfold函数
