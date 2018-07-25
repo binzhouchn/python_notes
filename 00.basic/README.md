@@ -52,6 +52,8 @@
 
 [**26. df宽变长及一列变多列**](#df宽变长及一列变多列)
 
+[**27. groupby使用**](#groupby使用)
+
 ---
 ```python
 %reload_ext autoreload
@@ -614,4 +616,16 @@ df.col.str.split(' ', expand=True)
 #2	NaN	NaN	NaN
 ```
 
+### groupby使用
+
+根据df的personid进行groupby，统计一下用户消费consume这一列特征的相关聚合情况；
+比如count, max, kurt
+
+```python
+gr = df.groupby('personid')['consume']
+df_aggr = gr.agg([('_count','count'),('_max',np.max),('_kurt',pd.Series.kurt)]).reset_index()
+
+# 多个特征聚合统计值拼接
+df = df.merge(df_aggr, how='left', on='personid').fillna(0)
+```
 
