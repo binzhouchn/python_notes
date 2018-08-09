@@ -8,6 +8,8 @@
 
 [**4. python单例模式**](#单例模式)
 
+[**5. python deprecated warning**](#deprecationwarning)
+
 ---
 
 ### super函数使用基础
@@ -216,3 +218,6 @@ class MyClass(Singleton):
         print('effwfwsefwefwef')
 ```
 > 好像写一个装饰器@singleton也行
+
+### DeprecationWarning
+

@@ -65,10 +65,10 @@ sys.path.append('..')
 ### lambda函数
 ```python
 # lambda: 快速定义单行的最小函数，inline的匿名函数
-(lambda x : x ** 2)(3)  9
+(lambda x : x ** 2)(3)
 # 或者
 f = lambda x : x ** 2
-f(3)  9
+f(3)
 ```
 ### map函数
 ```python
@@ -77,10 +77,10 @@ arr_num = [3,1,6,10,12]
 
 def f(x):
     return x ** 2
-map(lambda x : x ** 2, arr_num) [9,1,36,100,144]
-map(f, arr_num) [9,1,36,100,144]
-map(len, arr_str) [5,4]
-map(lambda x : (x, 1), arr_str)  [('hello', 1), ('this', 1)]
+map(lambda x : x ** 2, arr_num)
+map(f, arr_num)
+map(len, arr_str)
+map(lambda x : (x, 1), arr_str)
 ```
 ```python
 # 可以对每个列表对应的元素进行操作，比如加总
@@ -91,14 +91,19 @@ list(map(f1,[1,2,10],[2,3,6],[4,3,5]))
 
 ### filter函数
 ```python
-filter(lambda x : len(x) >= 5, arr_str) ['hello']
-filter(lambda x : x > 5, arr_num) [6,10,12]
+arr_str = ['hello','hi','nice']
+arr_num = [1,6,10,12]
+filter(lambda x : len(x) >= 5, arr_str)
+filter(lambda x : x > 5, arr_num) 
 [(i.word, 'E') if i.flag =='n' else (i.word, 'P') for i in filter(lambda x: x.flag in ('n', 'v'), a) ]
 ```
 
 ### reduce函数
 ```python
-reduce(lambda x, y : x + y, arr_num) 32
+# reduce已经不是默认了，需要从functools导进来
+from functools import reduce
+arr_num = [1,6,7,10]
+reduce(lambda x, y : x + y, arr_num)
 ```
 
 ### apply函数
