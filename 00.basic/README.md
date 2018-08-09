@@ -10,47 +10,43 @@
 
 [**5. apply和applymap函数、transform/agg**](#apply函数)
 
-[**6. 装饰器**](#装饰器)
+[**6. dict转object**](#dict转object)
 
-[**7. dict转object**](#dict转object)
+[**7. KFold函数**](#kfold函数)
 
-[**8. 统计空缺率**](#统计空缺率)
+[**8. sys.defaultencoding**](#sys)
 
-[**9. KFold函数**](#kfold函数)
+[**9. pip install error _NamespacePath**](#pip_error)
 
-[**10. sys.defaultencoding**](#sys)
+[**10. zip(\*xx)用法**](#zip)
 
-[**11. pip install error _NamespacePath**](#pip_error)
+[**11. dataframe中某一列字符串长度为10的进行切片**](#切片)
 
-[**12. zip(\*xx)用法**](#zip)
+[**12. re模块**](#re模块)
 
-[**13. dataframe中某一列字符串长度为10的进行切片**](#切片)
+[**13. eval**](#eval)
 
-[**14. re模块**](#re模块)
+[**14. global用法**](#global)
 
-[**15. eval**](#eval)
+[**15. 多进程之pool用法**](#pool)
 
-[**16. global用法**](#global)
+[**16. 保存模型**](#保存模型)
 
-[**17. 多进程之pool用法**](#pool)
+[**17. enumerate用法**](#enumerate)
 
-[**18. 保存模型**](#保存模型)
+[**18. label数值化方法**](#label数值化方法)
 
-[**19. enumerate用法**](#enumerate)
+[**19. 列表推导式中使用if else**](#列表推导式中使用if_else)
 
-[**20. label数值化方法**](#label数值化方法)
+[**20. 将numpy array中的最多的元素选出**](#将numpy_array中的最多的元素选出)
 
-[**21. 列表推导式中使用if else**](#列表推导式中使用if_else)
+[**21. 函数中传入函数demo**](#函数中传入函数demo)
 
-[**22. 将numpy array中的最多的元素选出**](#将numpy_array中的最多的元素选出)
+[**22. getattr**](#getattr)
 
-[**23. 函数中传入函数demo**](#函数中传入函数demo)
+[**23. df宽变长及一列变多列**](#df宽变长及一列变多列)
 
-[**24. getattr**](#getattr)
-
-[**25. df宽变长及一列变多列**](#df宽变长及一列变多列)
-
-[**26. groupby使用**](#groupby使用)
+[**24. groupby使用**](#groupby使用)
 
 ---
 ```python
@@ -132,65 +128,6 @@ df.apply(lambda x : [1,2], axis=1)
 combined_train_test['Fare'] = combined_train_test[['Fare']].fillna(combined_train_test.groupby('Pclass').transform(np.mean))
 ```
 
-### 装饰器
-
-装饰器相当于一个高阶函数，传入函数，返回函数，返回的时候这个函数多了一些功能[(原文链接)](https://mp.weixin.qq.com/s/hsa-kYvL31c1pEtMpkr6bA)
-```python
-# 无参数的装饰器
-def use_logging(func):
-
-    def wrapper():
-        logging.warn("%s is running" % func.__name__)
-        return func()
-    return wrapper
-
-@use_logging
-def foo():
-    print("i am foo")
-
-foo()
-
-#----------------------------------------------------------
-# 带参数的装饰器
-def use_logging(level):
-    def decorator(func):
-        def wrapper(*args, **kwargs):
-            if level == "warn":
-                logging.warn("%s is running" % func.__name__)
-            elif level == "info":
-                logging.info("%s is running" % func.__name__)
-            return func(*args, **kwargs)
-        return wrapper
-
-    return decorator
-
-@use_logging(level="warn") # 可以传参数进装饰器
-def foo(name, age=None, height=None):
-    print("I am %s, age %s, height %s" % (name, age, height))
-
-foo('John',9) [WARNING:root:foo is running]I am John, age 9, height None
-
-#---------------------------------------------------
-# 类装饰器
-class Foo(object):
-    def __init__(self, func):
-        self._func = func
-
-    def __call__(self):
-        print ('class decorator runing')
-        self._func()
-        print ('class decorator ending')
-
-@Foo
-def bar():
-    print ('test bar')
-
-bar() 
-输出
-class decorator runing
-test bar
-class decorator ending
-```
 ### dict转object
 ```python
 import json
@@ -236,14 +173,6 @@ p.items
 p.keys
 ```
 
-### 统计空缺率
-两种方法统计空缺率：
-```python
-(1 - np.count_nonzero(np.array(data['col2']))*1.0 / data['col2'].count()) * 100
-
-(1 - data['col2'].apply(lambda x : x != '').sum() * 1.0 / data['col2'].count()) * 100
-```
-
 ### kfold函数
 新手用cross_val_score比较简单，后期可用KFold更灵活,
 ```python
@@ -256,7 +185,7 @@ def ff(y,y_pred):
     rmse = np.sqrt(sum((y-y_pred)**2)/len(y))
     return rmse
 rmse_scoring = scorer.make_scorer(ff)
-cross_val_score(forest,X=train_data_features,y=df.Score,scoring=rmse_scoring,cv=3)
+cross_val_score(forest,X=train_data_features,y=df.Score,scoring=rmse_scoring,cv=5)
 ```
 ```python
 # Some useful parameters which will come in handy later on

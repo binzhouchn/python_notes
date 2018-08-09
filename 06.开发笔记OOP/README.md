@@ -197,6 +197,64 @@ class_foo
 foo
 ```
 
+装饰器相当于一个高阶函数，传入函数，返回函数，返回的时候这个函数多了一些功能[(原文链接)](https://mp.weixin.qq.com/s/hsa-kYvL31c1pEtMpkr6bA)
+```python
+# 无参数的装饰器
+def use_logging(func):
+
+    def wrapper():
+        logging.warn("%s is running" % func.__name__)
+        return func()
+    return wrapper
+
+@use_logging
+def foo():
+    print("i am foo")
+
+foo()
+
+#----------------------------------------------------------
+# 带参数的装饰器
+def use_logging(level):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            if level == "warn":
+                logging.warn("%s is running" % func.__name__)
+            elif level == "info":
+                logging.info("%s is running" % func.__name__)
+            return func(*args, **kwargs)
+        return wrapper
+
+    return decorator
+
+@use_logging(level="warn") # 可以传参数进装饰器
+def foo(name, age=None, height=None):
+    print("I am %s, age %s, height %s" % (name, age, height))
+
+foo('John',9) [WARNING:root:foo is running]I am John, age 9, height None
+
+#---------------------------------------------------
+# 类装饰器
+class Foo(object):
+    def __init__(self, func):
+        self._func = func
+
+    def __call__(self):
+        print ('class decorator runing')
+        self._func()
+        print ('class decorator ending')
+
+@Foo
+def bar():
+    print ('test bar')
+
+bar() 
+输出
+class decorator runing
+test bar
+class decorator ending
+```
+
 ### 单例模式
 ```python
 class Singleton(object):
@@ -221,3 +279,25 @@ class MyClass(Singleton):
 
 ### DeprecationWarning
 
+```python
+import warnings
+import functools
+
+def deprecated(func):
+    """This is a decorator which can be used to mark functions
+    as deprecated. It will result in a warning being emitted
+    when the function is used."""
+    @functools.wraps(func)
+    def new_func(*args, **kwargs):
+        warnings.simplefilter('always', DeprecationWarning)  # turn off filter
+        warnings.warn("Call to deprecated function {}.".format(func.__name__),
+                      category=DeprecationWarning,
+                      stacklevel=2)
+        warnings.simplefilter('default', DeprecationWarning)  # reset filter
+        return func(*args, **kwargs)
+    return new_func
+
+@deprecated
+def ff(x):
+    print(x,'test')
+```
