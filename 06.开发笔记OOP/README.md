@@ -276,6 +276,23 @@ class MyClass(Singleton):
         print('effwfwsefwefwef')
 ```
 > 好像写一个装饰器@singleton也行
+```python
+def singleton(cls, *args, **kw):
+    instance={}
+    def _singleton():
+        if cls not in instance:
+            instance[cls]=cls(*args, **kw)
+        return instance[cls]
+    return _singleton
+
+@singleton
+class A:
+    def __init__(self):
+        pass
+    def test(self,num):
+        return num*2
+```
+
 
 ### DeprecationWarning
 
