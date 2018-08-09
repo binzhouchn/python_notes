@@ -97,7 +97,7 @@ filter(lambda x : x > 5, arr_num)
 
 ### reduce函数
 ```python
-# reduce已经不是默认了，需要从functools导进来
+# 在python3里，reduce函数已经被从全局命名空间里移除了，它现在被放置在functools模块里
 from functools import reduce
 arr_num = [1,6,7,10]
 reduce(lambda x, y : x + y, arr_num)
