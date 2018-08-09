@@ -298,6 +298,6 @@ def deprecated(func):
     return new_func
 
 @deprecated
-def ff(x):
-    print(x,'test')
+def some_old_function(x, y):
+    return x + y
 ```
