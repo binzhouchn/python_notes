@@ -275,7 +275,7 @@ class MyClass(Singleton):
     def kk(self):
         print('effwfwsefwefwef')
 ```
-> 好像写一个装饰器@singleton也行
+> 写一个装饰器@singleton也行
 ```python
 def singleton(cls, *args, **kw):
     instance={}
