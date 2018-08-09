@@ -70,6 +70,7 @@ sys.path.append('..')
 f = lambda x : x ** 2
 f(3)
 ```
+
 ### map函数
 ```python
 arr_str = ["hello", "this"]
