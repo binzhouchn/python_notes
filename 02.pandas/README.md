@@ -4,25 +4,27 @@
 
 [**2. pandas dataframe中apply用法**](#pandas_dataframe中apply用法)
 
-[**3. groupby用法**](#groupby用法)
+[**3. pandas dataframe中map用法**](#pandas_dataframe中map用法)
 
-[**4. explode用法**](#explode用法)
+[**4. groupby用法**](#groupby用法)
 
-[**5. sort用法**](#sort用法)
+[**5. explode用法**](#explode用法)
 
-[**6. left join用法**](#left_join用法)
+[**6. sort用法**](#sort用法)
 
-[**7. reset_index用法**](#reset_index用法)
+[**7. left join用法**](#left_join用法)
 
-[**8. pandas to_csv字段和值加引号操作**](#to_csv字段和值加引号操作)
+[**8. reset_index用法**](#reset_index用法)
 
-[**9. pd concat、merge、join来合并数据表**](#合并数据表)
+[**9. pandas to_csv字段和值加引号操作**](#to_csv字段和值加引号操作)
 
-[**10. 数据透视表（Pivot Tables）**](#数据透视表)
+[**10. pd concat、merge、join来合并数据表**](#合并数据表)
 
-[**11. shuffle**](#shuffle)
+[**11. 数据透视表（Pivot Tables）**](#数据透视表)
 
-[**12. dataframe交换列的顺序**](#dataframe交换列的顺序)
+[**12. shuffle**](#shuffle)
+
+[**13. dataframe交换列的顺序**](#dataframe交换列的顺序)
 
 ---
 ### pandas_dataframe手动创建
@@ -39,6 +41,15 @@ data = pd.DataFrame(arr.transpose(),columns=['name','age'])
 现在想看一下地址中含有-和,的数据有哪些可以进行如下操作： 
 ```python
 data[data.address.apply(lambda x: ('-' in list(x)) and (',' in list(x)))]
+```
+
+> 可以看basic中apply函数的用法
+
+### pandas_dataframe中map用法
+
+```python
+df["season"] = df.season.map({1: "Spring", 2 : "Summer", 3 : "Fall", 4 :"Winter" })
+# 把数字映射成string
 ```
 
 ### groupby用法

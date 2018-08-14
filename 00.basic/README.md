@@ -116,6 +116,7 @@ df.apply(np.sqrt)
 df.apply(np.sum,axis=0)
 df.apply(np.sum,axis=1)
 df.apply(lambda x : [1,2], axis=1)
+df.apply(lambda x : x.split()[0])
 ```
  > applymap和apply差不多，不过是全局函数，elementwise，作用于dataframe中的每个元素
 
