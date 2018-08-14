@@ -32,7 +32,7 @@
 手动创建dataframe
 ```python
 arr = np.array([['John','Lily','Ben'],[11,23,56]])
-data = pd.DataFrame(arr.transpose(),columns=['name','age'])
+df = pd.DataFrame(arr.transpose(),columns=['name','age'])
 ```
 
 
@@ -40,7 +40,7 @@ data = pd.DataFrame(arr.transpose(),columns=['name','age'])
 
 现在想看一下地址中含有-和,的数据有哪些可以进行如下操作： 
 ```python
-data[data.address.apply(lambda x: ('-' in list(x)) and (',' in list(x)))]
+df[df.address.apply(lambda x: ('-' in list(x)) and (',' in list(x)))]
 ```
 
 > 可以看basic中apply函数的用法
@@ -56,7 +56,7 @@ df["season"] = df.season.map({1: "Spring", 2 : "Summer", 3 : "Fall", 4 :"Winter"
 
 [**用法举例一**]
 ```python
-gr = data.groupby(by='EID')
+gr = df.groupby(by='EID')
 gr.agg({'BTBL':'max','BTYEAR':'count'}).reset_index() # 常见的max, min, count, mean, first, nunique
 ```
 ||EID|BTBL|BTYEAR
@@ -65,7 +65,7 @@ gr.agg({'BTBL':'max','BTYEAR':'count'}).reset_index() # 常见的max, min, count
 |1|38|0.700|2013
 |2|51|0.147|2002
 
-这里对data根据EID进行groupby，然后根据字段BTBL, BTYEAR两个字段进行聚合，然后reset_index
+这里对df根据EID进行groupby，然后根据字段BTBL, BTYEAR两个字段进行聚合，然后reset_index
 
 [**用法举例二**]
 
