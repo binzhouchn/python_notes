@@ -11,7 +11,7 @@
 
 [**3. 对结果进行评判，混淆矩阵**](#对结果进行评判用混淆矩阵)
 
-[**4. 模型效果评价accuracy, logloss, precision, recall等**](#模型效果评价)
+[**4. 模型效果评价accuracy, logloss, precision, recall, ks等**](#模型效果评价)
 
 ---
 
@@ -69,5 +69,20 @@ confusion_matrix(y_true, y_pred)
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.metrics import f1_score
+```
+```python
+# KS
+'''
+其实从某个角度上来讲ROC曲线和KS曲线是一回事，只是横纵坐标的取法不同而已。
+拿逻辑回归举例，模型训练完成之后每个样本都会得到一个类概率值（注意是类似的类），
+把样本按这个类概率值排序后分成10等份，每一份单独计算它的真正率和假正率，
+然后计算累计概率值，用真正率和假正率的累计做为坐标画出来的就是ROC曲线；
+用10等分做为横坐标，用真正率和假正率的累计值分别做为纵坐标就得到两个曲线，这就是KS曲线
+'''
+from sklearn import metrics
+def ks(y_pred, y_true):
+    label=y_true
+    fpr,tpr,thres = metrics.roc_curve(label,y_pred,pos_label=1)
+    return 'ks',abs(fpr - tpr).max()
 ```
 
