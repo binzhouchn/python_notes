@@ -48,6 +48,8 @@
 
 [**24. groupby使用**](#groupby使用)
 
+[**25. python画图及显示中文**](#python画图及显示中文)
+
 ---
 ```python
 %reload_ext autoreload
@@ -564,5 +566,37 @@ df_aggr = gr.agg([('_count','count'),('_max',np.max),('_kurt',pd.Series.kurt)]).
 
 # 多个特征聚合统计值拼接
 df = df.merge(df_aggr, how='left', on='personid').fillna(0)
+```
+
+### python画图及显示中文
+
+```python
+# 解决方法一
+import matplotlib as mpl
+mpl.rcParams['font.sans-serif'] = ['SimHei']
+mpl.rcParams['font.serif'] = ['SimHei']
+
+# 如果方法一解决不了
+import matplotlib.pyplot as plt
+plt.rcParams['font.sans-serif'] = ['SimHei']  # 解决中文显示问题-设置字体为黑体
+plt.rcParams['axes.unicode_minus'] = False  # 解决保存图像是负号'-'显示为方块的问题
+
+# 如果方法二解决不了
+import matplotlib
+zhfont = matplotlib.font_manager.FontProperties(fname='../simsun.ttc')
+plt.title("职业分布情况",fontproperties=zhfont)
+plt.xlabel("用户职业",fontproperties=zhfont)
+plt.ylabel("逾期用户比例",fontproperties=zhfont)
+#或者
+import seaborn as sns
+p = sns.color_palette()
+sns.set_style("darkgrid",{"font.sans-serif":['simhei', 'Arial']})
+fig = plt.figure(figsize=(20, 20))
+ax1 = fig.add_subplot(3, 2, 1) # 总共3行2列6张，这是第一张图
+ax1=sns.barplot(职业分布.index, 职业分布.逾期/职业分布.总数, alpha=0.8, color=p[0], label='train')
+ax1.legend()
+ax1.set_title(u'职业分布情况',fontproperties=zhfont) 
+ax1.set_xlabel(u'用户职业',fontproperties=zhfont)
+ax1.set_ylabel(u'逾期用户比例',fontproperties=zhfont)
 ```
 
