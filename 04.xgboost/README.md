@@ -4,7 +4,7 @@
 
 [**2. xgboost在windows上安装**](#xgboost在windows上安装)
 
-[**3. xgboost参数**](#xgboost参数)
+[**3. xgboost参数与跑模型示例**](#xgboost参数与跑模型示例)
 
 [**4. xgboost sklearn框架和原生态框架**](#xgboost_sklearn框架和原生态框架)
 
@@ -46,7 +46,8 @@ xboost在windows安装需要自己编译，编译的过程比较麻烦(需要安
 
 (6) Done!
 
-## xgboost参数
+## xgboost参数与跑模型示例
+
 ```python
 import xgboost as xgb
 
