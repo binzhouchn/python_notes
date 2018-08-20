@@ -1,4 +1,4 @@
-## 一级目录
+# 目录
 
 [**1. xgboost优化**](#xgboost优化)
 
@@ -8,11 +8,11 @@
 
 [**4. xgboost sklearn框架和原生态框架**](#xgboost_sklearn框架和原生态框架)
 
-[**5. xxx用法**](#xxx用法)
+[**5. xgb调参示例代码**](#xgb调参示例代码)
 
 ---
 
-### xgboost优化
+## xgboost优化
 
 **xgb是gbdt的优化：主要两方面**
 1.目标函数，传统GBDT在优化时只用到一阶导数信息（负梯度），xgboost则对代价函数进行了二阶泰勒展开，同时用到一阶和二阶导数<br>
@@ -29,7 +29,7 @@
 6.基于直方图的稀疏特征优化<br>
 7.多线程优化<br>
 
-### xgboost在windows上安装
+## xgboost在windows上安装
 
 xboost在windows安装需要自己编译，编译的过程比较麻烦(需要安装visual studio等)，而且需要复杂的软件环境。为了免去编译，我这里把编译好的文件供大家下载安装。有了编译好的文件，xgboost的安装变得超级简单（注：编译好的dll文件仅适用于windows64位操作系统）
 
@@ -46,27 +46,39 @@ xboost在windows安装需要自己编译，编译的过程比较麻烦(需要安
 
 (6) Done!
 
-### xgboost参数
+## xgboost参数
 ```python
 import xgboost as xgb
 
-params = {
-        'objective': 'binary:logistic',
-        'eta': 0.01,
-        'colsample_bytree': 0.887,
-        'min_child_weight': 2,
-        'max_depth': 10,
-        'subsample': 0.886,
-        'alpha': 10,
-        'gamma': 30,
-        'lambda': 50,
-        'verbose_eval': True,
-        'nthread': 8,
-        'eval_metric': 'auc',
-        'scale_pos_weight': 10,
-        'seed': 201709,
-        'missing': -1
-        }
+params={
+    'booster':'gbtree',
+    'objective': 'binary:logistic',
+    'scale_pos_weight': 1/7.5,
+    #7183正样本
+    #55596条总样本
+    #差不多1:7.7这样子
+    'gamma':0.2,  # 用于控制是否后剪枝的参数,越大越保守，一般0.1、0.2这样子。
+    'max_depth':8, # 构建树的深度，越大越容易过拟合
+    'lambda':3,  # 控制模型复杂度的权重值的L2正则化项参数，参数越大，模型越不容易过拟合。
+    'subsample':0.7, # 随机采样训练样本
+    #'colsample_bytree':0.7, # 生成树时进行的列采样
+    'min_child_weight':3, 
+    # 这个参数默认是 1，是每个叶子里面 h 的和至少是多少，对正负样本不均衡时的 0-1 分类而言
+    #，假设 h 在 0.01 附近，min_child_weight 为 1 意味着叶子节点中最少需要包含 100 个样本。
+    #这个参数非常影响结果，控制叶子节点中二阶导的和的最小值，该参数值越小，越容易 overfitting。 
+    'silent':0 ,#设置成1则没有运行信息输出，最好是设置为0.
+    'eta': 0.03, # 如同学习率
+    'seed':1000,
+    'nthread':12,# cpu 线程数
+    'eval_metric':'auc',
+    'missing':-1
+}
+plst = list(params.items())
+num_rounds = 2000 # 迭代次数
+xgb_train = xgb.DMatrix(X, label=y)
+xgb_val = xgb.DMatrix(val_X,label=val_y)
+watchlist = [(xgb_train, 'train'),(xgb_val, 'val')]
+model = xgb.train(plst, xgb_train, num_boost_round=75000,evals=watchlist,early_stopping_rounds=500)
 ```
 ```python
 params = {
@@ -85,7 +97,7 @@ params = {
         }
 ```
 
-### xgboost_sklearn框架和原生态框架
+## xgboost_sklearn框架和原生态框架
 
 - sklearn框架
 ```python
@@ -102,5 +114,6 @@ xgb_m2.predict(xgb.DMatrix(test))  这个得到的就是概率【一列 n*1】�
 还有个参数evals可以加验证集，early_stopping_rounds=1000 最高迭代1000次，如果验证集误差上升就停止
 ```
 
-### xxx用法
+## xgb调参示例代码
 
+[xgboost调参示例代码](xgboost调参示例代码.py)
