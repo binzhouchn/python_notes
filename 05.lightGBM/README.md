@@ -11,7 +11,7 @@
 
 [lgb_baseline模型](baseline_model.py)
 
-## 自定义metric
+## lgb_自定义metric
 
 ```python
 from sklearn import metrics
