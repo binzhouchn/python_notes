@@ -19,8 +19,8 @@ class Model(object):
         :param application: regression binary multiclass
 
         :param feval:
-            def feval(y_pred, y_true):
-                y_true = y_true.get_label()
+            def feval(y_pred, data):
+                y_true = data.get_label()
                 return '1 / (1 + rmse)', 1 /(rmse(y_true, y_pred) + 1), True
 
         :param seed:
