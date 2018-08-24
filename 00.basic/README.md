@@ -50,6 +50,8 @@
 
 [**25. python画图及显示中文**](#python画图及显示中文)
 
+[**26. 给字典按value排序**](#给字典按value排序)
+
 ---
 ```python
 %reload_ext autoreload
@@ -600,3 +602,28 @@ ax1.set_xlabel(u'用户职业',fontproperties=zhfont)
 ax1.set_ylabel(u'逾期用户比例',fontproperties=zhfont)
 ```
 
+### 给字典按value排序
+
+```python
+model = xgb.train()
+feature_score = model.get_fscore()
+#{'avg_user_date_datereceived_gap': 1207,
+# 'buy_total': 2391,
+# 'buy_use_coupon': 557,
+# 'buy_use_coupon_rate': 1240,
+# 'count_merchant': 1475,
+# 'coupon_rate': 5615,
+# ...
+# }
+```
+
+方法一：
+```python
+sorted(feature_score.items(), key=lambda x:x[1],reverse=True)
+```
+
+方法二：
+```python
+df = pd.DataFrame([(key, value) for key,value in feature_score.items()],columns=['key','value'])
+df.sort_values(by='value',ascending=False,inplace=True)
+```
