@@ -52,6 +52,8 @@
 
 [**26. 给字典按value排序**](#给字典按value排序)
 
+[**27. sorted高级用法**](#sorted高级用法)
+
 ---
 ```python
 %reload_ext autoreload
@@ -626,4 +628,27 @@ sorted(feature_score.items(), key=lambda x:x[1],reverse=True)
 ```python
 df = pd.DataFrame([(key, value) for key,value in feature_score.items()],columns=['key','value'])
 df.sort_values(by='value',ascending=False,inplace=True)
+```
+
+### sorted高级用法
+
+用法一：<br>
+这里，列表里面的每一个元素都为二维元组，key参数传入了一个lambda函数表达式，其x就代表列表里的每一个元素，然后分别利用索引返回元素内的第一个和第二个元素，这就代表了sorted()函数利用哪一个元素进行排列。而reverse参数就如同上面讲的一样，起到逆排的作用。默认情况下，reverse参数为False。<br>
+```python
+l=[('a', 1), ('b', 2), ('c', 6), ('d', 4), ('e', 3)]
+sorted(l, key=lambda x:x[0], reverse=True)
+# Out[40]: [('e', 3), ('d', 4), ('c', 6), ('b', 2), ('a', 1)]
+sorted(l, key=lambda x:x[1], reverse=True)
+# Out[42]: [('c', 6), ('d', 4), ('e', 3), ('b', 2), ('a', 1)]
+```
+
+用法二：<br>
+```python
+# 调整数组顺序使奇数位于偶数前面，奇偶相对顺序不变
+# 按照某个键值（即索引）排序，这里相当于对0和1进行排序
+a = [3,2,1,5,8,4,9]
+sorted(a, key=lambda c:c%2, reverse=True)
+# key=a%2得到索引[1,0,1,1,0,0,1] 相当于给a打上索引标签[(1, 3), (0, 2), (1, 1), (1, 5), (0, 8), (0, 4), (1, 9)]
+# 然后根据0和1的索引排序 得到[0,0,0,1,1,1,1]对应的数[2,8,4,3,1,5,9]，
+# 最后reverse的时候两块索引整体交换位置[1,1,1,1,0,0,0] 对应的数为[3, 1, 5, 9, 2, 8, 4] 这一系列过程数相对位置不变
 ```
