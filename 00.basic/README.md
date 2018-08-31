@@ -652,3 +652,20 @@ sorted(a, key=lambda c:c%2, reverse=True)
 # 然后根据0和1的索引排序 得到[0,0,0,1,1,1,1]对应的数[2,8,4,3,1,5,9]，
 # 最后reverse的时候两块索引整体交换位置[1,1,1,1,0,0,0] 对应的数为[3, 1, 5, 9, 2, 8, 4] 这一系列过程数相对位置不变
 ```
+
+用法三：<br>
+需要注意的是，在python3以后，sort方法和sorted函数中的cmp参数被取消，此时如果还需要使用自定义的比较函数，那么可以使用cmp_to_key函数(在functools中)<br>
+```python
+from functools import cmp_to_key
+arr = [3,5,6,4,2,8,1]
+def comp(x, y):
+    if x < y:
+        return 1
+    elif x > y:
+        return -1
+    else:
+        return 0
+        
+sorted(arr, key=cmp_to_key(comp))
+# Out[10]: [8,6,5,4,3,2,1]
+```
