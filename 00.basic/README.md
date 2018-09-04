@@ -54,6 +54,8 @@
 
 [**27. sorted高级用法**](#sorted高级用法)
 
+[**28. time用法**](#time用法)
+
 ---
 ```python
 %reload_ext autoreload
@@ -681,3 +683,13 @@ ll = sorted(arr, key=cmp_to_key(lambda x,y:int(x+y)-int(y+x)))
 print(int(''.join(ll)))
 # Out[3]: 321323
 ```
+
+### time用法
+
+```python
+import time
+s = 'Jun-96'
+time.mktime(time.strptime(s,'%b-%y'))
+# strptime函数是将字符串按照后面的格式转换成时间元组类型；mktime函数则是将时间元组转换成时间戳
+```
+
