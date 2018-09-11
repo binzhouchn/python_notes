@@ -58,11 +58,11 @@ z1234.. <br>
 http://blog.csdn.net/hshuihui/article/details/53320144 <br>
 
 安装ipython notebook on 百度云 <br>
-```
+```bash
 wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
 ```
 PATH in your .bashrc or .bash_profile 
-```
+```bash
 export PATH="/root/anaconda2/bin:$PATH"
 ```
 在服务器上启动IPython，生成自定义密码的sha1
@@ -74,11 +74,11 @@ Verify password:
 Out[2]: 'sha1:01f0def65085:059ed81ab3f5658e7d4d266f1ed5394e9885e663'
 ```
 创建IPython notebook服务器
-```
+```bash
 ipython profile create nbserver
 ```
 生成mycert.pem
-```
+```bash
 mkdir certs 
 cd certs 
 然后openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
@@ -86,12 +86,8 @@ cd certs
 我们重点要关注的是 cd .ipython/profile_nbserver <br>
 ipython_notebook_config.py这个文件，待会儿我们要修改该文件来配置服务器。不过，有时候这个文件不能生成，
 这时候我们自己在这里新建即可，使用vim或者gedit。我自己配置的时候就没有生成ipython_notebook_config.py这个文件，我使用vim新建了一个： 
-然后把一下代码复制进去（替换certfile路径和sha1），保存
+然后把以下代码复制进去（替换certfile路径和sha1），保存
 
-（不需要这步 #找不到notebook config文件 
-```bash
-#jupyter notebook —generate-config）
-```
 ```bash
 # Configuration file for ipython-notebook
 c = get_config()
