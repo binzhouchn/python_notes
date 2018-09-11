@@ -73,7 +73,7 @@ export PATH="/root/anaconda2/bin:$PATH"
       cd certs 
       然后 openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
 
- - 4. 我们重点要关注的是 cd .ipython/profile_nbserver 
+ - 4. 我们重点要关注的是 cd .ipython/profile_nbserver <br>
       ipython_notebook_config.py这个文件，待会儿我们要修改该文件来配置服务器。不过，有时候这个文件不能生成，这时候我们自己在这里新建即可，使用vim或者gedit。我自己配置的时候就没有生成ipython_notebook_config.py这个文件，我使用vim新建了一个： 
       然后把一下代码复制进去（替换certfile路径和sha1），保存
 
