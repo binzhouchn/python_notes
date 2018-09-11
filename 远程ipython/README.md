@@ -61,21 +61,32 @@ http://blog.csdn.net/hshuihui/article/details/53320144 <br>
 ```
 wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
 ```
-PATH in your /root/.bashrc: 
+PATH in your .bashrc or .bash_profile 
 ```
 export PATH="/root/anaconda2/bin:$PATH"
 ```
- - 1. 'sha1:01f0def65085:059ed81ab3f5658e7d4d266f1ed5394e9885e663'
-
- - 2. ipython profile create nbserver
-
- - 3. mkdir certs 
-      cd certs 
-      然后 openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
-
- - 4. 我们重点要关注的是 cd .ipython/profile_nbserver <br>
-      ipython_notebook_config.py这个文件，待会儿我们要修改该文件来配置服务器。不过，有时候这个文件不能生成，这时候我们自己在这里新建即可，使用vim或者gedit。我自己配置的时候就没有生成ipython_notebook_config.py这个文件，我使用vim新建了一个： 
-      然后把一下代码复制进去（替换certfile路径和sha1），保存
+在服务器上启动IPython，生成自定义密码的sha1
+```python
+In [1]: from IPython.lib import passwd
+In [2]: passwd()
+Enter password:
+Verify password:
+Out[2]: 'sha1:01f0def65085:059ed81ab3f5658e7d4d266f1ed5394e9885e663'
+```
+创建IPython notebook服务器
+```
+ipython profile create nbserver
+```
+生成mycert.pem
+```
+mkdir certs 
+cd certs 
+然后openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
+```
+我们重点要关注的是 cd .ipython/profile_nbserver <br>
+ipython_notebook_config.py这个文件，待会儿我们要修改该文件来配置服务器。不过，有时候这个文件不能生成，
+这时候我们自己在这里新建即可，使用vim或者gedit。我自己配置的时候就没有生成ipython_notebook_config.py这个文件，我使用vim新建了一个： 
+然后把一下代码复制进去（替换certfile路径和sha1），保存
 
 （不需要这步 #找不到notebook config文件 
 ```bash
@@ -105,4 +116,5 @@ nohup ipython notebook --config=/root/.ipython/profile_nbserver/ipython_notebook
 
 ---
 
-jupyter是ipython的升级版，它的安装也非常方便，一般Anaconda安装包中会自带。安装好以后直接输入jupyter notebook便可以在浏览器中使用。但是它默认只能在本地访问，如果想把它安装在服务器上，然后在本地远程访问，则需要进行如下配置：
+jupyter是ipython的升级版，它的安装也非常方便，一般Anaconda安装包中会自带。安装好以后直接输入jupyter notebook便可以在浏览器中使用。
+但是它默认只能在本地访问，如果想把它安装在服务器上，然后在本地远程访问，则需要进行如下配置：
