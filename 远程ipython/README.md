@@ -112,5 +112,12 @@ nohup ipython notebook --config=/root/.ipython/profile_nbserver/ipython_notebook
 
 ---
 
-jupyter是ipython的升级版，它的安装也非常方便，一般Anaconda安装包中会自带。安装好以后直接输入jupyter notebook便可以在浏览器中使用。
-但是它默认只能在本地访问，如果想把它安装在服务器上，然后在本地远程访问，则需要进行如下配置：
+Jupyter Notebook 添加目录插件<br>
+
+```bash
+pip install jupyter_contrib_nbextensions
+```
+```bash
+jupyter contrib nbextension install --user --skip-running-check
+```
+注意配置的时候要确保没有打开Jupyter Notebook
