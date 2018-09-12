@@ -4,6 +4,7 @@
 
 [**2. lgb 自定义metric**](#lgb_自定义metric)
 
+[**3. lgb在linux编译好的文件**](#lgb在linux编译好的文件)
 
 ---
 
@@ -33,3 +34,9 @@ lgb.cv(
     feval = ks, #ks  #这里增加feval参数
     show_stdv=True)
 ```
+
+## lgb在linux编译好的文件
+
+[lgb_centos65_py36.tar.gz](Files/lgb_centos65_py36.tar.gz)
+
+## 
