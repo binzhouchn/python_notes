@@ -30,31 +30,33 @@
 
 [**15. 多进程之Process, Pool用法**](#pool)
 
-[**16. 保存模型**](#保存模型)
+[**16. CV的多进程实现**](#cv的多进程实现)
 
-[**17. enumerate用法**](#enumerate)
+[**17. 保存模型**](#保存模型)
 
-[**18. label数值化方法**](#label数值化方法)
+[**18. enumerate用法**](#enumerate)
 
-[**19. 列表推导式中使用if else**](#列表推导式中使用if_else)
+[**19. label数值化方法**](#label数值化方法)
 
-[**20. 将numpy array中的最多的元素选出**](#将numpy_array中的最多的元素选出)
+[**20. 列表推导式中使用if else**](#列表推导式中使用if_else)
 
-[**21. 函数中传入函数demo**](#函数中传入函数demo)
+[**21. 将numpy array中的最多的元素选出**](#将numpy_array中的最多的元素选出)
 
-[**22. getattr**](#getattr)
+[**22. 函数中传入函数demo**](#函数中传入函数demo)
 
-[**23. df宽变长及一列变多列**](#df宽变长及一列变多列)
+[**23. getattr**](#getattr)
 
-[**24. groupby使用**](#groupby使用)
+[**24. df宽变长及一列变多列**](#df宽变长及一列变多列)
 
-[**25. python画图及显示中文**](#python画图及显示中文)
+[**25. groupby使用**](#groupby使用)
 
-[**26. 给字典按value排序**](#给字典按value排序)
+[**26. python画图及显示中文**](#python画图及显示中文)
 
-[**27. sorted高级用法**](#sorted高级用法)
+[**27. 给字典按value排序**](#给字典按value排序)
 
-[**28. time用法**](#time用法)
+[**28. sorted高级用法**](#sorted高级用法)
+
+[**29. time用法**](#time用法)
 
 ---
 ```python
@@ -433,6 +435,33 @@ hello, 8
 hello, 9
 CPU times: user 45.5 ms, sys: 16.7 ms, total: 62.1 ms
 Wall time: 10 s
+```
+
+### cv的多进程实现
+
+```python
+from multiprocessing import Manager, Process
+n = 5
+kf = KFold(n_splits=n, shuffle=False)
+mg = Manager()
+mg_list = mg.list()
+p_proc = []
+
+def lr_pred(i,tr,va,mg_list):
+    print('%s stack:%d/%d'%(str(datetime.now()),i+1,n))
+    clf = LogisticRegression(C=3)
+    clf.fit(X[tr],y[tr])
+    y_pred_va = clf.predict_proba(X[va])
+    print('va acc:',myAcc(y[va],y_pred_va))
+    mg_list.append((va,y_pred_va))
+#     return mg_list # 可以不加
+
+print('main line')
+for i,(tr,va) in tqdm_notebook(enumerate(kf.split(X))):
+    p = Process(target=lr_pred,args=(i,tr,va,mg_list,))
+    p.start()
+    p_proc.append(p)
+[p.join() for p in p_proc]
 ```
 
 ### 保存模型
