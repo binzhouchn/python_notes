@@ -452,16 +452,17 @@ def lr_pred(i,tr,va,mg_list):
     clf = LogisticRegression(C=3)
     clf.fit(X[tr],y[tr])
     y_pred_va = clf.predict_proba(X[va])
-    print('va acc:',myAcc(y[va],y_pred_va))
-    mg_list.append((va,y_pred_va))
+    print('va acc:',myAcc(y[va], y_pred_va))
+    mg_list.append((va, y_pred_va))
 #     return mg_list # 可以不加
 
 print('main line')
 for i,(tr,va) in tqdm_notebook(enumerate(kf.split(X))):
-    p = Process(target=lr_pred,args=(i,tr,va,mg_list,))
+    p = Process(target=lr_pred, args=(i,tr,va,mg_list,))
     p.start()
     p_proc.append(p)
 [p.join() for p in p_proc]
+# 最后把mg_list中的元组数据拿出来即可
 ```
 
 ### 保存模型
