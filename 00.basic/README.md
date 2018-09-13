@@ -28,7 +28,7 @@
 
 [**14. global用法**](#global)
 
-[**15. 多进程之pool用法**](#pool)
+[**15. 多进程之Process, Pool用法**](#pool)
 
 [**16. 保存模型**](#保存模型)
 
@@ -359,7 +359,30 @@ print(a)
 运行完f1()后，a还是None；运行完f2()后，a变成了10。一般规范global变量用大写
 
 ### pool
+
 ```python
+# Process用法（我用的比较多）
+from multiprocessing import Manager, Process
+
+mg = Manager()
+mg_list = mg.list()
+p_proc = []
+
+def ff(x,mg_list):
+    print('function f')
+    mg_list.append(x**3)
+    #return mg_list # 可以不加
+
+print('main line')
+for i in [1,2,3]:
+    p = Process(target=ff, args=(i,mg_list,))
+    p.start()
+    p_proc.append(p)
+[p.join() for p in p_proc]
+```
+
+```python
+# Pool用法
 from multiprocessing import Pool
 import time
 
