@@ -494,6 +494,46 @@ clf3 = joblib.load('save/clf.pkl')
 print(clf3.predict(X[0:1]))
 ```
 
+3. 可以使用dataframe自带的to_pickle函数，可以把大的文件存成多个
+```python
+import os
+from glob import glob
+
+def mkdir_p(path):
+    try:
+        os.stat(path)
+    except:
+        os.mkdir(path)
+    
+def to_pickles(df, path, split_size=3, inplace=True):
+    """
+    path = '../output/mydf'
+    
+    wirte '../output/mydf/0.p'
+          '../output/mydf/1.p'
+          '../output/mydf/2.p'
+    
+    """
+    if inplace==True:
+        df.reset_index(drop=True, inplace=True)
+    else:
+        df = df.reset_index(drop=True)
+    gc.collect()
+    mkdir_p(path)
+    
+    kf = KFold(n_splits=split_size)
+    for i, (train_index, val_index) in enumerate(tqdm(kf.split(df))):
+        df.iloc[val_index].to_pickle(f'{path}/{i:03d}.p')
+    return
+
+def read_pickles(path, col=None):
+    if col is None:
+        df = pd.concat([pd.read_pickle(f) for f in tqdm(sorted(glob(path+'/*')))])
+    else:
+        df = pd.concat([pd.read_pickle(f)[col] for f in tqdm(sorted(glob(path+'/*')))])
+    return df
+```
+
 ### enumerate
 ```python
 tuples = [(2,3),(7,8),(12,25)]
