@@ -58,6 +58,8 @@
 
 [**29. time用法**](#time用法)
 
+[**30. 两层列表展开平铺**](#两层列表展开平铺)
+
 ---
 ```python
 %reload_ext autoreload
@@ -786,3 +788,20 @@ time.mktime(time.strptime(s,'%b-%y'))
 # strptime函数是将字符串按照后面的格式转换成时间元组类型；mktime函数则是将时间元组转换成时间戳
 ```
 
+### 两层列表展开平铺
+
+性能最好的两个方法
+
+1. 方法一
+```python
+input = [[1,2],[3,4,5],[7]]
+[item for sublist in input for item in sublist]
+```
+
+2. 方法二
+```python
+import itertools
+list(itertools.chain(*input))
+```
+
+### 
