@@ -802,6 +802,7 @@ input = [[1,2],[3,4,5],[7]]
 ```python
 from itertools import chain
 list(chain(*input))
+# list(chain.from_iterable(input))
 ```
 
 ### 
