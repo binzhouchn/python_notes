@@ -800,8 +800,8 @@ input = [[1,2],[3,4,5],[7]]
 
 2. 方法二
 ```python
-import itertools
-list(itertools.chain(*input))
+from itertools import chain
+list(chain(*input))
 ```
 
 ### 
