@@ -26,6 +26,8 @@
 
 [**13. dataframe交换列的顺序**](#dataframe交换列的顺序)
 
+[**14. dataframe设置两个条件取值**](#dataframe设置两个条件取值)
+
 ---
 ### pandas_dataframe手动创建
 
@@ -198,7 +200,11 @@ reorder_col = ['label','doc','query']
 df = df.loc[:, reorder_col]
 ```
 
+### dataframe设置两个条件取值
 
+```python
+df[(df.Store == 1) & (df.Dept == 1)]
+```
 
 
 
