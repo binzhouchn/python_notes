@@ -28,6 +28,9 @@
 
 [**14. dataframe设置两个条件取值**](#dataframe设置两个条件取值)
 
+[**15. dataframe用h5格式保存**](#dataframe用h5格式保存)
+
+
 ---
 ### pandas_dataframe手动创建
 
@@ -206,6 +209,20 @@ df = df.loc[:, reorder_col]
 df[(df.Store == 1) & (df.Dept == 1)]
 ```
 
+### dataframe用h5格式保存
+
+```python
+# 普通格式存储
+h5 = pd.HDFStore('data/data1_2212.h5','w')
+h5['data'] = data1
+h5.close()
+# 压缩格式存储
+h5 = pd.HDFStore('data/data1_2212.h5','w', complevel=4, complib='blosc')
+h5['data'] = data1
+h5.close()
+# 读取h5文件
+data=pd.read_hdf('data/data1_2212.h5',key='data')
+```
 
 
 
