@@ -257,6 +257,15 @@ class decorator ending
 
 ### 单例模式
 ```python
+# 使用__new__方法
+#写法一
+class Singleton(object):
+    def __new__(cls, *args, **kw):
+        if not hasattr(cls, '_instance'):
+            orig = super(Singleton, cls)
+            cls._instance = orig.__new__(cls, *args, **kw)
+        return cls._instance
+#写法二
 class Singleton(object):
     __instance=None
     def __init__(self):
