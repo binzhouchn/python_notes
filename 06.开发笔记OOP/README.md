@@ -1,4 +1,4 @@
-## 一级目录
+## 目录
 
 [**1. super函数使用基础**](#super函数使用基础)
 
@@ -8,7 +8,9 @@
 
 [**4. python单例模式**](#单例模式)
 
-[**5. python deprecated warning**](#deprecationwarning)
+[**各种模式待补充**]()
+
+[**6. python deprecated warning**](#deprecationwarning)
 
 ---
 
