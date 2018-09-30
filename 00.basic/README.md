@@ -204,9 +204,9 @@ cross_val_score(forest,X=train_data_features,y=df.Score,scoring=rmse_scoring,cv=
 # Some useful parameters which will come in handy later on
 ntrain = titanic_train_data_X.shape[0]
 ntest = titanic_test_data_X.shape[0]
-SEED = 0 # for reproducibility
-NFOLDS = 7 # set folds for out-of-fold prediction
-kf = KFold(n_splits = NFOLDS, random_state=SEED, shuffle=False)
+SEED = 42 # for reproducibility
+NFOLDS = 5 # set folds for out-of-fold prediction
+kf = KFold(n_splits = NFOLDS, random_state=SEED, shuffle=True)
 
 def get_out_fold(clf, x_train, y_train, x_test): # 这里需要将dataframe转成array，用x_train.values即可
     oof_train = np.zeros((ntrain,))
@@ -214,9 +214,9 @@ def get_out_fold(clf, x_train, y_train, x_test): # 这里需要将dataframe转�
     oof_test_skf = np.empty((NFOLDS, ntest))
 
     for i, (train_index, test_index) in enumerate(kf.split(x_train)):
-        x_tr = x_train[train_index]
-        y_tr = y_train[train_index]
-        x_te = x_train[test_index]
+        x_tr = x_train.loc[train_index]
+        y_tr = y_train.loc[train_index]
+        x_te = x_train.loc[test_index]
 
         clf.fit(x_tr, y_tr)
 
