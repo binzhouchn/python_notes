@@ -30,6 +30,8 @@
 
 [**15. dataframe用h5格式保存**](#dataframe用h5格式保存)
 
+[**16. assign用法**](#assign用法)
+
 
 ---
 
@@ -225,8 +227,33 @@ h5.close()
 data=pd.read_hdf('data/data1_2212.h5',key='data')
 ```
 
+### assign用法
 
+assign相当于给df增加一列，返回新的df copy<br>
+Assign new columns to a DataFrame, returning a new object
+(a copy) with the new columns added to the original ones.
 
+```python
+def iv_xy(x, y):
+    # good bad func
+    def goodbad(df):
+        names = {'good': (df['y']==0).sum(),'bad': (df['y']==1).sum()}
+        return pd.Series(names)
+    # iv calculation
+    iv_total = pd.DataFrame({'x':x.astype('str'),'y':y}) \
+      .fillna('missing') \
+      .groupby('x') \
+      .apply(goodbad) \
+      .replace(0, 0.9) \
+      .assign(
+        DistrBad = lambda x: x.bad/sum(x.bad),
+        DistrGood = lambda x: x.good/sum(x.good)
+      ) \
+      .assign(iv = lambda x: (x.DistrBad-x.DistrGood)*np.log(x.DistrBad/x.DistrGood)) \
+      .iv.sum() # iv核心公式
+    # return iv
+    return iv_total
+```
 
 
 
