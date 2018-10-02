@@ -250,7 +250,7 @@ def iv_xy(x, y):
         DistrGood = lambda x: x.good/sum(x.good)
       ) \
       .assign(iv = lambda x: (x.DistrBad-x.DistrGood)*np.log(x.DistrBad/x.DistrGood)) \
-      .iv.sum() # iv核心公式
+      .iv.sum() # iv核心公式，最后iv.sum()对每个group加总求和，即为该特征的iv值
     # return iv
     return iv_total
 ```
