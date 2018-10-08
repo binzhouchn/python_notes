@@ -701,6 +701,16 @@ ax1.set_xlabel(u'用户职业',fontproperties=zhfont)
 ax1.set_ylabel(u'逾期用户比例',fontproperties=zhfont)
 ```
 
+```bash
+# Graphviz 中文乱码
+centos5.x下 
+yum install fonts-chinese 
+centos6.x或7.x下 
+yum install cjkuni-ukai-fonts
+
+fc-cache -f -v 刷新字体缓存
+```
+
 ### 给字典按value排序
 
 ```python
