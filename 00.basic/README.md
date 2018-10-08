@@ -707,7 +707,7 @@ centos5.x下
 yum install fonts-chinese 
 centos6.x或7.x下 
 yum install cjkuni-ukai-fonts
- 
+
 fc-cache -f -v 刷新字体缓存
 ```
 
