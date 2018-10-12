@@ -32,6 +32,7 @@
 
 [**16. assign用法**](#assign用法)
 
+[**17. 用一列的非空值填充另一列对应行的空值**](#用一列的非空值填充另一列对应行的空值)
 
 ---
 
@@ -255,6 +256,11 @@ def iv_xy(x, y):
     return iv_total
 ```
 
+### 用一列的非空值填充另一列对应行的空值
+
+```python
+df.loc[df['new_subject'].isnull(),'new_subject']=df[df['new_subject'].isnull()]['subject']
+```
 
 
 
