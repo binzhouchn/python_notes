@@ -72,7 +72,7 @@ gr.agg({'BTBL':'max','BTYEAR':'count'}).reset_index() # 常见的max, min, count
 |0|4|0.620|2011
 |1|38|0.700|2013
 |2|51|0.147|2002
-
+ 
 这里对df根据EID进行groupby，然后根据字段BTBL, BTYEAR两个字段进行聚合，然后reset_index
 
 [**用法举例二**]
