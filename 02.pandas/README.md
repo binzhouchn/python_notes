@@ -260,7 +260,7 @@ def iv_xy(x, y):
 
 ```python
 df.loc[df['new_subject'].isnull(),'new_subject']=df[df['new_subject'].isnull()]['subject']
-```
+``` 
 
 
 
