@@ -34,6 +34,8 @@
 
 [**17. 用一列的非空值填充另一列对应行的空值**](#用一列的非空值填充另一列对应行的空值)
 
+[**18. dataframe修改值**](#dataframe修改值)
+
 ---
 
 ### pandas_dataframe手动创建
@@ -262,7 +264,7 @@ def iv_xy(x, y):
 df.loc[df['new_subject'].isnull(),'new_subject']=df[df['new_subject'].isnull()]['subject']
 ``` 
 
-###
+### dataframe修改值
 
 
 
