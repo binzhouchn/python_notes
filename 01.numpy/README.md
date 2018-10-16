@@ -14,6 +14,8 @@
 
 [**7. numpy array改dtype方法**](#numpy_array改dtype方法)
 
+[**8. numpy保存数据**](#numpy保存数据)
+
 ---
 
 ### numpy类型
@@ -112,4 +114,10 @@ print(arr)
 #        [4, 5, 6],
 #        [7, 8, 9]], dtype=object)
 arr.astype(np.float)
+```
+
+### numpy保存数据
+
+```python
+
 ```
