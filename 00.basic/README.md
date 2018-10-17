@@ -60,6 +60,8 @@
 
 [**30. 两层列表展开平铺**](#两层列表展开平铺)
 
+[**31. 读取百度百科词向量**](#读取百度百科词向量)
+
 ---
 ```python
 %reload_ext autoreload
@@ -815,4 +817,20 @@ list(chain(*input))
 # list(chain.from_iterable(input))
 ```
 
-### 
+### 读取百度百科词向量
+
+```python
+from bz2 import BZ2File as b2f
+import tarfile
+path = 'data/sgns.target.word-ngram.1-2.dynwin5.thr10.neg5.dim300.iter5.bz2'
+fp = b2f(path)
+lines = fp.readlines()
+
+def get_baike_wv(lines):
+    d_ = {}
+    for line in lines:
+        tmp = line.decode('utf-8').split(' ')
+        d_[tmp[0]] = [float(x) for x in tmp[1:-1]]
+    return d_
+baike_wv_dict = get_baike_wv(lines)
+```
