@@ -14,7 +14,7 @@
 
 [**7. numpy array改dtype方法**](#numpy_array改dtype方法)
 
-[**8. numpy保存数据**](#numpy保存数据)
+[**8. numpy存取数据**](#numpy存取数据)
 
 ---
 
@@ -116,8 +116,9 @@ print(arr)
 arr.astype(np.float)
 ```
 
-### numpy保存数据
+### numpy存取数据
 
 ```python
-
+np.save('xxx.npy',data)
+np.load('xxx.npy')
 ```
