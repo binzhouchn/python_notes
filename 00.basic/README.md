@@ -62,6 +62,8 @@
 
 [**31. 读取百度百科词向量**](#读取百度百科词向量)
 
+[**32. logging**](#logging)
+
 ---
 ```python
 %reload_ext autoreload
@@ -835,3 +837,10 @@ def get_baike_wv(lines):
 baike_wv_dict = get_baike_wv(lines)
 ```
 
+### logging
+
+```python
+import logging
+logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',\
+    level=logging.INFO) # logging.WARNING
+```
