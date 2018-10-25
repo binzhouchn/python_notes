@@ -40,7 +40,7 @@
 
 [**20. 列表推导式中使用if else**](#列表推导式中使用if_else)
 
-[**21. 将numpy array中的最多的元素选出**](#将numpy_array中的最多的元素选出)
+[**21. 将nparray或list中的最多的元素选出**](#将numpy_array中的最多的元素选出)
 
 [**22. 函数中传入函数demo**](#函数中传入函数demo)
 
