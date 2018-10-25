@@ -581,6 +581,16 @@ np.bincount(arr).argmax()
 # output: 1
 ```
 
+将list中最多的元素选出，如果一样则取最小的那个
+```python
+# 方法一
+arr = [2,2,2,4,5]
+max(set(arr),key=arr.count)
+# 方法二
+from collections import Counter
+Counter(arr).most_common(1)[0][0]
+```
+
 ### 函数中传入函数demo
 ```python
 # time_function把时间包装了一下给其他的函数
