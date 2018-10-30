@@ -14,7 +14,7 @@
 
 [**7. python deprecated warning**](#deprecationwarning)
 
-
+[**8. 定制类**](#定制类)
 
 ---
 
@@ -358,3 +358,8 @@ def deprecated(func):
 def some_old_function(x, y):
     return x + y
 ```
+
+### 定制类
+
+[廖雪峰 定制类](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014319098638265527beb24f7840aa97de564ccc7f20f6000)
+
