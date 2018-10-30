@@ -263,7 +263,28 @@ class decorator ending
 
 ### 装饰器property
 
+把一个getter方法变成属性，只需要加上@property就可以了，此时，@property本身又创建了另一个装饰器@score.setter，
+负责把一个setter方法变成属性赋值，于是，我们就拥有一个可控的属性操作<br>
+```python
+class Student(object):
 
+    @property
+    def birth(self):
+        return self._birth
+
+    @birth.setter
+    def birth(self, value):
+        self._birth = value
+
+    @property
+    def age(self):
+        return 2015 - self._birth
+
+a = Student()
+a.birth = 22 # 这个的birth.setter装饰器相当于把之前birth方法变成了属性
+print(a.birth)
+print(a.age)
+```
 
 ### 单例模式
 ```python
