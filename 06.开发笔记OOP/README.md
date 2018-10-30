@@ -6,11 +6,15 @@
 
 [**3. 装饰器@**](#装饰器)
 
-[**4. python单例模式**](#单例模式)
+[**4. 装饰器@property**](#装饰器property)
+
+[**5. python单例模式**](#单例模式)
 
 [**各种模式待补充**]()
 
-[**6. python deprecated warning**](#deprecationwarning)
+[**7. python deprecated warning**](#deprecationwarning)
+
+
 
 ---
 
@@ -256,6 +260,10 @@ class decorator runing
 test bar
 class decorator ending
 ```
+
+### 装饰器property
+
+
 
 ### 单例模式
 ```python
