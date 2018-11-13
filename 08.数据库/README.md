@@ -25,3 +25,21 @@ redis_conf.hgetall('hash1')
 
 ## 3. pymongo
 
+```python
+import pymongo
+# 连接
+client = pymongo.MongoClient(host='xx.xx.xx.xx', port=27017)
+# 读取数据库（如果没有的话自动创建）
+db = client.tencent_wv
+# 读取集合（如果没有的话自动创建）
+my_set = db.test_set
+# 删除集合 test_set
+db.drop_collection('test_set')
+# 插入数据和查询数据
+my_set.insert_one ({"name":"zhangsan","age":18,'shuze':[3,4,2,6,7,10]})
+my_set.find_one({"name":"zhangsan"})
+```
+```python
+# 以插入腾讯词向量为例
+
+```
