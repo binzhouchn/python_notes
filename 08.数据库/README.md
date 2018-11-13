@@ -44,11 +44,14 @@ my_set.find_one({"name":"zhangsan"})
 from tqdm import tqdm
 # 定义一个迭代器
 def __reader():
-    with open("/opt/common_files/Tencent_AILab_ChineseEmbedding.txt") as f:
+    with open("/opt/common_files/Tencent_AILab_ChineseEmbedding.txt",encoding='utf-8',errors='ignore') as f:
         for idx, line in tqdm(enumerate(f), 'Loading ...'):
             ws = line.strip().split(' ')
             if idx:
-                yield {'word': ws[0], 'vector': [float(i) for i in ws[1:]]}
+                vec = [float(i) for i in ws[1:]]
+                if len(vec) != 200:
+                    continue
+                yield {'word': ws[0], 'vector': vec}rd = __reader()
 rd = __reader()
 while rd:
     my_set.insert_one(next(rd))
