@@ -41,5 +41,15 @@ my_set.find_one({"name":"zhangsan"})
 ```
 ```python
 # 以插入腾讯词向量为例
-
+from tqdm import tqdm
+# 定义一个迭代器
+def __reader():
+    with open("/opt/common_files/Tencent_AILab_ChineseEmbedding.txt") as f:
+        for idx, line in tqdm(enumerate(f), 'Loading ...'):
+            ws = line.strip().split(' ')
+            if idx:
+                yield {'word': ws[0], 'vector': [float(i) for i in ws[1:]]}
+rd = __reader()
+while rd:
+    my_set.insert_one(next(rd))
 ```
