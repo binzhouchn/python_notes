@@ -47,6 +47,6 @@ index-url = http://mirrors.aliyun.com/pypi/simple/
 [install]
 trusted-host = mirrors.aliyun.com
 或者
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy --upgrade
+pip install numpy --upgrade -i https://pypi.tuna.tsinghua.edu.cn/simple
 ``` 
 
