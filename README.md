@@ -2,7 +2,7 @@
 [![Analytics](https://ga-beacon.appspot.com/GA-80121379-2/notes-python)](https://github.com/binzhouchn/feature_engineering)
 
 # python笔记
-> 版本：0.0.2<br>
+> 版本：0.0.3<br>
 > 作者：binzhou<br>
 > 邮件：binzhouchn@gmail.com<br>
 
@@ -12,7 +12,7 @@
 
 ## 简介
 
-默认安装了 `Python 3.5`，以及相关的第三方包  `numpy`， `pandas`，`sklearn`。
+默认安装了 `Python 3.6`，以及相关的第三方包  `numpy`， `pandas`，`sklearn`
 
 > life is short.use python.
 
