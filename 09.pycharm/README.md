@@ -30,3 +30,4 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
 ![pic2](pic/pycharm_git2.png)<br>
 
 # 2. pycharm远程服务器
+
