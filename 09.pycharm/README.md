@@ -32,6 +32,6 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
 # 2. pycharm远程服务器生成项目及调试代码
 
 1. 打开pycharm -> File -> Settings -> Project Interpreter<br>
-2. 点Project Interpreter轮子，选择add remote选择SSH然后填入用户密码等
-3. 
+2. 点Project Interpreter轮子，选择add remote选择SSH然后填入用户密码等apply再OK
+3. Tools -> Deployment -> Configuration点击左上角的加号（取名字v2并选SFTP）
 
