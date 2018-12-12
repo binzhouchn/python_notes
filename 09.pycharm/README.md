@@ -34,4 +34,10 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
 1. 打开pycharm -> File -> Settings -> Project Interpreter<br>
 2. 点Project Interpreter轮子，选择add remote选择SSH然后填入用户密码等apply再OK
 3. Tools -> Deployment -> Configuration点击左上角的加号（取名字v2并选SFTP）
+4. Configuration中配置Connection和Mappings如下图所示
 
+![pycharm_remote1.png](pic/pycharm_remote1.png)<br>
+![pycharm_remote2.png](pic/pycharm_remote2.png)<br>
+![pycharm_remote3.png](pic/pycharm_remote3.png)<br>
+![pycharm_remote4.png](pic/pycharm_remote4.png)<br>
+![pycharm_remote5.png](pic/pycharm_remote5.png)<br>
