@@ -26,6 +26,7 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
 最后友情提示，在GitHub上免费托管的Git仓库，任何人都可以看到喔（但只有你自己才能改）。所以，不要把敏感信息放进去。
 
 **第3步：** 如果想在pycharm中使用git可以先配置pycharm（以windows为例的话）<br>
-
+![pic1](pic/pycharm_git1.png)<br>
+![pic2](pic/pycharm_git2.png)<br>
 
 # 2. pycharm远程服务器
