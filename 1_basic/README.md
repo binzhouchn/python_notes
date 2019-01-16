@@ -64,6 +64,8 @@
 
 [**32. logging**](#logging)
 
+[**33. argparse用法**](#argparse用法)
+
 ---
 ```python
 %reload_ext autoreload
@@ -853,4 +855,17 @@ baike_wv_dict = get_baike_wv(lines)
 import logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',\
     level=logging.INFO) # logging.WARNING
+```
+
+### argparse用法
+
+[arg_test.py](arg_test.py)
+```
+# 在shell中输入 
+python arg_test.py --train_path aa --dev_path bb
+# 打印结果如下
+Namespace(dev_path='bb',log_level='info',train_path='aa')
+aa
+bb
+done.
 ```
