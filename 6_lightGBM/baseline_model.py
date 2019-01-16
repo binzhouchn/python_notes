@@ -43,7 +43,7 @@ class Model(object):
 
             'boosting': 'gbdt',  # 'rf', 'dart', 'goss'
             'max_depth': -1,
-            'num_leaves': 2 ** 7 - 1,
+            'num_leaves': 2 ** 6 - 1,
 
             'min_split_gain': 0,
             'min_child_weight': 0.01,
