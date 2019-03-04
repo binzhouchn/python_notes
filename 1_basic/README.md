@@ -820,8 +820,8 @@ time.mktime(time.strptime(s,'%b-%y'))
 
 1. 方法一
 ```python
-input = [[1,2],[3,4,5],[7]]
-[item for sublist in input for item in sublist]
+C = [[1,2],[3,4,5],[7]]
+[a for b in C for a in b]
 ```
 
 2. 方法二
@@ -858,6 +858,8 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',\
 ```
 
 ### argparse用法
+
+argparse 是在 Python 中处理命令行参数的一种标准方式。
 
 [arg_test.py](arg_test.py)
 ```
