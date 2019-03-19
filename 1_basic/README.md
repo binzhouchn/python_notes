@@ -66,6 +66,8 @@
 
 [**33. argparse用法**](#argparse用法)
 
+[**34. 包管理**](#包管理)
+
 ---
 ```python
 %reload_ext autoreload
@@ -871,3 +873,13 @@ aa
 bb
 done.
 ```
+
+### 包管理
+
+一个包里有三个模块，mod1.py, mod2.py, mod3.py，但使用from demopack import *导入模块时，如何保证只有mod1、mod3被导入了。<br>
+答案:增加init.py文件，并在文件中增加：
+```python
+__all__ = ['mod1','mod3']
+```
+
+### 
