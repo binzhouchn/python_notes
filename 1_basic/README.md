@@ -197,6 +197,13 @@ p.keys
 ### kfold函数
 新手用cross_val_score比较简单，后期可用KFold更灵活,
 ```python
+skf = StratifiedKFold(n_splits=5,shuffle=True)
+for train_idx, val_idx in skf.split(X,y):
+    pass
+train_idx
+val_idx
+```
+```python
 from sklearn.model_selection import cross_val_score, StratifiedKFold, KFold
 forest = RandomForestClassifier(n_estimators = 120,max_depth=5, random_state=42)
 cross_val_score(forest,X=train_data_features,y=df.Score,scoring='neg_mean_squared_error',cv=3)
