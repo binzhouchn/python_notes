@@ -172,6 +172,7 @@ join()和merge()很相似，只不过join()是按数据表的索引进行对齐�
 ### 数据透视表
 最后也最重要的是数据透视表。如果你对微软的Excel有一定了解的话，你大概也用过（或听过）Excel里的“数据透视表”功能。Pandas里内建的pivot_table()函数的功能也差不多，它能帮你对一个数据表进行格式化，并输出一个像Excel工作表一样的表格。实际使用中，透视表将根据一个或多个键对数据进行分组统计，将函数传入参数aggfunc中，数据将会按你指定的函数进行统计，并将结果分配到表格中。<br>
 ```python
+from pandas import pivot_table
 >>> df
    A   B   C      D
 0  foo one small  1
