@@ -2,7 +2,7 @@
 
 [**1. super函数使用基础**](#super函数使用基础)
 
-[**2. super函数使用 LR举例**](#super函数使用_lr举例)
+[**2. super函数使用 以LR为例**](#super函数使用_以lr为例)
 
 [**3. 装饰器@**](#装饰器)
 
@@ -119,7 +119,7 @@ BB(1,2,3).a, BB(1,2,3).b, BB(1,2,3).c
 　　5. 混用super类和非绑定的函数是一个危险行为，这可能导致应该调用的父类函数没有调用或者一
        个父类函数被调用多次。
 ```
-### super函数使用_LR举例
+### super函数使用_以LR为例
 ```python
 from sklearn.linear_model import LogisticRegression
 
