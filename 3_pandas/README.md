@@ -1,40 +1,42 @@
 ## 目录
 
-[**1. pandas dataframe手动创建**](#pandas_dataframe手动创建)
+[**1. pandas并行包**](#pandas并行包)
 
-[**2. pandas dataframe中apply用法**](#pandas_dataframe中apply用法)
+[**2. pandas dataframe手动创建**](#pandas_dataframe手动创建)
 
-[**3. pandas dataframe中map用法**](#pandas_dataframe中map用法)
+[**3. pandas dataframe中apply用法**](#pandas_dataframe中apply用法)
 
-[**4. groupby用法**](#groupby用法)
+[**4. pandas dataframe中map用法**](#pandas_dataframe中map用法)
 
-[**5. explode用法**](#explode用法)
+[**5. groupby用法**](#groupby用法)
 
-[**6. sort用法**](#sort用法)
+[**6. explode用法**](#explode用法)
 
-[**7. left join用法**](#left_join用法)
+[**7. sort用法**](#sort用法)
 
-[**8. reset_index用法**](#reset_index用法)
+[**8. left join用法**](#left_join用法)
 
-[**9. pandas to_csv字段和值加引号操作**](#to_csv字段和值加引号操作)
+[**9. reset_index用法**](#reset_index用法)
 
-[**10. pd concat、merge、join来合并数据表**](#合并数据表)
+[**10. pandas to_csv字段和值加引号操作**](#to_csv字段和值加引号操作)
 
-[**11. 数据透视表（Pivot Tables）**](#数据透视表)
+[**11. pd concat、merge、join来合并数据表**](#合并数据表)
 
-[**12. shuffle**](#shuffle)
+[**12. 数据透视表（Pivot Tables）**](#数据透视表)
 
-[**13. dataframe交换列的顺序**](#dataframe交换列的顺序)
+[**13. shuffle**](#shuffle)
 
-[**14. dataframe设置两个条件取值**](#dataframe设置两个条件取值)
+[**14. dataframe交换列的顺序**](#dataframe交换列的顺序)
 
-[**15. dataframe用h5格式保存**](#dataframe用h5格式保存)
+[**15. dataframe设置两个条件取值**](#dataframe设置两个条件取值)
 
-[**16. assign用法**](#assign用法)
+[**16. dataframe用h5格式保存**](#dataframe用h5格式保存)
 
-[**17. 用一列的非空值填充另一列对应行的空值**](#用一列的非空值填充另一列对应行的空值)
+[**17. assign用法**](#assign用法)
 
-[**18. dataframe修改值**](#dataframe修改值)
+[**18. 用一列的非空值填充另一列对应行的空值**](#用一列的非空值填充另一列对应行的空值)
+
+[**19. dataframe修改值**](#dataframe修改值)
 
 ---
 
