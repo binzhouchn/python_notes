@@ -895,6 +895,6 @@ __all__ = ['mod1','mod3']
 
 [装饰器参考网址（还可以）](https://blog.csdn.net/qq_41853758/article/details/82853811)<br>
 ```python
-#其中一种举例
+#其中一种举例 装饰带有返回值的函数
 
 ```
