@@ -18,6 +18,7 @@
 
 推荐使用[Anaconda](http://www.continuum.io/downloads)，这个IDE集成了大部分常用的包。
 
+[以下两个镜像由于授权问题已经不可用]<br>
 推荐下载[Anaconda-tsinghua](https://mirrors.tuna.tsinghua.edu.cn/)，清华镜像下载速度快。
 或者[USTC](https://mirrors.ustc.edu.cn/)科大
 
