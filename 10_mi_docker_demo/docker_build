@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir -p release/
+cp -r * /home/work
+pip install  -r requirements.txt -U -i https://pypi.tuna.tsinghua.edu.cn/simple/
