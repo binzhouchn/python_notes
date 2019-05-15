@@ -2,7 +2,7 @@
 
 [**2. sanic**](#sanic)
 
-[**3. python调用flask post方法(formdata)**](#python调用flask_post方法)
+[**3. python调用flask post方法**](#python调用flask_post方法)
 
 # flask
 
