@@ -145,8 +145,19 @@ if __name__ == '__main__':
 ```
 # python调用flask_post方法
 
-postman工具右上方，点击Code->选Python Requests->复制代码即可
-
+方法一：python requests<br>
 ```python
-
+# json(request.json.get)
+import requests
+json={'id': 1223, 'text': '我是中国人'}
+r = requests.post('http://0.0.0.0:5000/req_message', json=json)
+r.json()
+# values(request.values.get)
+import requests
+r = requests.post('http://0.0.0.0:5000/req_message', data=[('id',1223),('text', '我是中国人')])
 ```
+
+方法二：postman工具<br>
+点击右上方，点击Code->选Python Requests->复制代码即可
+
+
