@@ -161,5 +161,5 @@ r = requests.post('http://0.0.0.0:5000/req_message', data=[('id',1223),('text', 
 点击右上方，点击Code->选Python Requests->复制代码即可
 
 方法三：终端访问<br>
-待补充..
+curl, 待补充..
 
