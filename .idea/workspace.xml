@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1_basic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/1_basic/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,13 +28,23 @@
         <entry file="file://$PROJECT_DIR$/1_basic/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="873">
-                <caret line="755" column="14" lean-forward="true" selection-start-line="755" selection-start-column="14" selection-end-line="755" selection-end-column="14" />
+              <first_editor relative-caret-position="316">
+                <caret line="701" selection-start-line="701" selection-end-line="701" />
                 <folding>
                   <element signature="e#0#9#0" expanded="true" />
                   <element signature="e#0#30#0" expanded="true" />
                 </folding>
               </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3_pandas/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -138,7 +147,7 @@
       <updated>1557893106019</updated>
       <workItem from="1557893107283" duration="1159000" />
       <workItem from="1557902233224" duration="875000" />
-      <workItem from="1559298500904" duration="194000" />
+      <workItem from="1559298500904" duration="521000" />
     </task>
     <task id="LOCAL-00001" summary="update on 5/15">
       <created>1557893256089</created>
@@ -210,11 +219,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557904473777</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update on 5.31">
+      <created>1559298708052</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559298708052</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2228000" />
+    <option name="totallyTimeSpent" value="2555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1924" y="57" width="1463" height="947" extended-state="0" />
@@ -248,7 +264,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update on 5/15" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 5/15" />
+    <MESSAGE value="update on 5.31" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 5.31" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md">
@@ -279,11 +296,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/3_pandas/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/1_basic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="873">
-            <caret line="755" column="14" lean-forward="true" selection-start-line="755" selection-start-column="14" selection-end-line="755" selection-end-column="14" />
+          <first_editor relative-caret-position="316">
+            <caret line="701" selection-start-line="701" selection-end-line="701" />
             <folding>
               <element signature="e#0#9#0" expanded="true" />
               <element signature="e#0#30#0" expanded="true" />
