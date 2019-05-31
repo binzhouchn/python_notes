@@ -699,6 +699,10 @@ df = df.merge(df_aggr, how='left', on='personid').fillna(0)
 ### python画图及显示中文
 
 ```python
+
+```
+```python
+## 显示中文解决方法
 # 解决方法一
 import matplotlib as mpl
 mpl.rcParams['font.sans-serif'] = ['SimHei']
