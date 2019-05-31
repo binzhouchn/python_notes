@@ -726,7 +726,38 @@ ax1.legend()
 ax1.set_title(u'职业分布情况',fontproperties=zhfont) 
 ax1.set_xlabel(u'用户职业',fontproperties=zhfont)
 ax1.set_ylabel(u'逾期用户比例',fontproperties=zhfont)
+
+# 杰哥的方法，这个比较好
+from pathlib import Path
+from matplotlib.font_manager import _rebuild
+def chinese_setting(url=None):
+    """
+    :param url: SimHei字体下载链接
+    :return:
+    """
+    print('开始设置中文...')
+    matplotlibrc_path = Path(matplotlib.matplotlib_fname())
+    ttf_path = matplotlibrc_path.parent.__str__() + '/fonts/ttf'
+    ttf_url = 'https://raw.githubusercontent.com/Jie-Yuan/Jie-Yuan.github.io/master/SimHei.ttf' if url is None else url
+    if list(Path(ttf_path).glob('SimHei.ttf')):
+        pass
+    else:
+        print('下载字体...')
+        os.popen("cd %s && wget %s" % (ttf_path, ttf_url))
+
+    print('设置字体...')
+    setting1 = 'font.family: sans-serif'
+    setting2 = 'font.sans-serif: SimHei, Bitstream Vera Sans, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif'
+    setting3 = 'axes.unicode_minus: False'
+    os.system('echo > %s' % matplotlibrc_path)
+    os.system('echo %s >> %s' % (setting1, matplotlibrc_path))
+    os.system('echo %s >> %s' % (setting2, matplotlibrc_path))
+    os.system('echo %s >> %s' % (setting3, matplotlibrc_path))
+    _rebuild()
+    print('请重启kernel测试...')
+chinese_setting()
 ```
+
 
 ```bash
 # Graphviz 中文乱码
