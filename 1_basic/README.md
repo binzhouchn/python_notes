@@ -958,3 +958,8 @@ print(test(3, 4)))
 
 ### 本地用python起http服务
 
+```shell
+python -m http.server 7777
+```
+
+###
