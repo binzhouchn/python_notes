@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_pandas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/3_pandas/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +13,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1_basic/arg_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
               <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1_basic/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="3887">
+                <caret line="964" column="3" lean-forward="true" selection-start-line="964" selection-start-column="3" selection-end-line="964" selection-end-column="3" />
+                <folding>
+                  <element signature="e#0#30#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/3_pandas/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="602">
+                <caret line="277" column="4" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -46,14 +74,15 @@
       <list>
         <option value="$PROJECT_DIR$/6_flask_sanic/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/1_basic/README.md" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/1_basic/README.md" />
+        <option value="$PROJECT_DIR$/3_pandas/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2014" />
-    <option name="y" value="49" />
+    <option name="x" value="99" />
+    <option name="y" value="32" />
     <option name="width" value="1463" />
     <option name="height" value="947" />
   </component>
@@ -76,6 +105,11 @@
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
               <item name="1_basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
+              <item name="3_pandas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -120,7 +154,7 @@
       <workItem from="1557893107283" duration="1159000" />
       <workItem from="1557902233224" duration="875000" />
       <workItem from="1559298500904" duration="756000" />
-      <workItem from="1559552805597" duration="21000" />
+      <workItem from="1559552805597" duration="932000" />
     </task>
     <task id="LOCAL-00001" summary="update on 5/15">
       <created>1557893256089</created>
@@ -220,14 +254,29 @@
       <option name="project" value="LOCAL" />
       <updated>1559299232114</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update on 6.3">
+      <created>1559552929856</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1559552929856</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update on 6.3">
+      <created>1559552965677</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1559552965677</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2811000" />
+    <option name="totallyTimeSpent" value="3722000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2014" y="49" width="1463" height="947" extended-state="0" />
+    <frame x="99" y="32" width="1463" height="947" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18781006" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -258,7 +307,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update on 5/15" />
     <MESSAGE value="update on 5.31" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 5.31" />
+    <MESSAGE value="update on 6.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 6.3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md">
@@ -272,28 +322,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/app.py" />
-    <entry file="file://$PROJECT_DIR$/3_pandas/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_basic/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="467">
-            <caret line="710" column="10" lean-forward="true" selection-start-line="710" selection-start-column="10" selection-end-line="710" selection-end-column="10" />
-            <folding>
-              <element signature="e#0#9#0" expanded="true" />
-              <element signature="e#0#30#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -315,6 +343,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_numpy/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="475">
+            <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_basic/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3887">
+            <caret line="964" column="3" lean-forward="true" selection-start-line="964" selection-start-column="3" selection-end-line="964" selection-end-column="3" />
+            <folding>
+              <element signature="e#0#30#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_pandas/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="602">
+            <caret line="277" column="4" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
