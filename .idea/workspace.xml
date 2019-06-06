@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3_pandas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/3_pandas/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/3_pandas/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="602">
-                <caret line="277" column="4" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
+              <first_editor relative-caret-position="583">
+                <caret line="276" selection-start-line="276" selection-end-line="276" />
               </first_editor>
               <second_editor />
             </state>
@@ -154,7 +153,7 @@
       <workItem from="1557893107283" duration="1159000" />
       <workItem from="1557902233224" duration="875000" />
       <workItem from="1559298500904" duration="756000" />
-      <workItem from="1559552805597" duration="932000" />
+      <workItem from="1559552805597" duration="1065000" />
     </task>
     <task id="LOCAL-00001" summary="update on 5/15">
       <created>1557893256089</created>
@@ -268,11 +267,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559552965677</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update on 6.5">
+      <created>1559699829370</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1559699829370</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3722000" />
+    <option name="totallyTimeSpent" value="3855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="99" y="32" width="1463" height="947" extended-state="0" />
@@ -308,7 +314,8 @@
     <MESSAGE value="update on 5/15" />
     <MESSAGE value="update on 5.31" />
     <MESSAGE value="update on 6.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 6.3" />
+    <MESSAGE value="update on 6.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 6.5" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md">
@@ -372,8 +379,8 @@
     <entry file="file://$PROJECT_DIR$/3_pandas/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="602">
-            <caret line="277" column="4" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
+          <first_editor relative-caret-position="583">
+            <caret line="276" selection-start-line="276" selection-end-line="276" />
           </first_editor>
           <second_editor />
         </state>
