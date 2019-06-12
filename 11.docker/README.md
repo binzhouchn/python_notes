@@ -11,9 +11,10 @@ TODO
 
 ## 2. docker基本命令
 
-2.1 docker查看版本
+2.1 docker查看版本及images
 ```shell
 docker --version
+docker images
 ```
 
 2.2 docker run
@@ -33,4 +34,18 @@ docker rmi image_id
 docker rmi -f image_id
 ```
 
-2.4 
+2.4 docker保存和读取image
+```shell
+# 保存
+docker export -o helloword_test.tar fce45eedd442(image_id)
+# 读取
+docker load -i helloword_test.tar
+```
+
+2.5 docker保存和读取container
+```shell
+# 保存
+
+# 读取
+
+```
