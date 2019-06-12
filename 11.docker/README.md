@@ -7,7 +7,7 @@
 [docker docs for mac](https://docs.docker.com/docker-for-mac/)<br>
 
 1.2 linux下安装<br>
-
+TODO
 
 ## 2. docker基本命令
 
@@ -29,7 +29,8 @@ docker ps -a
 docker rm container_id
 # 删除image
 docker rmi image_id
-# 
-
-
+# 也可以直接暴力删除image
+docker rmi -f image_id
 ```
+
+2.4 
