@@ -19,6 +19,13 @@ docker run hello-world
 
 2.3 docker跑完以后需要删除container再删除image
 ```shell
-docker ps -a #查看
+# 查看image对应的container id
+docker ps -a
+# 删除container
+docker rm container_id
+# 删除image
+docker rmi image_id
+# 
+
 
 ```
