@@ -37,7 +37,7 @@ docker rmi -f image_id
 2.4 docker保存和读取image
 ```shell
 # 保存
-docker export -o helloword_test.tar fce45eedd442(image_id)
+docker save -o helloword_test.tar fce45eedd449(image_id)
 # 读取
 docker load -i helloword_test.tar
 ```
@@ -45,7 +45,9 @@ docker load -i helloword_test.tar
 2.5 docker保存和读取container
 ```shell
 # 保存
-
+docker export -o helloword_test.tar fce45eedd444(container_id)
 # 读取
-
+docker import ...
 ```
+
+2.6 
