@@ -1,9 +1,13 @@
 # simple use for docker
 
-## 1. docker安装（mac）
+## 1. docker安装
 
+1.1 mac下安装<br>
 [mac安装网址](https://hub.docker.com/editions/community/docker-ce-desktop-mac)<br>
 [docker docs for mac](https://docs.docker.com/docker-for-mac/)<br>
+
+1.2 linux下安装<br>
+
 
 ## 2. docker基本命令
 
