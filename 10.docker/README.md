@@ -64,6 +64,21 @@ docker tag [image id] [name]:[版本]
 docker run -d -p 5000:5000 -v $PWD/myapp:/usr/src/myapp  -w /usr/src/myapp binzhou/python35:v2 python app.py
 ```
 
+2.8 用dockerfile建一个image，并上传到dockerhub
+```
+# 建一个dockerfile
+cat > Dockerfile <<EOF
+FROM busybox
+CMD echo "Hello world! This is my first Docker image."
+EOF
+# 上面命令的效果的vi Dockerfile，然后
+FROM busybox
+CMD echo "Hello world! This is my first Docker image."
+
+# 
+
+```
+
 2.8 docker用mysql镜像
 
 
