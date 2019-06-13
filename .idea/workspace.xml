@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="" />
+    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_docker/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/10_docker/README.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,11 +14,11 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/10.docker/README.md">
+        <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="540">
-                <caret line="84" selection-start-line="84" selection-end-line="84" />
+              <first_editor relative-caret-position="730">
+                <caret line="97" selection-start-line="97" selection-end-line="97" />
               </first_editor>
               <second_editor />
             </state>
@@ -53,6 +56,7 @@
         <option value="$PROJECT_DIR$/11.docker/README.md" />
         <option value="$PROJECT_DIR$/10.docker/mi_docker_demo/README.md" />
         <option value="$PROJECT_DIR$/10.docker/README.md" />
+        <option value="$PROJECT_DIR$/10_docker/README.md" />
       </list>
     </option>
   </component>
@@ -80,13 +84,7 @@
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-              <item name="10.docker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-              <item name="10.docker" type="462c0819:PsiDirectoryNode" />
-              <item name="mi_docker_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="10_docker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -131,7 +129,7 @@
       <workItem from="1557893107283" duration="1159000" />
       <workItem from="1557902233224" duration="875000" />
       <workItem from="1559298500904" duration="756000" />
-      <workItem from="1559552805597" duration="6664000" />
+      <workItem from="1559552805597" duration="7149000" />
     </task>
     <task id="LOCAL-00001" summary="update on 5/15">
       <created>1557893256089</created>
@@ -399,11 +397,39 @@
       <option name="project" value="LOCAL" />
       <updated>1560413400968</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="update on 6.13">
+      <created>1560413595977</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1560413595977</updated>
+    </task>
+    <task id="LOCAL-00040" summary="update on 6.13">
+      <created>1560413600671</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1560413600671</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update on 6.13">
+      <created>1560413676496</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1560413676496</updated>
+    </task>
+    <task id="LOCAL-00042" summary="update on 6.13">
+      <created>1560413744092</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1560413744092</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9454000" />
+    <option name="totallyTimeSpent" value="9939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1821" y="43" width="1617" height="942" extended-state="0" />
@@ -549,6 +575,16 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="540">
             <caret line="84" selection-start-line="84" selection-end-line="84" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10_docker/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="730">
+            <caret line="97" selection-start-line="97" selection-end-line="97" />
           </first_editor>
           <second_editor />
         </state>
