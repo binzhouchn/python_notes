@@ -50,4 +50,4 @@ docker export -o helloword_test.tar fce45eedd444(container_id)
 docker import ...
 ```
 
-2.6 
+2.6 docker跑一个简单的flask demo
