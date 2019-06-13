@@ -50,4 +50,10 @@ docker export -o helloword_test.tar fce45eedd444(container_id)
 docker import ...
 ```
 
-2.6 docker跑一个简单的flask demo
+2.6 修改repository和tag名称
+```shell
+# 加载images后可以名称都为<none>
+docker tag [image id] [name]:[版本]
+```
+
+2.7 docker跑一个简单的flask demo
