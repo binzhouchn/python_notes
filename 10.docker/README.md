@@ -57,3 +57,6 @@ docker tag [image id] [name]:[版本]
 ```
 
 2.7 docker跑一个简单的flask demo
+```shell
+
+```
