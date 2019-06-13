@@ -58,13 +58,7 @@ docker import ...
 docker tag [image id] [name]:[版本]
 ```
 
-2.7 docker跑一个简单的flask demo(用到python3.5镜像)
-```shell
-# -d后台运行 -p端口映射
-docker run -d -p 5000:5000 -v $PWD/myapp:/usr/src/myapp  -w /usr/src/myapp binzhou/python35:v2 python app.py
-```
-
-2.8 用dockerfile建一个image，并上传到dockerhub
+2.7 用dockerfile建一个image，并上传到dockerhub
 ```
 # 建一个dockerfile
 cat > Dockerfile <<EOF
@@ -81,7 +75,15 @@ docker build -t binzhouchn/my-first-repo .
 docker push binzhouchn/my-first-repo
 ```
 
-2.9 docker用mysql镜像
+## 3. docker镜像使用
+
+3.1 docker跑一个简单的flask demo(用到python3.5镜像)
+```shell
+# -d后台运行 -p端口映射
+docker run -d -p 5000:5000 -v $PWD/myapp:/usr/src/myapp  -w /usr/src/myapp binzhou/python35:v2 python app.py
+```
+
+3.2 docker用mysql镜像
 ```
 # 先下载镜像
 docker pull mysql:5.5
@@ -102,7 +104,7 @@ db = pymysql.connect("localhost","root","123456","test_db")
 cursor = db.cursor()
 ```
 
-2.10 docker
+3.3 docker
 
 
 
