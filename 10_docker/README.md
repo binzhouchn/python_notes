@@ -71,7 +71,7 @@ cat > Dockerfile <<EOF
 FROM busybox
 CMD echo "Hello world! This is my first Docker image."
 EOF
-# 上面命令的效果的vi Dockerfile，然后
+# 上面命令的效果的vi Dockerfile，然后填入
 FROM busybox
 CMD echo "Hello world! This is my first Docker image."
 
