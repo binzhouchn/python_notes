@@ -77,7 +77,8 @@ CMD echo "Hello world! This is my first Docker image."
 
 # build image建镜像
 docker build -t binzhouchn/my-first-repo .
-# 
+# 刚建完的docker镜像上传到我的仓库
+docker push binzhouchn/my-first-repo
 
 ```
 
