@@ -32,6 +32,8 @@ docker rm container_id
 docker rmi image_id
 # 也可以直接暴力删除image
 docker rmi -f image_id
+# 如果存在同名同id不同tag的镜像
+可以使用repository：tag的组合来删除特殊的镜像
 ```
 
 2.4 docker保存和读取image
