@@ -58,13 +58,14 @@ docker import ...
 docker tag [image id] [name]:[版本]
 ```
 
-2.7 docker跑一个简单的flask demo
+2.7 docker跑一个简单的flask demo(用到python3.5镜像)
 ```shell
 # -d后台运行 -p端口映射
 docker run -d -p 5000:5000 -v $PWD/myapp:/usr/src/myapp  -w /usr/src/myapp binzhou/python35:v2 python app.py
 ```
 
-2.8 docker 
+2.8 docker用mysql镜像
+
 
 
 
