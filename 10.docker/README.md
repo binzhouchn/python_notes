@@ -75,6 +75,8 @@ EOF
 FROM busybox
 CMD echo "Hello world! This is my first Docker image."
 
+# build image建镜像
+docker build -t binzhouchn/my-first-repo .
 # 
 
 ```

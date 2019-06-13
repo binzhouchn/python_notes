@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/10.docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="559">
-                <caret line="67" selection-start-line="67" selection-end-line="67" />
+              <first_editor relative-caret-position="572">
+                <caret line="79" column="2" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -134,7 +134,7 @@
       <workItem from="1557893107283" duration="1159000" />
       <workItem from="1557902233224" duration="875000" />
       <workItem from="1559298500904" duration="756000" />
-      <workItem from="1559552805597" duration="5953000" />
+      <workItem from="1559552805597" duration="6404000" />
     </task>
     <task id="LOCAL-00001" summary="update on 5/15">
       <created>1557893256089</created>
@@ -367,11 +367,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560411776013</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="update on 6.13">
+      <created>1560411998329</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1560411998329</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update on 6.13">
+      <created>1560412833004</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1560412833004</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8743000" />
+    <option name="totallyTimeSpent" value="9194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1821" y="43" width="1617" height="942" extended-state="0" />
@@ -515,8 +529,8 @@
     <entry file="file://$PROJECT_DIR$/10.docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="559">
-            <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <first_editor relative-caret-position="572">
+            <caret line="79" column="2" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
