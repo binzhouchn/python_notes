@@ -81,7 +81,7 @@ docker build -t binzhouchn/my-first-repo .
 docker push binzhouchn/my-first-repo
 ```
 
-2.8 docker用mysql镜像
+2.9 docker用mysql镜像
 ```
 # 先下载镜像
 docker pull mysql:5.5
@@ -94,10 +94,15 @@ docker run -p 3306:3306 --name mymysql -v $PWD/conf:/etc/mysql/conf.d -v $PWD/lo
 -v $PWD/data:/var/lib/mysql ：将主机当前目录下的data目录挂载到容器的 /var/lib/mysql 。
 -e MYSQL_ROOT_PASSWORD=123456：初始化 root 用户的密码。
 
-# 用三方工具或者python连接
-
-
+# 用三方工具Navicat或者python连接，先建好db比如test_db
+import pymysql
+# 打开数据库连接
+db = pymysql.connect("localhost","root","123456","test_db")
+# 使用 cursor() 方法创建一个游标对象 cursor
+cursor = db.cursor()
 ```
+
+2.10 docker
 
 
 
