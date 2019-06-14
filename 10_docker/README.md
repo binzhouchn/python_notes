@@ -20,6 +20,7 @@ docker images
 2.2 docker run
 ```shell
 docker run hello-world
+# run之前如果没有这个images，则会从docker_hub上先pull下来 docker pull hello-world
 ```
 
 2.3 docker跑完以后需要删除container再删除image
