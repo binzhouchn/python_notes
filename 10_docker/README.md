@@ -190,6 +190,9 @@ docker run \
     -d neo4j:latest
 
 # 然后登陆网页可视化界面
+
+# 或使用Cypher shell
+docker exec --interactive --tty <container_id> bin/cypher-shell
 ```
 
 3.6 docker用elasticsearch镜像
