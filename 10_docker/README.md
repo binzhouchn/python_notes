@@ -89,6 +89,13 @@ pymongo py2neo neo4j-driver==$PYTHON_DRIVER_VERSION
 
 ## 3. docker镜像使用
 
+3.1 docker跑一个helloworld
+```shell
+docker run  -v $PWD/myapp:/usr/src/myapp  -w /usr/src/myapp python:3.5 python helloworld.py
+# 本地需要建一个myapp文件夹，把helloworld.py文件放文件夹中，然后返回上一级cd ..
+
+```
+
 3.1 docker跑一个简单的flask demo(用到python3.5镜像)
 ```shell
 # -d后台运行 -p端口映射
@@ -116,7 +123,7 @@ db = pymysql.connect("localhost","root","123456","test_db")
 cursor = db.cursor()
 
 # 起了mysql服务以后，在用docker python去插入数据
-# --需要先查看docker mysql的容器ip地址，命令看2.8
+# 需要先查看docker mysql的容器ip地址，命令看2.8
 # 然后localhost改成mysql容器的ip地址即可，其他一样
 
 #
