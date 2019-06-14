@@ -89,7 +89,12 @@ docker push binzhouchn/my-first-repo
 docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -aq)
 ```
 
-2.10 docker修改完镜像生成新的镜像以后貌似没看法删除旧的镜像
+2.10 查找依赖容器
+```shell
+docker image inspect --format='{{.RepoTags}} {{.Id}} {{.Parent}}' $(docker image ls -q --filter since=<image_id>)
+```
+
+2.11 docker修改完镜像生成新的镜像以后貌似没看法删除旧的镜像
 ```shell
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy 
 pandas sklearn jieba gensim tqdm flask requests PyMySQL redis 
