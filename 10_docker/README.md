@@ -45,7 +45,7 @@ docker run -t -i python:3.5 /bin/bash
 docker commit -m="has update" -a="binzhou" e4bf99f3948e binzhouchn/python35:v2
 ```
 
-2.4 docker保存和读取image（存成tar文件）
+2.5 docker保存和读取image（存成tar文件）
 ```shell
 # 保存
 docker save -o helloword_test.tar fce45eedd449(image_id)
@@ -53,7 +53,7 @@ docker save -o helloword_test.tar fce45eedd449(image_id)
 docker load -i helloword_test.tar
 ```
 
-2.5 docker保存和读取container
+2.6 docker保存和读取container
 ```shell
 # 保存
 docker export -o helloword_test.tar fce45eedd444(container_id)
@@ -61,13 +61,13 @@ docker export -o helloword_test.tar fce45eedd444(container_id)
 docker import ...
 ```
 
-2.6 修改repository和tag名称
+2.7 修改repository和tag名称
 ```shell
 # 加载images后可以名称都为<none>
 docker tag [image id] [name]:[版本]
 ```
 
-2.7 用dockerfile建一个image，并上传到dockerhub
+2.8 用dockerfile建一个image，并上传到dockerhub
 ```
 # 建一个dockerfile
 cat > Dockerfile <<EOF
@@ -84,12 +84,12 @@ docker build -t binzhouchn/my-first-repo .
 docker push binzhouchn/my-first-repo
 ```
 
-2.8 要获取所有容器名称及其IP地址只需一个命令 
+2.9 要获取所有容器名称及其IP地址只需一个命令 
 ```shell
 docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -aq)
 ```
 
-2.9 docker修改完镜像生成新的镜像以后貌似没看法删除旧的镜像
+2.10 docker修改完镜像生成新的镜像以后貌似没看法删除旧的镜像
 ```shell
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy 
 pandas sklearn jieba gensim tqdm flask requests PyMySQL redis 
