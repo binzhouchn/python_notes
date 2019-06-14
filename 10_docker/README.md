@@ -151,7 +151,13 @@ cursor = db.cursor()
 #
 ```
 
-3.3 docker
+3.3 docker用redis镜像
+```
+# 启动redis命令
+docker run --name docker-redis-test -p 6379:6379  -d redis:latest --requirepass "123456"
+# 
+
+```
 
 
 
