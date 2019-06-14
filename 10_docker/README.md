@@ -181,6 +181,14 @@ print(r.get('name'))
 
 ```
 
+3.5 docker用neo4j镜像
+```
+# docker启动neo4j服务
+docker run \
+    --publish=7474:7474 --publish=7687:7687 \
+    --volume=$HOME/neo4j/data:/data \
+    neo4j
+```
 
 
 
