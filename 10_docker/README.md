@@ -190,6 +190,7 @@ db.runoob.insert({"title": 'MongoDB 教程',
     "url": 'http://www.w3cschool.cn',
     "tags": ['mongodb', 'database', 'NoSQL'],
     "likes": 100})
+db.runoob.find()
 
 # python连接docker起的mongo服务
 TODO
