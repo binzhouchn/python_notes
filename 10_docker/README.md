@@ -41,8 +41,8 @@ docker rmi -f image_id
 ```shell
 docker pull python:3.5
 docker run -t -i python:3.5 /bin/bash
-# 进去以后看下id多少；pip install一些包这些操作
-docker commit -m="has update" -a="binzhou" e4bf99f3948e binzhouchn/python35:v2
+# 接下去进行一些pip install一些包等操作
+docker commit -m="has update" -a="binzhou" <container_id> binzhouchn/python35:v2
 ```
 
 2.5 docker保存和读取image（存成tar文件）
