@@ -37,6 +37,14 @@ docker rmi -f image_id
 可以使用repository：tag的组合来删除特殊的镜像
 ```
 
+2.4 docker打开image bash编辑，比如打开python镜像bash下载一些包再保存
+```shell
+docker pull python:3.5
+docker run -t -i python:3.5 /bin/bash
+# 进去以后看下id多少；pip install一些包这些操作
+docker commit -m="has update" -a="binzhou" e4bf99f3948e binzhouchn/python35:v2
+```
+
 2.4 docker保存和读取image（存成tar文件）
 ```shell
 # 保存
