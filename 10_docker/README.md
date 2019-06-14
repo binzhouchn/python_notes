@@ -178,7 +178,8 @@ print(r.get('name'))
 
 3.4 docker用mongo镜像
 ```
-
+# 启动mongodb命令
+docker run -p 27017:27017 -v $PWD/mongo_db:/data/mongo_db -d mongo:4.0.10
 ```
 
 3.5 docker用neo4j镜像
