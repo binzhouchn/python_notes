@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="443">
-                <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
+              <first_editor relative-caret-position="494">
+                <caret line="159" column="4" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -134,21 +134,7 @@
       <workItem from="1557893107283" duration="1159000" />
       <workItem from="1557902233224" duration="875000" />
       <workItem from="1559298500904" duration="756000" />
-      <workItem from="1559552805597" duration="10195000" />
-    </task>
-    <task id="LOCAL-00008" summary="update on 5/15">
-      <created>1557902626942</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1557902626942</updated>
-    </task>
-    <task id="LOCAL-00009" summary="update on 5/15">
-      <created>1557902672932</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1557902672932</updated>
+      <workItem from="1559552805597" duration="10764000" />
     </task>
     <task id="LOCAL-00010" summary="update on 5/15">
       <created>1557904473777</created>
@@ -479,11 +465,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560476043007</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="update on 6.14">
+      <created>1560476382997</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1560476382997</updated>
+    </task>
+    <task id="LOCAL-00058" summary="update on 6.14">
+      <created>1560491048467</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1560491048467</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12985000" />
+    <option name="totallyTimeSpent" value="13554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1821" y="43" width="1617" height="942" extended-state="0" />
@@ -651,8 +651,8 @@
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="443">
-            <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
+          <first_editor relative-caret-position="494">
+            <caret line="159" column="4" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>

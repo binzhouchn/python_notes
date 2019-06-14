@@ -155,9 +155,16 @@ cursor = db.cursor()
 ```
 # 启动redis命令
 docker run --name docker-redis-test -p 6379:6379  -d redis:latest --requirepass "123456"
-# 
-
+# redis客户端连接命令
+docker exec -it <container_id> redis-cli
+# 进去以后的操作
+auth 123456
+set name zhangsan
+get name 
+quit
 ```
+
+3.4 
 
 
 
