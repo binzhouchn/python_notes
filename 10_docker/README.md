@@ -188,6 +188,8 @@ docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$PWD/neo4j/data:/data \
     -d neo4j:latest
+
+# 然后登陆网页可视化界面
 ```
 
 3.6 docker用elasticsearch镜像
