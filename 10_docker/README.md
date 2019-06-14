@@ -193,6 +193,7 @@ docker run \
 
 # 或使用Cypher shell
 docker exec --interactive --tty <container_id> bin/cypher-shell
+# 退出:exit
 ```
 
 3.6 docker用elasticsearch镜像
