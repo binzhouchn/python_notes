@@ -37,7 +37,7 @@ docker rmi -f image_id
 可以使用repository：tag的组合来删除特殊的镜像
 ```
 
-2.4 docker保存和读取image
+2.4 docker保存和读取image（存成tar文件）
 ```shell
 # 保存
 docker save -o helloword_test.tar fce45eedd449(image_id)
