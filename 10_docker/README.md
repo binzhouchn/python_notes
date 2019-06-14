@@ -172,6 +172,8 @@ import redis
 r = redis.Redis(host='localhost', port=6379, password='123456')
 r.set('name', 'John')
 print(r.get('name'))
+
+# redis可视化工具RDM(已安装)
 ```
 
 3.4 
