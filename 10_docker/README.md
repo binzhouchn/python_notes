@@ -176,7 +176,10 @@ print(r.get('name'))
 # redis可视化工具RDM(已安装)
 ```
 
-3.4 
+3.4 docker用mongo镜像
+```
+
+```
 
 
 
