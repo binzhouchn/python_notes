@@ -180,6 +180,9 @@ print(r.get('name'))
 ```
 # 启动mongodb命令
 docker run -p 27017:27017 -v $PWD/mongo_db:/data/mongo_db -d mongo:4.0.10
+# 连接到mongo镜像cli
+docker run -it mongo:4.0.10 mongo --host <容器ip>
+
 ```
 
 3.5 docker用neo4j镜像
