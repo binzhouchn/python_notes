@@ -143,6 +143,10 @@ import pymysql
 db = pymysql.connect("localhost","root","123456","test_db")
 # 使用 cursor() 方法创建一个游标对象 cursor
 cursor = db.cursor()
+sql = "INSERT INTO tt(a, b, date) VALUES ('%d', '%s', '%s')"
+data = (306, '插入6', '20190615')
+cursor.execute(sql % data)
+db.commit()
 
 # 起了mysql服务以后，在用docker python去插入数据
 # 需要先查看docker mysql的容器ip地址，命令看2.8
@@ -162,6 +166,12 @@ auth 123456
 set name zhangsan
 get name 
 quit
+
+# python连接docker起的redis服务
+import redis
+r = redis.Redis(host='localhost', port=6379, password='123456')
+r.set('name', 'John')
+print(r.get('name'))
 ```
 
 3.4 
