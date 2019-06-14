@@ -186,10 +186,11 @@ print(r.get('name'))
 # docker启动neo4j服务
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
-    --volume=$HOME/neo4j/data:/data \
-    neo4j
+    --volume=$PWD/neo4j/data:/data \
+    -d neo4j:latest
 ```
 
+3.6 docker用elasticsearch镜像
 
 
 
