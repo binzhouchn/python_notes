@@ -117,7 +117,7 @@ cursor = db.cursor()
 
 # 起了mysql服务以后，在用docker python去插入数据
 # --需要先查看docker mysql的容器ip地址，命令看2.8
-# 然后连接的ip地址改成mysql容器的ip地址即可，其他一样
+# 然后localhost改成mysql容器的ip地址即可，其他一样
 
 #
 ```
