@@ -193,7 +193,11 @@ db.runoob.insert({"title": 'MongoDB 教程',
 db.runoob.find()
 
 # python连接docker起的mongo服务
-TODO
+import pymongo
+mongodb_host = 'localhost'
+mongodb_port = 27017
+# pymongo.MongoClient('localhost', 27017, username='test', password='123456')
+myclient = pymongo.MongoClient('mongodb://localhost:27017/')
 
 ```
 

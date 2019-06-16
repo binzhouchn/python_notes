@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_docker/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/10_docker/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +16,8 @@
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="575">
-                <caret line="195" selection-start-line="195" selection-end-line="195" />
+              <first_editor relative-caret-position="521">
+                <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
               </first_editor>
               <second_editor />
             </state>
@@ -61,10 +60,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1821" />
-    <option name="y" value="43" />
-    <option name="width" value="1617" />
-    <option name="height" value="942" />
+    <option name="x" value="99" />
+    <option name="y" value="32" />
+    <option name="width" value="1463" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -134,21 +133,7 @@
       <workItem from="1557893107283" duration="1159000" />
       <workItem from="1557902233224" duration="875000" />
       <workItem from="1559298500904" duration="756000" />
-      <workItem from="1559552805597" duration="13867000" />
-    </task>
-    <task id="LOCAL-00022" summary="update on 6.12">
-      <created>1560310409348</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1560310409348</updated>
-    </task>
-    <task id="LOCAL-00023" summary="update on 6.12">
-      <created>1560310453383</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1560310453383</updated>
+      <workItem from="1559552805597" duration="14446000" />
     </task>
     <task id="LOCAL-00024" summary="update on 6.12">
       <created>1560310494671</created>
@@ -479,17 +464,31 @@
       <option name="project" value="LOCAL" />
       <updated>1560498904950</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="update on 6.14">
+      <created>1560500322885</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1560500322885</updated>
+    </task>
+    <task id="LOCAL-00072" summary="update on 6.14">
+      <created>1560500353429</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1560500353429</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16657000" />
+    <option name="totallyTimeSpent" value="17236000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1821" y="43" width="1617" height="942" extended-state="0" />
+    <frame x="99" y="32" width="1463" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16932908" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18781006" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -651,8 +650,8 @@
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="575">
-            <caret line="195" selection-start-line="195" selection-end-line="195" />
+          <first_editor relative-caret-position="521">
+            <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
           </first_editor>
           <second_editor />
         </state>
