@@ -202,6 +202,8 @@ myclient.list_database_names()
 mydb = myclient["mongo_testdb"]
 mydb.list_collection_names()
 mycol = mydb["runoob"]
+# 创建collection
+mydb.create_collection('test2')
 # 插入数据
 mydict = { "name": "Google", "age": "25", "url": "https://www.google.com" }
 mycol.insert_one(mydict)
