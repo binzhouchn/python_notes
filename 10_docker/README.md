@@ -198,7 +198,15 @@ mongodb_host = 'localhost'
 mongodb_port = 27017
 # pymongo.MongoClient('localhost', 27017, username='test', password='123456')
 myclient = pymongo.MongoClient('mongodb://localhost:27017/')
-
+myclient.list_database_names()
+mydb = myclient["mongo_testdb"]
+mydb.list_collection_names()
+mycol = mydb["runoob"]
+# 插入数据
+mydict = { "name": "Google", "age": "25", "url": "https://www.google.com" }
+mycol.insert_one(mydict)
+# 查看数据
+list(mycol.find())
 ```
 
 3.5 docker用neo4j镜像
