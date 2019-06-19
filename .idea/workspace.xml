@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/10_docker/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/10_docker/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="620">
-                <caret line="231" column="23" selection-start-line="231" selection-start-column="23" selection-end-line="231" selection-end-column="23" />
+              <first_editor relative-caret-position="639">
+                <caret line="232" selection-start-line="232" selection-end-line="232" />
               </first_editor>
               <second_editor />
             </state>
@@ -134,14 +133,7 @@
       <workItem from="1557893107283" duration="1159000" />
       <workItem from="1557902233224" duration="875000" />
       <workItem from="1559298500904" duration="756000" />
-      <workItem from="1559552805597" duration="15317000" />
-    </task>
-    <task id="LOCAL-00028" summary="update on 6.13">
-      <created>1560386141420</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1560386141420</updated>
+      <workItem from="1559552805597" duration="15474000" />
     </task>
     <task id="LOCAL-00029" summary="update on 6.13">
       <created>1560386666408</created>
@@ -479,11 +471,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560730437661</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="update on 6.17">
+      <created>1560772663918</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1560772663918</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18107000" />
+    <option name="totallyTimeSpent" value="18264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1821" y="43" width="1617" height="942" extended-state="0" />
@@ -653,8 +652,8 @@
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="620">
-            <caret line="231" column="23" selection-start-line="231" selection-start-column="23" selection-end-line="231" selection-end-column="23" />
+          <first_editor relative-caret-position="639">
+            <caret line="232" selection-start-line="232" selection-end-line="232" />
           </first_editor>
           <second_editor />
         </state>
