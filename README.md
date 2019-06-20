@@ -57,6 +57,7 @@ trusted-host = mirrors.aliyun.com
 
 ```
 
+
 或者
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy
  
