@@ -22,11 +22,18 @@
 推荐下载[Anaconda-tsinghua](https://mirrors.tuna.tsinghua.edu.cn/)，清华镜像下载速度快。
 或者[USTC](https://mirrors.ustc.edu.cn/)科大
 
+### python pip使用国内镜像
+
+[让python pip使用国内镜像](https://www.cnblogs.com/wqpkita/p/7248525.html)
+
 ```
-# pip install镜像选择：
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-conda config --set show_channel_urls yes
+临时使用：
+pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com flask
+# 如果是公司电脑且有代理，本地进入docker python3.5后需要加个代理再安装相关的包
+pip --proxy=proxyAddress:port install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com flask
 ```
+
+### pip镜像配置
 
 pip install镜像配置（Linux）
 ```
