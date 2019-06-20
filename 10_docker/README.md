@@ -1,6 +1,6 @@
 # simple use for docker
 
-## 1. docker安装
+## 1. docker安装及配置Docker镜像站
 
 1.1 mac下安装<br>
 [mac安装网址](https://hub.docker.com/editions/community/docker-ce-desktop-mac)<br>
@@ -8,6 +8,10 @@
 
 1.2 linux下安装<br>
 TODO
+
+1.3 配置docker镜像站<br>
+[docker镜像站网址](https://www.daocloud.io/mirror#accelerator-doc)<br>
+
 
 ## 2. docker基本命令
 
