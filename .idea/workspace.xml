@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/10_docker/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/10_docker/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="437">
-                <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <first_editor relative-caret-position="579">
+                <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
               </first_editor>
               <second_editor />
             </state>
@@ -130,28 +131,7 @@
       <workItem from="1559298500904" duration="756000" />
       <workItem from="1559552805597" duration="15766000" />
       <workItem from="1560924268493" duration="1747000" />
-      <workItem from="1561039325676" duration="431000" />
-    </task>
-    <task id="LOCAL-00037" summary="update on 6.13">
-      <created>1560413346425</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1560413346425</updated>
-    </task>
-    <task id="LOCAL-00038" summary="update on 6.13">
-      <created>1560413400968</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1560413400968</updated>
-    </task>
-    <task id="LOCAL-00039" summary="update on 6.13">
-      <created>1560413595977</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1560413595977</updated>
+      <workItem from="1561039325676" duration="650000" />
     </task>
     <task id="LOCAL-00040" summary="update on 6.13">
       <created>1560413600671</created>
@@ -475,11 +455,32 @@
       <option name="project" value="LOCAL" />
       <updated>1561085069219</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="update on 6.21">
+      <created>1561085160765</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1561085160765</updated>
+    </task>
+    <task id="LOCAL-00087" summary="update on 6.21">
+      <created>1561085232663</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1561085232663</updated>
+    </task>
+    <task id="LOCAL-00088" summary="update on 6.21">
+      <created>1561085247623</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1561085247623</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20734000" />
+    <option name="totallyTimeSpent" value="20953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1920" height="977" extended-state="0" />
@@ -545,8 +546,8 @@
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="437">
-            <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <first_editor relative-caret-position="579">
+            <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
           </first_editor>
           <second_editor />
         </state>

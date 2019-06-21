@@ -15,7 +15,7 @@ TODO
 1.4 配置docker代理<br>
 
  - windows中右击图标，选settings->Proxies
- - mac/linux
+ - [mac/linux](https://www.cnblogs.com/EasonJim/p/9988154.html)
 
 ```shell
 # 如果使用HTTP代理服务器时，将为docker服务创建systemd插件目录
@@ -33,7 +33,10 @@ Environment="HTTP_PROXY=http://proxy.example.com:80/" "NO_PROXY=localhost,127.0.
 Environment="HTTPS_PROXY=https://proxy.example.com:443/" "NO_PROXY=localhost,127.0.0.1,docker-registry.somecorporation.com"
 # 重新读取服务的配置文件
 systemctl daemon-reload
-
+# 重启Docker
+systemctl restart docker
+# 验证是否已加载配置
+systemctl show --property=Environment docker
 ```
 
 
