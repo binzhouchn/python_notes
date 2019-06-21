@@ -12,6 +12,11 @@ TODO
 1.3 配置docker镜像站<br>
 [docker镜像站网址](https://www.daocloud.io/mirror#accelerator-doc)<br>
 
+1.4 配置docker代理<br>
+
+ - windows中右击图标，选settings->Proxies
+ - mac/linux中
+
 
 ## 2. docker基本命令
 
