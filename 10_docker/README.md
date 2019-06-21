@@ -183,7 +183,6 @@ db.commit()
 # 需要先查看docker mysql的容器ip地址，命令看2.8
 # 然后localhost改成mysql容器的ip地址即可，其他一样
 
-#
 ```
 
 3.3 docker用redis镜像
