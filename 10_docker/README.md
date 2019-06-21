@@ -31,6 +31,8 @@ Environment="HTTPS_PROXY=https://proxy.example.com:443/"
 Environment="HTTP_PROXY=http://proxy.example.com:80/" "NO_PROXY=localhost,127.0.0.1,docker-registry.somecorporation.com"
 [Service]    
 Environment="HTTPS_PROXY=https://proxy.example.com:443/" "NO_PROXY=localhost,127.0.0.1,docker-registry.somecorporation.com"
+# 重新读取服务的配置文件
+systemctl daemon-reload
 
 ```
 
