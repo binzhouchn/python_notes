@@ -261,10 +261,8 @@ docker exec --interactive --tty <container_id> bin/cypher-shell
 ```
 TODO
 看下elasticsearch的参考书结合代码
-今天看下
 ```
 
-3.7
 
 
 
