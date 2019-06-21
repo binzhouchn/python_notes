@@ -15,7 +15,17 @@ TODO
 1.4 配置docker代理<br>
 
  - windows中右击图标，选settings->Proxies
- - mac/linux中
+ - mac/linux
+
+```shell
+# 如果使用HTTP代理服务器时，将为docker服务创建systemd插件目录
+mkdir -p /etc/systemd/system/docker.service.d
+# 创建一个名为的文件/etc/systemd/system/docker.service.d/http-proxy.conf，添加HTTP_PROXY环境变量
+[Service]
+Environment="HTTP_PROXY=http://proxy.example.com:80/"
+# 或者，如果使用HTTPS代理服务器，那么再创建一个名为/etc/systemd/system/docker.service.d/https-proxy.conf 添加HTTPS_PROXY环境变量 ：
+
+```
 
 
 ## 2. docker基本命令
