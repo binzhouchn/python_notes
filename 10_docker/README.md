@@ -23,7 +23,14 @@ mkdir -p /etc/systemd/system/docker.service.d
 # 创建一个名为的文件/etc/systemd/system/docker.service.d/http-proxy.conf，添加HTTP_PROXY环境变量
 [Service]
 Environment="HTTP_PROXY=http://proxy.example.com:80/"
-# 或者，如果使用HTTPS代理服务器，那么再创建一个名为/etc/systemd/system/docker.service.d/https-proxy.conf 添加HTTPS_PROXY环境变量 ：
+# 或者，如果使用HTTPS代理服务器，那么再创建一个名为/etc/systemd/system/docker.service.d/https-proxy.conf 添加HTTPS_PROXY环境变量
+[Service]
+Environment="HTTPS_PROXY=https://proxy.example.com:443/"
+# 为Docker配置不代理的地址时，可以通过NO_PROXY环境变量指定它们，比如HTTP代理服务器的配置
+[Service]    
+Environment="HTTP_PROXY=http://proxy.example.com:80/" "NO_PROXY=localhost,127.0.0.1,docker-registry.somecorporation.com"
+[Service]    
+Environment="HTTPS_PROXY=https://proxy.example.com:443/" "NO_PROXY=localhost,127.0.0.1,docker-registry.somecorporation.com"
 
 ```
 
