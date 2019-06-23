@@ -260,6 +260,7 @@ docker exec --interactive --tty <container_id> bin/cypher-shell
 ```
 # Run Elasticsearch 
 docker run -d --name elasticsearch_for_test -p 9200:9200 -e "discovery.type=single-node" elasticsearch:6.6.0
+# 安装elasticsearch-head
 ```
 
 3.7
