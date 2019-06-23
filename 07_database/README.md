@@ -115,7 +115,9 @@ while rd:
     my_set.insert_one(next(rd))
 ```
 
-## 4. neo4j图数据库(docker version)
+## 4. ElasticSearch(docker version)
+
+## 5. neo4j图数据库(docker version)
 
 ```
 # docker启动neo4j服务
@@ -131,4 +133,4 @@ docker exec --interactive --tty <container_id> bin/cypher-shell
 # 退出:exit
 ```
 
-## 5. ElasticSearch(docker version)
+

@@ -241,7 +241,18 @@ mycol.insert_one(mydict)
 list(mycol.find())
 ```
 
-3.5 docker用neo4j镜像
+3.5 docker用elasticsearch镜像
+```
+# Run Elasticsearch 
+docker run -d --name elasticsearch_for_test -p 9200:9200 -e "discovery.type=single-node" elasticsearch:6.6.0
+# 安装elasticsearch-head
+
+
+TODO
+```
+
+
+3.6 docker用neo4j镜像
 ```
 # docker启动neo4j服务
 docker run \
@@ -256,14 +267,6 @@ docker exec --interactive --tty <container_id> bin/cypher-shell
 # 退出:exit
 ```
 
-3.6 docker用elasticsearch镜像
-```
-# Run Elasticsearch 
-docker run -d --name elasticsearch_for_test -p 9200:9200 -e "discovery.type=single-node" elasticsearch:6.6.0
-# 安装elasticsearch-head
-```
-
-3.7
-
+3.7 
 
 
