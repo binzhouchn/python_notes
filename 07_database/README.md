@@ -68,6 +68,21 @@ redis_conf.hgetall('hash1')
 
 ## 3. pymongo(docker version)
 
+```
+# 启动mongodb命令
+docker run -p 27017:27017 -v $PWD/mongo_db:/data/mongo_db -d mongo:4.0.10
+# 连接到mongo镜像cli
+docker run -it mongo:4.0.10 mongo --host <容器ip>
+
+# 建database建collection比如runoob然后插入数据
+db.runoob.insert({"title": 'MongoDB 教程', 
+    "description": 'MongoDB 是一个 Nosql 数据库',
+    "by": 'w3cschool',
+    "url": 'http://www.w3cschool.cn',
+    "tags": ['mongodb', 'database', 'NoSQL'],
+    "likes": 100})
+db.runoob.find()
+```
 ```python
 import pymongo
 # 连接
