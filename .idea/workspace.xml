@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="607">
-                <caret line="261" column="112" selection-start-line="261" selection-start-column="112" selection-end-line="261" selection-end-column="112" />
+              <first_editor relative-caret-position="645">
+                <caret line="264" column="3" selection-start-line="264" selection-start-column="3" selection-end-line="264" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -61,10 +61,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1680" />
+    <option name="x" value="140" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="977" />
+    <option name="width" value="1400" />
+    <option name="height" value="958" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -131,14 +131,8 @@
       <workItem from="1559298500904" duration="756000" />
       <workItem from="1559552805597" duration="15766000" />
       <workItem from="1560924268493" duration="1747000" />
-      <workItem from="1561039325676" duration="1092000" />
-    </task>
-    <task id="LOCAL-00043" summary="update on 6.13">
-      <created>1560416442046</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1560416442046</updated>
+      <workItem from="1561039325676" duration="1544000" />
+      <workItem from="1561237794841" duration="273000" />
     </task>
     <task id="LOCAL-00044" summary="update on 6.13">
       <created>1560419153998</created>
@@ -476,17 +470,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561085645530</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="update on 6.21">
+      <created>1561087509887</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1561087509887</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21395000" />
+    <option name="totallyTimeSpent" value="22120000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="23" width="1920" height="977" extended-state="0" />
+    <frame x="140" y="23" width="1400" height="958" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23343152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -546,8 +547,8 @@
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="607">
-            <caret line="261" column="112" selection-start-line="261" selection-start-column="112" selection-end-line="261" selection-end-column="112" />
+          <first_editor relative-caret-position="645">
+            <caret line="264" column="3" selection-start-line="264" selection-start-column="3" selection-end-line="264" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
