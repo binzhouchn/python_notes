@@ -114,3 +114,19 @@ rd = __reader()
 while rd:
     my_set.insert_one(next(rd))
 ```
+
+## 4. neo4j图数据库(docker version)
+
+```
+# docker启动neo4j服务
+docker run \
+    --publish=7474:7474 --publish=7687:7687 \
+    --volume=$PWD/neo4j/data:/data \
+    -d neo4j:latest
+
+# 然后登陆网页可视化界面
+
+# 或使用Cypher shell
+docker exec --interactive --tty <container_id> bin/cypher-shell
+# 退出:exit
+```
