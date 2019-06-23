@@ -1,7 +1,6 @@
 # 目录
 
 ## 1. Mysql/Hive(docker version)
-
 ```
 # 先下载镜像
 docker pull mysql:5.5
@@ -33,7 +32,6 @@ db.commit()
 ```
 
 ## 2. Redis(docker version)
-
 ```
 # 启动redis命令
 docker run --name docker-redis-test -p 6379:6379  -d redis:latest --requirepass "123456"
@@ -67,7 +65,6 @@ redis_conf.hgetall('hash1')
 ```
 
 ## 3. pymongo(docker version)
-
 ```
 # 启动mongodb命令
 docker run -p 27017:27017 -v $PWD/mongo_db:/data/mongo_db -d mongo:4.0.10
@@ -116,9 +113,17 @@ while rd:
 ```
 
 ## 4. ElasticSearch(docker version)
+```
+# Run Elasticsearch 
+docker run -d --name elasticsearch_for_test -p 9200:9200 -e "discovery.type=single-node" elasticsearch:6.6.0
+# 安装elasticsearch-head
+
+
+TODO
+```
+
 
 ## 5. neo4j图数据库(docker version)
-
 ```
 # docker启动neo4j服务
 docker run \
