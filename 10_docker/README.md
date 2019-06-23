@@ -134,7 +134,7 @@ docker rm $(sudo docker ps -a -q)
 ```shell
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy 
 pandas sklearn jieba gensim tqdm flask requests PyMySQL redis 
-pymongo py2neo neo4j-driver==$PYTHON_DRIVER_VERSION
+pymongo pyspark py2neo neo4j-driver==$PYTHON_DRIVER_VERSION
 ```
 
 ## 3. docker镜像使用
