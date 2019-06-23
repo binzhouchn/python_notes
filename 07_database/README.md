@@ -71,7 +71,7 @@ redis_conf.hgetall('hash1')
 ```python
 import pymongo
 # 连接
-client = pymongo.MongoClient(host='xx.xx.xx.xx', port=27017)
+client = pymongo.MongoClient(host='xx.xx.xx.xx', port=27017, username='test', password='123456')
 # 读取数据库（如果没有的话自动创建）
 db = client.tencent_wv
 # 读取集合（如果没有的话自动创建）

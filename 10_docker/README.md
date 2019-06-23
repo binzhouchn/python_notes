@@ -226,7 +226,7 @@ db.runoob.find()
 import pymongo
 mongodb_host = 'localhost'
 mongodb_port = 27017
-# pymongo.MongoClient('localhost', 27017, username='test', password='123456')
+# pymongo.MongoClient(mongodb_host, 27017, username='test', password='123456')
 myclient = pymongo.MongoClient('mongodb://localhost:27017/')
 myclient.list_database_names()
 mydb = myclient["mongo_testdb"]
