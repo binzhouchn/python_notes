@@ -117,9 +117,38 @@ while rd:
 # Run Elasticsearch 
 docker run -d --name elasticsearch_for_test -p 9200:9200 -e "discovery.type=single-node" elasticsearch:6.6.0
 # 安装elasticsearch-head
+```
+```python
+# 用python连接，并进行增删改查
+from elasticsearch import Elasticsearch
+from elasticsearch import helpers
+esclient = Elasticsearch(['localhost:9200'])
+# 高效插入ES
+action1 = {
+        "_index": "idx111",
+        "_type": "test",
+#         "_id": ,
+        "_source": {
+            'ServerIp': '0.1.1.1',
+            'SpiderType': 'toxic',
+            'Level': 4
+        }
+}
+action2 = {
+        "_index": "idx111",
+        "_type": "pre",
+#         "_id": 1,
+        "_source": {
+            'ServerIp': '0.1.1.2',
+            'SpiderType': 'non-toxic',
+            'Level': 1
+        }
+}
+actions = [action1, action2]
+helpers.bulk(esclient, actions)
 
+# 删除
 
-TODO
 ```
 
 

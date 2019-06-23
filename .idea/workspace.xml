@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_docker/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/10_docker/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_database/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/07_database/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,24 +13,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="711">
-                <caret line="269" column="4" selection-start-line="269" selection-start-column="4" selection-end-line="269" selection-end-column="4" />
+              <first_editor relative-caret-position="179">
+                <caret line="243" column="26" selection-start-line="243" selection-start-column="26" selection-end-line="243" selection-end-column="26" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/07_database/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="749">
-                <caret line="134" selection-start-line="134" selection-end-line="134" />
+              <first_editor relative-caret-position="760">
+                <caret line="149" column="4" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="4" />
+                <folding>
+                  <element signature="e#20#59#0" expanded="true" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -68,8 +71,8 @@
         <option value="$PROJECT_DIR$/10.docker/mi_docker_demo/README.md" />
         <option value="$PROJECT_DIR$/10.docker/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/07_database/README.md" />
         <option value="$PROJECT_DIR$/10_docker/README.md" />
+        <option value="$PROJECT_DIR$/07_database/README.md" />
       </list>
     </option>
   </component>
@@ -150,21 +153,7 @@
       <workItem from="1559552805597" duration="15766000" />
       <workItem from="1560924268493" duration="1747000" />
       <workItem from="1561039325676" duration="1544000" />
-      <workItem from="1561237794841" duration="2017000" />
-    </task>
-    <task id="LOCAL-00052" summary="update on 6.14">
-      <created>1560474813325</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1560474813325</updated>
-    </task>
-    <task id="LOCAL-00053" summary="update on 6.14">
-      <created>1560475083704</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1560475083704</updated>
+      <workItem from="1561237794841" duration="2875000" />
     </task>
     <task id="LOCAL-00054" summary="update on 6.14">
       <created>1560475107354</created>
@@ -495,11 +484,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561292118792</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="update on 6.23">
+      <created>1561292232702</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1561292232702</updated>
+    </task>
+    <task id="LOCAL-00102" summary="update on 6.23">
+      <created>1561292305719</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1561292305719</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23864000" />
+    <option name="totallyTimeSpent" value="24722000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1920" height="986" extended-state="6" />
@@ -563,21 +566,24 @@
     <entry file="file://$PROJECT_DIR$/10.docker/README.md" />
     <entry file="file://$PROJECT_DIR$/01_basic/README.md" />
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/07_database/README.md">
+    <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="749">
-            <caret line="134" selection-start-line="134" selection-end-line="134" />
+          <first_editor relative-caret-position="179">
+            <caret line="243" column="26" selection-start-line="243" selection-start-column="26" selection-end-line="243" selection-end-column="26" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10_docker/README.md">
+    <entry file="file://$PROJECT_DIR$/07_database/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="711">
-            <caret line="269" column="4" selection-start-line="269" selection-start-column="4" selection-end-line="269" selection-end-column="4" />
+          <first_editor relative-caret-position="760">
+            <caret line="149" column="4" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="4" />
+            <folding>
+              <element signature="e#20#59#0" expanded="true" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
