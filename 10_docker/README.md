@@ -74,6 +74,10 @@ docker pull python:3.5
 docker run -t -i python:3.5 /bin/bash
 # 接下去进行一些pip install一些包等操作
 docker commit -m="has update" -a="binzhou" <container_id> binzhouchn/python35:v2
+
+# 如果原来的镜像已经启动了container，则
+docker exec -it <container_id> /bin/bash
+
 ```
 
 2.5 docker保存和读取image（存成tar文件）
