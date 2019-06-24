@@ -166,7 +166,7 @@ answer_mapping = {
                 },
                 "schoolName":{
                     "type": "text",
-                    "analyzer": "ik_max_word"
+                    "analyzer": "ik_max_word" # 这个需要安装，先run docker6.6.0然后docker exec -it <container_id> /bin/bash下载解压ik后exit然后restart这个container即可，之后可以新生成一个image
 #                     "analyzer":"whitespace"
                 },
                 "calNum":{
