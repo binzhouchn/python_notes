@@ -155,7 +155,7 @@ esclient.delete(index='pre', doc_type='imagetable2', id=1)
 # 更新
 # esclient.update(index='indexName', doc_type='typeName', id='idValue', body={_type:{待更新字段}})
 new_doc = {'id': 7, 'schoolId': '007', 'schoolName': '更新名字1'}
-esclient.update(index=answer_index, id=7, doc_type=answer_type, body={'doc': new_doc}) # 注意body中一定要加_type doc
+esclient.update(index=answer_index, id=7, doc_type=answer_type, body={'doc': new_doc}) # 注意body中一定要加_type doc，更新的body中不一定要加入所有字段，只要把要更新的几个字段加入即可
 
 # 查询
 
