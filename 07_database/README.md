@@ -148,6 +148,40 @@ action2 = {
 actions = [action1, action2]
 helpers.bulk(esclient, actions)
 
+#---------------------------------------------------
+# 创建schema然后单条插入数据
+# 类似创建schema
+answer_index = 'baidu_answer'
+answer_type = 'doc22'
+esclient.indices.create(answer_index)
+answer_mapping = {
+        "doc22": {
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    # "index": True
+                },
+                "schoolID":{
+                    "type":"text"
+                },
+                "schoolName":{
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+#                     "analyzer":"whitespace"
+                },
+                "calNum":{
+                    "type":"float"
+                }
+            }
+        }
+    }
+esclient.indices.put_mapping(index=answer_index, doc_type=answer_type, body=answer_mapping)
+# 创建完schema以后导入数据
+doc = {'id': 7, 'schoolID': '007', 'schoolName': '春晖外国语学校', 'calNum':6.20190624}
+esclient.index(index=answer_index ,doc_type=answer_type ,body=doc, id=doc['id'])
+esclient.index(index=answer_index ,doc_type=answer_type ,body=doc, id=10)
+#----------------------------------------------------
+
 # 删除单条数据
 # esclient.delete(index='indexName', doc_type='typeName', id='idValue')
 esclient.delete(index='pre', doc_type='imagetable2', id=1)
