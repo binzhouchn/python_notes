@@ -245,7 +245,7 @@ list(mycol.find())
 ```
 # Run Elasticsearch 
 docker run -d --name elasticsearch_for_test -p 9200:9200 -e "discovery.type=single-node" elasticsearch:6.6.0
-# 安装elasticsearch-head
+# 安装elasticsearch-head 已安装googlechrome插件
 
 
 TODO

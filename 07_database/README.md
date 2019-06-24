@@ -148,9 +148,12 @@ action2 = {
 actions = [action1, action2]
 helpers.bulk(esclient, actions)
 
-# 删除
+# 删除单条数据
 # esclient.delete(index='indexName', doc_type='typeName', id='idValue')
 esclient.delete(index='pre', doc_type='imagetable2', id=1)
+# 删除索引
+answer_index = 'baidu_answer'
+esclient.indices.delete(answer_index)
 
 # 更新
 # esclient.update(index='indexName', doc_type='typeName', id='idValue', body={_type:{待更新字段}})
