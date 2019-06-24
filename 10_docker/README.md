@@ -250,12 +250,92 @@ list(mycol.find())
 ```
 # Run Elasticsearch 
 docker run -d --name elasticsearch_for_test -p 9200:9200 -e "discovery.type=single-node" elasticsearch:6.6.0
-# 安装elasticsearch-head 已安装googlechrome插件
-
-
-TODO
+# 安装elasticsearch-head
 ```
+```python
+# 用python连接，并进行增删改查
+from elasticsearch import Elasticsearch
+from elasticsearch import helpers
+# es = Elasticsearch(hosts="localhost:9200", http_auth=('username','passwd'))
+esclient = Elasticsearch(['localhost:9200'])
+# 高效插入ES
+action1 = {
+        "_index": "idx111",
+        "_type": "test",
+#         "_id": ,
+        "_source": {
+            'ServerIp': '0.1.1.1',
+            'SpiderType': 'toxic',
+            'Level': 4
+        }
+}
+action2 = {
+        "_index": "idx111",
+        "_type": "pre",
+#         "_id": 1,
+        "_source": {
+            'ServerIp': '0.1.1.2',
+            'SpiderType': 'non-toxic',
+            'Level': 1
+        }
+}
+actions = [action1, action2]
+helpers.bulk(esclient, actions)
 
+#---------------------------------------------------
+# 创建schema然后单条插入数据
+# 类似创建schema
+answer_index = 'baidu_answer'
+answer_type = 'doc22'
+esclient.indices.create(answer_index)
+answer_mapping = {
+        "doc22": {
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    # "index": True
+                },
+                "schoolID":{
+                    "type":"text"
+                },
+                "schoolName":{
+                    "type": "text",
+                    "analyzer": "ik_max_word" # 这个需要安装，先run docker6.6.0然后docker exec -it <container_id> /bin/bash下载解压ik后exit然后restart这个container即可，之后可以新生成一个image
+#                     "analyzer":"whitespace"
+                },
+                "calNum":{
+                    "type":"float"
+                }
+            }
+        }
+    }
+esclient.indices.put_mapping(index=answer_index, doc_type=answer_type, body=answer_mapping)
+# 创建完schema以后导入数据
+doc = {'id': 7, 'schoolID': '007', 'schoolName': '春晖外国语学校', 'calNum':6.20190624}
+esclient.index(index=answer_index ,doc_type=answer_type ,body=doc, id=doc['id'])
+esclient.index(index=answer_index ,doc_type=answer_type ,body=doc, id=10)
+#----------------------------------------------------
+
+# 删除单条数据
+# esclient.delete(index='indexName', doc_type='typeName', id='idValue')
+esclient.delete(index='pre', doc_type='imagetable2', id=1)
+# 删除索引
+esclient.indices.delete(answer_index)
+
+# 更新
+# esclient.update(index='indexName', doc_type='typeName', id='idValue', body={_type:{待更新字段}})
+new_doc = {'id': 7, 'schoolId': '007', 'schoolName': '更新名字1'}
+esclient.update(index=answer_index, id=7, doc_type=answer_type, body={'doc': new_doc}) # 注意body中一定要加_type doc，更新的body中不一定要加入所有字段，只要把要更新的几个字段加入即可
+
+# 查询
+### 根据id查找数据
+res = esclient.get(index=answer_index, doc_type=answer_type, id=7)
+### match：在schoolName中包含关键词的都会被搜索出来（这里的分词工具是ik）
+# res = esclient.search(index=answer_index,body={'query':{'match':{'schoolName':'春晖外'}}})
+res = esclient.search(index=answer_index,body={'query':{'match':{'schoolName':'春晖学校'}}})
+### ids：根据id值
+esclient.search(index='baidu_answer',body={'query':{'ids':{'values':'10'}}})
+```
 
 3.6 docker用neo4j镜像
 ```
