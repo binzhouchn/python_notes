@@ -77,7 +77,8 @@ docker commit -m="has update" -a="binzhou" <container_id> binzhouchn/python35:v2
 
 # 如果原来的镜像已经启动了container，则
 docker exec -it <container_id> /bin/bash
-
+# 进去修改完后
+docker start <container_id>
 ```
 
 2.5 docker保存和读取image（存成tar文件）

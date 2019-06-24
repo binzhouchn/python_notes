@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_database/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/07_database/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/10_docker/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/10_docker/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="526">
-                <caret line="247" column="40" selection-start-line="247" selection-start-column="40" selection-end-line="247" selection-end-column="40" />
+              <first_editor relative-caret-position="510">
+                <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
               </first_editor>
               <second_editor />
             </state>
@@ -154,21 +153,7 @@
       <workItem from="1559552805597" duration="15766000" />
       <workItem from="1560924268493" duration="1747000" />
       <workItem from="1561039325676" duration="1544000" />
-      <workItem from="1561237794841" duration="4861000" />
-    </task>
-    <task id="LOCAL-00058" summary="update on 6.14">
-      <created>1560491048467</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1560491048467</updated>
-    </task>
-    <task id="LOCAL-00059" summary="update on 6.14">
-      <created>1560491491112</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1560491491112</updated>
+      <workItem from="1561237794841" duration="7419000" />
     </task>
     <task id="LOCAL-00060" summary="update on 6.14">
       <created>1560491962047</created>
@@ -499,11 +484,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561338683062</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="update on 6.24">
+      <created>1561342043215</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1561342043215</updated>
+    </task>
+    <task id="LOCAL-00108" summary="update on 6.24">
+      <created>1561346957795</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1561346957795</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26708000" />
+    <option name="totallyTimeSpent" value="29266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1920" height="982" extended-state="6" />
@@ -584,8 +583,8 @@
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="526">
-            <caret line="247" column="40" selection-start-line="247" selection-start-column="40" selection-end-line="247" selection-end-column="40" />
+          <first_editor relative-caret-position="510">
+            <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
           </first_editor>
           <second_editor />
         </state>
