@@ -194,6 +194,12 @@ new_doc = {'id': 7, 'schoolId': '007', 'schoolName': '更新名字1'}
 esclient.update(index=answer_index, id=7, doc_type=answer_type, body={'doc': new_doc}) # 注意body中一定要加_type doc，更新的body中不一定要加入所有字段，只要把要更新的几个字段加入即可
 
 # 查询
+### 根据id查找数据
+res = esclient.get(index=answer_index, doc_type=answer_type, id=7)
+### match：在schoolName中包含关键词的都会被搜索出来（这里的分词工具是ik）
+# res = esclient.search(index=answer_index,body={'query':{'match':{'schoolName':'春晖外'}}})
+res = esclient.search(index=answer_index,body={'query':{'match':{'schoolName':'春晖学校'}}})
+
 
 ```
 
