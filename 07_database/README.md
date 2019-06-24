@@ -122,6 +122,7 @@ docker run -d --name elasticsearch_for_test -p 9200:9200 -e "discovery.type=sing
 # 用python连接，并进行增删改查
 from elasticsearch import Elasticsearch
 from elasticsearch import helpers
+# es = Elasticsearch(hosts="localhost:9200", http_auth=('username','passwd'))
 esclient = Elasticsearch(['localhost:9200'])
 # 高效插入ES
 action1 = {
