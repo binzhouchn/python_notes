@@ -199,9 +199,8 @@ res = esclient.get(index=answer_index, doc_type=answer_type, id=7)
 ### match：在schoolName中包含关键词的都会被搜索出来（这里的分词工具是ik）
 # res = esclient.search(index=answer_index,body={'query':{'match':{'schoolName':'春晖外'}}})
 res = esclient.search(index=answer_index,body={'query':{'match':{'schoolName':'春晖学校'}}})
-### 
+### ids：根据id值
 esclient.search(index='baidu_answer',body={'query':{'ids':{'values':'10'}}})
-
 ```
 
 
