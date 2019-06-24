@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_database/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/07_database/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +28,8 @@
         <entry file="file://$PROJECT_DIR$/07_database/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="536">
-                <caret line="197" selection-start-line="197" selection-end-line="197" />
+              <first_editor relative-caret-position="640">
+                <caret line="202" column="76" selection-start-line="202" selection-start-column="76" selection-end-line="202" selection-end-column="76" />
                 <folding>
                   <element signature="e#20#59#0" expanded="true" />
                 </folding>
@@ -153,21 +152,7 @@
       <workItem from="1559552805597" duration="15766000" />
       <workItem from="1560924268493" duration="1747000" />
       <workItem from="1561039325676" duration="1544000" />
-      <workItem from="1561237794841" duration="8933000" />
-    </task>
-    <task id="LOCAL-00064" summary="update on 6.14">
-      <created>1560496310828</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1560496310828</updated>
-    </task>
-    <task id="LOCAL-00065" summary="update on 6.14">
-      <created>1560496322823</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1560496322823</updated>
+      <workItem from="1561237794841" duration="9072000" />
     </task>
     <task id="LOCAL-00066" summary="update on 6.14">
       <created>1560496352623</created>
@@ -498,11 +483,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561354100438</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="update on 6.24">
+      <created>1561354233944</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1561354233944</updated>
+    </task>
+    <task id="LOCAL-00114" summary="update on 6.24">
+      <created>1561354414914</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1561354414914</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30780000" />
+    <option name="totallyTimeSpent" value="30919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1920" height="982" extended-state="6" />
@@ -580,8 +579,8 @@
     <entry file="file://$PROJECT_DIR$/07_database/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="536">
-            <caret line="197" selection-start-line="197" selection-end-line="197" />
+          <first_editor relative-caret-position="640">
+            <caret line="202" column="76" selection-start-line="202" selection-start-column="76" selection-end-line="202" selection-end-column="76" />
             <folding>
               <element signature="e#20#59#0" expanded="true" />
             </folding>
