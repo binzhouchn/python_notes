@@ -186,7 +186,6 @@ esclient.index(index=answer_index ,doc_type=answer_type ,body=doc, id=10)
 # esclient.delete(index='indexName', doc_type='typeName', id='idValue')
 esclient.delete(index='pre', doc_type='imagetable2', id=1)
 # 删除索引
-answer_index = 'baidu_answer'
 esclient.indices.delete(answer_index)
 
 # 更新
