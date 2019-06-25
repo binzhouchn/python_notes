@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_database/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/07_database/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_basic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01_basic/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,14 +25,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/07_database/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="707">
-                <caret line="220" column="20" selection-start-line="220" selection-start-column="20" selection-end-line="220" selection-end-column="20" />
+              <first_editor relative-caret-position="970">
+                <caret line="95" column="3" lean-forward="true" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
                 <folding>
                   <element signature="e#20#59#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01_basic/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="472">
+                <caret line="493" column="24" selection-start-line="493" selection-start-column="24" selection-end-line="493" selection-end-column="24" />
+                <folding>
+                  <element signature="e#0#9#0" expanded="true" />
+                  <element signature="e#0#30#0" expanded="true" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -52,6 +68,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>matlit</find>
+      <find>保存</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -73,6 +90,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/10_docker/README.md" />
         <option value="$PROJECT_DIR$/07_database/README.md" />
+        <option value="$PROJECT_DIR$/01_basic/README.md" />
       </list>
     </option>
   </component>
@@ -97,6 +115,11 @@
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
+              <item name="01_basic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
@@ -153,21 +176,7 @@
       <workItem from="1559552805597" duration="15766000" />
       <workItem from="1560924268493" duration="1747000" />
       <workItem from="1561039325676" duration="1544000" />
-      <workItem from="1561237794841" duration="11067000" />
-    </task>
-    <task id="LOCAL-00071" summary="update on 6.14">
-      <created>1560500322885</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1560500322885</updated>
-    </task>
-    <task id="LOCAL-00072" summary="update on 6.14">
-      <created>1560500353429</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1560500353429</updated>
+      <workItem from="1561237794841" duration="11918000" />
     </task>
     <task id="LOCAL-00073" summary="update on 6.16">
       <created>1560695003052</created>
@@ -498,11 +507,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561376323530</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="update on 6.25">
+      <created>1561426401552</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1561426401552</updated>
+    </task>
+    <task id="LOCAL-00121" summary="update on 6.25">
+      <created>1561441650960</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1561441650960</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32914000" />
+    <option name="totallyTimeSpent" value="33765000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1920" height="982" extended-state="6" />
@@ -550,7 +573,8 @@
     <MESSAGE value="update on 6.21" />
     <MESSAGE value="update on 6.23" />
     <MESSAGE value="update on 6.24" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 6.24" />
+    <MESSAGE value="update on 6.25" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 6.25" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -565,7 +589,6 @@
     <entry file="file://$PROJECT_DIR$/10.docker/mi_docker_demo/app.py" />
     <entry file="file://$PROJECT_DIR$/10.docker/mi_docker_demo/README.md" />
     <entry file="file://$PROJECT_DIR$/10.docker/README.md" />
-    <entry file="file://$PROJECT_DIR$/01_basic/README.md" />
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -580,10 +603,24 @@
     <entry file="file://$PROJECT_DIR$/07_database/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="707">
-            <caret line="220" column="20" selection-start-line="220" selection-start-column="20" selection-end-line="220" selection-end-column="20" />
+          <first_editor relative-caret-position="970">
+            <caret line="95" column="3" lean-forward="true" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
             <folding>
               <element signature="e#20#59#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_basic/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="472">
+            <caret line="493" column="24" selection-start-line="493" selection-start-column="24" selection-end-line="493" selection-end-column="24" />
+            <folding>
+              <element signature="e#0#9#0" expanded="true" />
+              <element signature="e#0#30#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />

@@ -490,7 +490,16 @@ for i,(tr,va) in tqdm_notebook(enumerate(kf.split(X))):
 
 ### 保存数据
 
-
+```python
+# 这里medical是mongodb的一个集合
+import json
+with open('../data/medical.json','w',encoding='utf-8') as fp:
+    for i in medical.find():
+        i['_id'] = i.get('_id').__str__() # 把bson的ObjectId转成str
+        json.dump(i,fp, ensure_ascii=False)
+        fp.write('\n')
+fp.close()
+```
 
 ### 保存模型
 1. 使用 pickle 保存
