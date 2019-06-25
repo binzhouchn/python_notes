@@ -32,45 +32,47 @@
 
 [**16. CV的多进程实现**](#cv的多进程实现)
 
-[**17. 保存模型**](#保存模型)
+[**17. 保存数据(json)**](#保存数据)
 
-[**18. enumerate用法**](#enumerate)
+[**18. 保存模型**](#保存模型)
 
-[**19. label数值化方法**](#label数值化方法)
+[**19. enumerate用法**](#enumerate)
 
-[**20. 列表推导式中使用if else**](#列表推导式中使用if_else)
+[**20. label数值化方法**](#label数值化方法)
 
-[**21. 将nparray或list中的最多的元素选出**](#将numpy_array中的最多的元素选出)
+[**21. 列表推导式中使用if else**](#列表推导式中使用if_else)
 
-[**22. 函数中传入函数demo**](#函数中传入函数demo)
+[**22. 将nparray或list中的最多的元素选出**](#将numpy_array中的最多的元素选出)
 
-[**23. getattr**](#getattr)
+[**23. 函数中传入函数demo**](#函数中传入函数demo)
 
-[**24. df宽变长及一列变多列**](#df宽变长及一列变多列)
+[**24. getattr**](#getattr)
 
-[**25. groupby使用**](#groupby使用)
+[**25. df宽变长及一列变多列**](#df宽变长及一列变多列)
 
-[**26. python画图及显示中文**](#python画图及显示中文)
+[**26. groupby使用**](#groupby使用)
 
-[**27. 给字典按value排序**](#给字典按value排序)
+[**27. python画图及显示中文**](#python画图及显示中文)
 
-[**28. sorted高级用法**](#sorted高级用法)
+[**28. 给字典按value排序**](#给字典按value排序)
 
-[**29. time用法**](#time用法)
+[**29. sorted高级用法**](#sorted高级用法)
 
-[**30. 两层列表展开平铺**](#两层列表展开平铺)
+[**30. time用法**](#time用法)
 
-[**31. 读取百度百科词向量**](#读取百度百科词向量)
+[**31. 两层列表展开平铺**](#两层列表展开平铺)
 
-[**32. logging**](#logging)
+[**32. 读取百度百科词向量**](#读取百度百科词向量)
 
-[**33. argparse用法**](#argparse用法)
+[**33. logging**](#logging)
 
-[**34. 包管理**](#包管理)
+[**34. argparse用法**](#argparse用法)
 
-[**35. 装饰器**](#装饰器)
+[**35. 包管理**](#包管理)
 
-[**36. 本地用python起http服务**](#本地用python起http服务)
+[**36. 装饰器**](#装饰器)
+
+[**37. 本地用python起http服务**](#本地用python起http服务)
 
 ---
 ```python
@@ -485,6 +487,10 @@ for i,(tr,va) in tqdm_notebook(enumerate(kf.split(X))):
 [p.join() for p in p_proc]
 # 最后把mg_list中的元组数据拿出来即可
 ```
+
+### 保存数据
+
+
 
 ### 保存模型
 1. 使用 pickle 保存
