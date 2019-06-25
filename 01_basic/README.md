@@ -502,6 +502,7 @@ fp.close()
 ```
 
 ### 保存模型
+
 1. 使用 pickle 保存
 ```python
 import pickle #pickle模块
@@ -571,6 +572,7 @@ def read_pickles(path, col=None):
 ```
 
 ### enumerate
+
 ```python
 tuples = [(2,3),(7,8),(12,25)]
 for step, tp in enumerate(tuples):
@@ -581,6 +583,7 @@ for step, tp in enumerate(tuples):
 ```
 
 ### label数值化方法
+
 方法一<br>
 ```python
 # 比如10个类别转成1到10
@@ -595,6 +598,7 @@ pd.get_dummies(data.categ_id)
 ```
 
 ### 列表推导式中使用if_else
+
 两种方式：<br>
 1. [x for x in data if condition] <br>
 2. [exp1 if condition else exp2 for x in data]
@@ -622,6 +626,7 @@ Counter(arr).most_common(1)[0][0]
 ```
 
 ### 函数中传入函数demo
+
 ```python
 # time_function把时间包装了一下给其他的函数
 def time_function(f, *args):
@@ -645,6 +650,7 @@ print('No loop version took %f seconds' % no_loop_time)
 ```
 
 ### getattr
+
 ```python
 class A(object):
     def __init__(self):
