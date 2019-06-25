@@ -44,8 +44,8 @@
         <entry file="file://$PROJECT_DIR$/01_basic/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="472">
-                <caret line="493" column="24" selection-start-line="493" selection-start-column="24" selection-end-line="493" selection-end-column="24" />
+              <first_editor relative-caret-position="726">
+                <caret line="984" selection-start-line="984" selection-end-line="984" />
                 <folding>
                   <element signature="e#0#9#0" expanded="true" />
                   <element signature="e#0#30#0" expanded="true" />
@@ -176,21 +176,7 @@
       <workItem from="1559552805597" duration="15766000" />
       <workItem from="1560924268493" duration="1747000" />
       <workItem from="1561039325676" duration="1544000" />
-      <workItem from="1561237794841" duration="11918000" />
-    </task>
-    <task id="LOCAL-00073" summary="update on 6.16">
-      <created>1560695003052</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1560695003052</updated>
-    </task>
-    <task id="LOCAL-00074" summary="update on 6.16">
-      <created>1560695066748</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1560695066748</updated>
+      <workItem from="1561237794841" duration="12184000" />
     </task>
     <task id="LOCAL-00075" summary="update on 6.16">
       <created>1560695814573</created>
@@ -521,17 +507,31 @@
       <option name="project" value="LOCAL" />
       <updated>1561441650960</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="update on 6.25">
+      <created>1561441711744</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1561441711744</updated>
+    </task>
+    <task id="LOCAL-00123" summary="update on 6.25">
+      <created>1561441764649</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1561441764649</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33765000" />
+    <option name="totallyTimeSpent" value="34031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1920" height="982" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1687966" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1687966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -616,8 +616,8 @@
     <entry file="file://$PROJECT_DIR$/01_basic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="472">
-            <caret line="493" column="24" selection-start-line="493" selection-start-column="24" selection-end-line="493" selection-end-column="24" />
+          <first_editor relative-caret-position="726">
+            <caret line="984" selection-start-line="984" selection-end-line="984" />
             <folding>
               <element signature="e#0#9#0" expanded="true" />
               <element signature="e#0#30#0" expanded="true" />
