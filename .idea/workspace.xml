@@ -18,7 +18,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="745">
-                <caret line="985" column="5" selection-start-line="985" selection-start-column="5" selection-end-line="985" selection-end-column="5" />
+                <caret line="985" column="9" selection-start-line="985" selection-start-column="9" selection-end-line="985" selection-end-column="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -64,10 +64,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1692" />
-    <option name="y" value="25" />
-    <option name="width" value="1897" />
-    <option name="height" value="1053" />
+    <option name="x" value="1680" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="982" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -147,21 +147,7 @@
       <workItem from="1561039325676" duration="1544000" />
       <workItem from="1561237794841" duration="13034000" />
       <workItem from="1561510977389" duration="1148000" />
-      <workItem from="1561513802220" duration="1168000" />
-    </task>
-    <task id="LOCAL-00082" summary="update on 6.20">
-      <created>1560999033395</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1560999033395</updated>
-    </task>
-    <task id="LOCAL-00083" summary="update on 6.20">
-      <created>1561009128722</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1561009128722</updated>
+      <workItem from="1561513802220" duration="1582000" />
     </task>
     <task id="LOCAL-00084" summary="update on 6.20">
       <created>1561039372125</created>
@@ -492,11 +478,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561518790678</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="update on 6.26">
+      <created>1561520198418</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1561520198418</updated>
+    </task>
+    <task id="LOCAL-00132" summary="update on 6.26">
+      <created>1561524887657</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1561524887657</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37197000" />
+    <option name="totallyTimeSpent" value="37611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1920" height="982" extended-state="6" />
@@ -586,7 +586,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="745">
-            <caret line="985" column="5" selection-start-line="985" selection-start-column="5" selection-end-line="985" selection-end-column="5" />
+            <caret line="985" column="9" selection-start-line="985" selection-start-column="9" selection-end-line="985" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
