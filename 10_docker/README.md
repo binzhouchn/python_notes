@@ -54,6 +54,14 @@ docker run hello-world
 # run之前如果没有这个images，则会从docker_hub上先pull下来 docker pull hello-world
 ```
 
+2.3 如果不小心关了container或者重启了电脑
+```
+# 先查看container历史
+docker ps -a
+# 重启container即可，前提是docker run的时候要加-volume把数据挂载到本地
+docker start <container_id>
+```
+
 2.3 docker跑完以后需要删除container再删除image
 ```shell
 # 查看image对应的container id
@@ -74,7 +82,7 @@ docker rmi -f image_id
 docker exec -it <container_id> /bin/bash
 # 进去修改完后
 docker start <container_id>
-
+#------------------------------------------
 docker pull python:3.5
 docker run -t -i python:3.5 /bin/bash
 # 接下去进行一些pip install一些包等操作
