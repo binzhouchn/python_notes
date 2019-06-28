@@ -277,11 +277,4 @@ df.loc[df.content_id=='x6mbO2rHfU3hTej4','sentiment_tmp'] = 1
 
 ### TODO
 
-|实体类型|中文含义|实体数量|举例
-|--|--|--|--
-|Company|公司名|1|太平人寿保险有限公司
-|Disease|疾病|1|疾病
-|Product|保险产品|1|保险产品
-
-
 
