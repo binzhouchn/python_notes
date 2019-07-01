@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="573">
-                <caret line="284" column="1" lean-forward="true" selection-start-line="284" selection-start-column="1" selection-end-line="284" selection-end-column="1" />
+              <first_editor relative-caret-position="536">
+                <caret line="279" selection-start-line="279" selection-end-line="279" />
               </first_editor>
               <second_editor />
             </state>
@@ -65,10 +65,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1728" />
-    <option name="y" value="48" />
-    <option name="width" value="1785" />
-    <option name="height" value="883" />
+    <option name="x" value="1967" />
+    <option name="y" value="146" />
+    <option name="width" value="1260" />
+    <option name="height" value="716" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -78,6 +78,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,7 +100,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,14 +143,8 @@
       <workItem from="1561039325676" duration="1544000" />
       <workItem from="1561237794841" duration="13034000" />
       <workItem from="1561510977389" duration="1148000" />
-      <workItem from="1561513802220" duration="4457000" />
-    </task>
-    <task id="LOCAL-00089" summary="update on 6.21">
-      <created>1561085386040</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1561085386040</updated>
+      <workItem from="1561513802220" duration="5233000" />
+      <workItem from="1561907566296" duration="109000" />
     </task>
     <task id="LOCAL-00090" summary="update on 6.21">
       <created>1561085459298</created>
@@ -488,17 +482,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561692897992</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="update on 6.28">
+      <created>1561700879740</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1561700879740</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40486000" />
+    <option name="totallyTimeSpent" value="41371000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1728" y="48" width="1785" height="883" extended-state="0" />
+    <frame x="1967" y="146" width="1260" height="716" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1858864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18883416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -593,8 +594,8 @@
     <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="573">
-            <caret line="284" column="1" lean-forward="true" selection-start-line="284" selection-start-column="1" selection-end-line="284" selection-end-column="1" />
+          <first_editor relative-caret-position="536">
+            <caret line="279" selection-start-line="279" selection-end-line="279" />
           </first_editor>
           <second_editor />
         </state>
