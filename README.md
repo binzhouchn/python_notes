@@ -54,5 +54,4 @@ trusted-host =  pypi.tuna.tsinghua.edu.cn
 index-url = http://mirrors.aliyun.com/pypi/simple/
 [install]
 trusted-host = mirrors.aliyun.com
-
 ```

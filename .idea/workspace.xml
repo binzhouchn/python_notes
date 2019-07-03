@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +14,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="377">
-                <caret line="279" column="4" selection-start-line="279" selection-start-column="4" selection-end-line="279" selection-end-column="4" />
+              <first_editor relative-caret-position="339">
+                <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
               </first_editor>
               <second_editor />
             </state>
@@ -55,17 +56,17 @@
         <option value="$PROJECT_DIR$/11.docker/README.md" />
         <option value="$PROJECT_DIR$/10.docker/mi_docker_demo/README.md" />
         <option value="$PROJECT_DIR$/10.docker/README.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/07_database/README.md" />
         <option value="$PROJECT_DIR$/01_basic/README.md" />
         <option value="$PROJECT_DIR$/10_docker/README.md" />
         <option value="$PROJECT_DIR$/03_pandas/README.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1908" />
-    <option name="y" value="51" />
+    <option name="x" value="1815" />
+    <option name="y" value="23" />
     <option name="width" value="1535" />
     <option name="height" value="898" />
   </component>
@@ -84,16 +85,6 @@
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-              <item name="03_pandas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-              <item name="10_docker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -144,21 +135,7 @@
       <workItem from="1561510977389" duration="1148000" />
       <workItem from="1561513802220" duration="5233000" />
       <workItem from="1561907566296" duration="840000" />
-      <workItem from="1562116889572" duration="1387000" />
-    </task>
-    <task id="LOCAL-00097" summary="update on 6.23">
-      <created>1561291860918</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1561291860918</updated>
-    </task>
-    <task id="LOCAL-00098" summary="update on 6.23">
-      <created>1561291935517</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1561291935517</updated>
+      <workItem from="1562116889572" duration="1766000" />
     </task>
     <task id="LOCAL-00099" summary="update on 6.23">
       <created>1561292053660</created>
@@ -489,17 +466,31 @@
       <option name="project" value="LOCAL" />
       <updated>1562118586299</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="update on 20190703">
+      <created>1562119003409</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1562119003409</updated>
+    </task>
+    <task id="LOCAL-00147" summary="update on 20190703">
+      <created>1562119663971</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1562119663971</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43489000" />
+    <option name="totallyTimeSpent" value="43868000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1908" y="51" width="1535" height="898" extended-state="0" />
+    <frame x="1815" y="23" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15606162" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15606162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -513,7 +504,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3287841" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3287841" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -562,7 +553,6 @@
     <entry file="file://$PROJECT_DIR$/10.docker/mi_docker_demo/app.py" />
     <entry file="file://$PROJECT_DIR$/10.docker/mi_docker_demo/README.md" />
     <entry file="file://$PROJECT_DIR$/10.docker/README.md" />
-    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/07_database/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -596,8 +586,18 @@
     <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="377">
-            <caret line="279" column="4" selection-start-line="279" selection-start-column="4" selection-end-line="279" selection-end-column="4" />
+          <first_editor relative-caret-position="359">
+            <caret line="274" column="14" lean-forward="true" selection-start-line="274" selection-start-column="14" selection-end-line="274" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="339">
+            <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
           </first_editor>
           <second_editor />
         </state>
