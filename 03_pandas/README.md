@@ -274,5 +274,3 @@ df.loc[df.A < 4,'A'] = [100,120,140]
 # or
 df.loc[df.content_id=='x6mbO2rHfU3hTej4','sentiment_tmp'] = 1
 ```
-
-### TODO
