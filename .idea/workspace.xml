@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
+    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="update on 20190703">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03_pandas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/03_pandas/README.md" afterDir="false" />
     </list>
@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="642">
-                <caret line="278" selection-start-line="278" selection-end-line="278" />
+              <first_editor relative-caret-position="377">
+                <caret line="279" column="10" lean-forward="true" selection-start-line="279" selection-start-column="10" selection-end-line="279" selection-end-column="10" />
               </first_editor>
               <second_editor />
             </state>
@@ -65,8 +65,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1893" />
-    <option name="y" value="47" />
+    <option name="x" value="1908" />
+    <option name="y" value="51" />
     <option name="width" value="1535" />
     <option name="height" value="898" />
   </component>
@@ -145,21 +145,7 @@
       <workItem from="1561510977389" duration="1148000" />
       <workItem from="1561513802220" duration="5233000" />
       <workItem from="1561907566296" duration="840000" />
-      <workItem from="1562116889572" duration="21000" />
-    </task>
-    <task id="LOCAL-00091" summary="update on 6.21">
-      <created>1561085645530</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1561085645530</updated>
-    </task>
-    <task id="LOCAL-00092" summary="update on 6.21">
-      <created>1561087509887</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1561087509887</updated>
+      <workItem from="1562116889572" duration="574000" />
     </task>
     <task id="LOCAL-00093" summary="update on 6.23">
       <created>1561254341822</created>
@@ -490,17 +476,31 @@
       <option name="project" value="LOCAL" />
       <updated>1561944046406</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="update on 20190703">
+      <created>1562116919519</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1562116919519</updated>
+    </task>
+    <task id="LOCAL-00141" summary="update on 20190703">
+      <created>1562117074808</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1562117074808</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42123000" />
+    <option name="totallyTimeSpent" value="42676000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1893" y="47" width="1535" height="898" extended-state="0" />
+    <frame x="1908" y="51" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15606162" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15606162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -514,7 +514,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3287841" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -547,7 +547,8 @@
     <MESSAGE value="update on 6.27" />
     <MESSAGE value="update on 6.28" />
     <MESSAGE value="update on 7.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 7.1" />
+    <MESSAGE value="update on 20190703" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190703" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -596,8 +597,8 @@
     <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="642">
-            <caret line="278" selection-start-line="278" selection-end-line="278" />
+          <first_editor relative-caret-position="377">
+            <caret line="279" column="10" lean-forward="true" selection-start-line="279" selection-start-column="10" selection-end-line="279" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>
