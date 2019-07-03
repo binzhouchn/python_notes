@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="update on 20190703">
+    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_pandas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/03_pandas/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +17,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="377">
-                <caret line="279" column="10" lean-forward="true" selection-start-line="279" selection-start-column="10" selection-end-line="279" selection-end-column="10" />
+                <caret line="279" column="4" selection-start-line="279" selection-start-column="4" selection-end-line="279" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -145,35 +144,7 @@
       <workItem from="1561510977389" duration="1148000" />
       <workItem from="1561513802220" duration="5233000" />
       <workItem from="1561907566296" duration="840000" />
-      <workItem from="1562116889572" duration="574000" />
-    </task>
-    <task id="LOCAL-00093" summary="update on 6.23">
-      <created>1561254341822</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1561254341822</updated>
-    </task>
-    <task id="LOCAL-00094" summary="update on 6.23">
-      <created>1561281558912</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1561281558913</updated>
-    </task>
-    <task id="LOCAL-00095" summary="update on 6.23">
-      <created>1561288377215</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1561288377215</updated>
-    </task>
-    <task id="LOCAL-00096" summary="update on 6.23">
-      <created>1561291724471</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1561291724471</updated>
+      <workItem from="1562116889572" duration="1387000" />
     </task>
     <task id="LOCAL-00097" summary="update on 6.23">
       <created>1561291860918</created>
@@ -490,11 +461,39 @@
       <option name="project" value="LOCAL" />
       <updated>1562117074808</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="update on 20190703">
+      <created>1562117657734</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1562117657734</updated>
+    </task>
+    <task id="LOCAL-00143" summary="update on 20190703">
+      <created>1562117703138</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1562117703138</updated>
+    </task>
+    <task id="LOCAL-00144" summary="update on 20190703">
+      <created>1562117754441</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1562117754441</updated>
+    </task>
+    <task id="LOCAL-00145" summary="update on 20190703">
+      <created>1562118586299</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1562118586299</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42676000" />
+    <option name="totallyTimeSpent" value="43489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1908" y="51" width="1535" height="898" extended-state="0" />
@@ -598,7 +597,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="377">
-            <caret line="279" column="10" lean-forward="true" selection-start-line="279" selection-start-column="10" selection-end-line="279" selection-end-column="10" />
+            <caret line="279" column="4" selection-start-line="279" selection-start-column="4" selection-end-line="279" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
