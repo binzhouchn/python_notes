@@ -146,7 +146,7 @@ docker rm $(sudo docker ps -a -q)
 2.12 docker修改完镜像生成新的镜像以后貌似没看法删除旧的镜像
 ```shell
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy 
-pandas sklearn jieba gensim tqdm flask requests PyMySQL redis 
+pandas sklearn jieba gensim tqdm flask requests PyMySQL redis pyahocorasick  
 pymongo pyspark py2neo neo4j-driver==$PYTHON_DRIVER_VERSION
 ```
 
