@@ -362,7 +362,9 @@ docker exec --interactive --tty <container_id> bin/cypher-shell
 
 3.7 stardog
 
-stardog.com
-xx
+```
+docker pull stardog/stardog:latest
+docker run -v ~/stardog-home/:/var/opt/stardog -e STARDOG_SERVER_JAVA_ARGS="-Xmx8g -Xms8g -XX:MaxDirectMemorySize=2g" stardog-eps-docker.jfrog.io/stardog:6.2.1
+```
 
 
