@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="301">
-                <caret line="366" column="159" selection-start-line="366" selection-start-column="159" selection-end-line="366" selection-end-column="159" />
+              <first_editor relative-caret-position="585">
+                <caret line="367" column="3" selection-start-line="367" selection-start-column="3" selection-end-line="367" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -65,7 +65,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1815" />
+    <option name="x" value="135" />
     <option name="y" value="23" />
     <option name="width" value="1535" />
     <option name="height" value="898" />
@@ -142,21 +142,7 @@
       <workItem from="1561907566296" duration="840000" />
       <workItem from="1562116889572" duration="3190000" />
       <workItem from="1562208281926" duration="438000" />
-      <workItem from="1562231550850" duration="664000" />
-    </task>
-    <task id="LOCAL-00102" summary="update on 6.23">
-      <created>1561292305719</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1561292305719</updated>
-    </task>
-    <task id="LOCAL-00103" summary="update on 6.23">
-      <created>1561293923956</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1561293923956</updated>
+      <workItem from="1562231550850" duration="3180000" />
     </task>
     <task id="LOCAL-00104" summary="update on 6.24">
       <created>1561338176257</created>
@@ -487,17 +473,31 @@
       <option name="project" value="LOCAL" />
       <updated>1562208162669</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="update on 20190705">
+      <created>1562289337053</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1562289337053</updated>
+    </task>
+    <task id="LOCAL-00152" summary="update on 20190707">
+      <created>1562510205656</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1562510205657</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46394000" />
+    <option name="totallyTimeSpent" value="48910000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1815" y="23" width="1535" height="898" extended-state="0" />
+    <frame x="135" y="23" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16008037" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122572005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -511,7 +511,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3287841" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3287841" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -545,7 +545,9 @@
     <MESSAGE value="update on 6.28" />
     <MESSAGE value="update on 7.1" />
     <MESSAGE value="update on 20190703" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190703" />
+    <MESSAGE value="update on 20190705" />
+    <MESSAGE value="update on 20190707" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190707" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -603,8 +605,8 @@
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="301">
-            <caret line="366" column="159" selection-start-line="366" selection-start-column="159" selection-end-line="366" selection-end-column="159" />
+          <first_editor relative-caret-position="585">
+            <caret line="367" column="3" selection-start-line="367" selection-start-column="3" selection-end-line="367" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>

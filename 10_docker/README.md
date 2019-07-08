@@ -367,6 +367,4 @@ docker pull stardog/stardog:latest
 docker run -v ~/stardog-home/:/var/opt/stardog -e STARDOG_SERVER_JAVA_ARGS="-Xmx8g -Xms8g -XX:MaxDirectMemorySize=2g" stardog-eps-docker.jfrog.io/stardog:6.2.1
 ```
 
-3.8
-
 
