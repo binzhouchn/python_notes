@@ -919,8 +919,18 @@ baike_wv_dict = get_baike_wv(lines)
 
 ```python
 import logging
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',\
-    level=logging.INFO) # logging.WARNING
+#logger
+def get_logger():
+    FORMAT = '[%(levelname)s]%(asctime)s:%(name)s:%(message)s'
+    logging.basicConfig(format=FORMAT)
+    logger = logging.getLogger('main')
+    logger.setLevel(logging.DEBUG)
+    return logger
+    
+logger = get_logger()
+
+logger.warning('Input data')
+logger.info('cat treatment')
 ```
 
 ### argparse用法
