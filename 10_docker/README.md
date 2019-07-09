@@ -366,8 +366,8 @@ docker exec --interactive --tty <container_id> bin/cypher-shell
 docker pull stardog/stardog:latest
 docker run -v ~/stardog-home/:/var/opt/stardog -e STARDOG_SERVER_JAVA_ARGS="-Xmx8g -Xms8g -XX:MaxDirectMemorySize=2g" stardog-eps-docker.jfrog.io/stardog:6.2.1
 # 看下RDF教程
-# 看下OWL教程
 ```
+[RDF入门](https://blog.csdn.net/txlCandy/article/details/50959358)
 [OWL语言](https://blog.csdn.net/zycxnanwang/article/details/86557350)<br>
 
 
