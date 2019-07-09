@@ -16,8 +16,8 @@
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="661">
-                <caret line="368" column="9" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="9" />
+              <first_editor relative-caret-position="566">
+                <caret line="368" lean-forward="true" selection-start-line="368" selection-end-line="368" selection-end-column="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -37,6 +37,7 @@
     <findStrings>
       <find>matlit</find>
       <find>保存</find>
+      <find>画图</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -56,10 +57,10 @@
         <option value="$PROJECT_DIR$/10.docker/mi_docker_demo/README.md" />
         <option value="$PROJECT_DIR$/10.docker/README.md" />
         <option value="$PROJECT_DIR$/07_database/README.md" />
-        <option value="$PROJECT_DIR$/01_basic/README.md" />
         <option value="$PROJECT_DIR$/03_pandas/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/10_docker/README.md" />
+        <option value="$PROJECT_DIR$/01_basic/README.md" />
       </list>
     </option>
   </component>
@@ -84,6 +85,11 @@
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
+              <item name="01_basic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -137,20 +143,7 @@
       <workItem from="1562116889572" duration="3190000" />
       <workItem from="1562208281926" duration="438000" />
       <workItem from="1562231550850" duration="3681000" />
-    </task>
-    <task id="LOCAL-00107" summary="update on 6.24">
-      <created>1561342043215</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1561342043215</updated>
-    </task>
-    <task id="LOCAL-00108" summary="update on 6.24">
-      <created>1561346957795</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1561346957795</updated>
+      <workItem from="1562647316718" duration="326000" />
     </task>
     <task id="LOCAL-00109" summary="update on 6.24">
       <created>1561347071164</created>
@@ -481,16 +474,31 @@
       <option name="project" value="LOCAL" />
       <updated>1562635510166</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="update on 20190709">
+      <created>1562647364651</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1562647364651</updated>
+    </task>
+    <task id="LOCAL-00157" summary="update on 20190709">
+      <created>1562647458797</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1562647458797</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49411000" />
+    <option name="totallyTimeSpent" value="49737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1892" y="54" width="1535" height="898" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122572005" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12391159" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -567,16 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_basic/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="536">
-            <caret line="973" column="22" lean-forward="true" selection-start-line="973" selection-start-column="22" selection-end-line="973" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -597,11 +595,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/01_basic/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="459">
+            <caret line="710" column="29" lean-forward="true" selection-start-line="710" selection-start-column="29" selection-end-line="710" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="661">
-            <caret line="368" column="9" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="9" />
+          <first_editor relative-caret-position="566">
+            <caret line="368" lean-forward="true" selection-start-line="368" selection-end-line="368" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>

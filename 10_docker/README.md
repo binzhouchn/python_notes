@@ -368,5 +368,6 @@ docker run -v ~/stardog-home/:/var/opt/stardog -e STARDOG_SERVER_JAVA_ARGS="-Xmx
 # 看下RDF教程
 # 看下OWL教程
 ```
+[OWL语言](https://blog.csdn.net/zycxnanwang/article/details/86557350)<br>
 
 
