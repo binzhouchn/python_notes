@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_docker/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/10_docker/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +16,8 @@
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="585">
-                <caret line="367" column="3" selection-start-line="367" selection-start-column="3" selection-end-line="367" selection-end-column="3" />
+              <first_editor relative-caret-position="661">
+                <caret line="368" column="9" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -65,8 +64,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="135" />
-    <option name="y" value="23" />
+    <option name="x" value="1892" />
+    <option name="y" value="54" />
     <option name="width" value="1535" />
     <option name="height" value="898" />
   </component>
@@ -85,11 +84,6 @@
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-              <item name="10_docker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -142,28 +136,7 @@
       <workItem from="1561907566296" duration="840000" />
       <workItem from="1562116889572" duration="3190000" />
       <workItem from="1562208281926" duration="438000" />
-      <workItem from="1562231550850" duration="3180000" />
-    </task>
-    <task id="LOCAL-00104" summary="update on 6.24">
-      <created>1561338176257</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1561338176257</updated>
-    </task>
-    <task id="LOCAL-00105" summary="update on 6.24">
-      <created>1561338359581</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1561338359581</updated>
-    </task>
-    <task id="LOCAL-00106" summary="update on 6.24">
-      <created>1561338683062</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1561338683062</updated>
+      <workItem from="1562231550850" duration="3681000" />
     </task>
     <task id="LOCAL-00107" summary="update on 6.24">
       <created>1561342043215</created>
@@ -487,15 +460,35 @@
       <option name="project" value="LOCAL" />
       <updated>1562510205657</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="update on 20190707">
+      <created>1562585762371</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1562585762371</updated>
+    </task>
+    <task id="LOCAL-00154" summary="update on 20190708">
+      <created>1562585815372</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1562585815372</updated>
+    </task>
+    <task id="LOCAL-00155" summary="update on 20190709">
+      <created>1562635510166</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1562635510166</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48910000" />
+    <option name="totallyTimeSpent" value="49411000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="135" y="23" width="1535" height="898" extended-state="0" />
-    <editor active="true" />
+    <frame x="1892" y="54" width="1535" height="898" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122572005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -547,7 +540,9 @@
     <MESSAGE value="update on 20190703" />
     <MESSAGE value="update on 20190705" />
     <MESSAGE value="update on 20190707" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190707" />
+    <MESSAGE value="update on 20190708" />
+    <MESSAGE value="update on 20190709" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190709" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -605,8 +600,8 @@
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="585">
-            <caret line="367" column="3" selection-start-line="367" selection-start-column="3" selection-end-line="367" selection-end-column="3" />
+          <first_editor relative-caret-position="661">
+            <caret line="368" column="9" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
