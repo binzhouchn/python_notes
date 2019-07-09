@@ -221,5 +221,6 @@ docker exec --interactive --tty <container_id> bin/cypher-shell
 ## 6. Stardog RDF数据库
 
 [stardog官方文档](https://www.stardog.com/docs/)<br>
-
+[RDF入门](https://blog.csdn.net/txlCandy/article/details/50959358)<br>
+[OWL语言](https://blog.csdn.net/zycxnanwang/article/details/86557350)<br>
 
