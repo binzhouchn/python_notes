@@ -720,7 +720,7 @@ df = df.merge(df_aggr, how='left', on='personid').fillna(0)
 ```
 
 ### python画图显示中文
-
+f
 ```python
 ## 显示中文解决方法
 # 解决方法一
