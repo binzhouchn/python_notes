@@ -369,5 +369,3 @@ docker run -v ~/stardog-6.2.2/:/var/opt/stardog -e STARDOG_SERVER_JAVA_ARGS="-Xm
 ```
 [RDF入门](https://blog.csdn.net/txlCandy/article/details/50959358)<br>
 [OWL语言](https://blog.csdn.net/zycxnanwang/article/details/86557350)<br>
-
-
