@@ -12,7 +12,7 @@
 
 ## 简介
 
-默认安装了 `Python 3.6`，以及相关的第三方包  `numpy`， `pandas`，`sklearn`
+默认安装了 `Python 3.6`，以及相关的第三方包  `numpy`, `pandas`, `sklearn`, `tqdm`
 
 > life is short.use python.
 
