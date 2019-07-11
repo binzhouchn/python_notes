@@ -4,6 +4,8 @@
 
 [**3. 远程ipython https安全版**](#远程ipython_https安全版)
 
+[**4. jupyter notebook启动错误总结**](#jupyter_notebook启动错误总结)
+
 # pycharm远程配置
 
 pycharm远程配置： <br>
@@ -121,3 +123,6 @@ pip install jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user --skip-running-check
 ```
 注意配置的时候要确保没有打开Jupyter Notebook
+
+# jupyter_notebook启动错误总结
+
