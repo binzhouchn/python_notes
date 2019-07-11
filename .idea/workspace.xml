@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_remote_ipython/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/09_remote_ipython/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,12 +13,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/10_docker/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="171">
+                <caret line="139" selection-start-line="139" selection-end-line="139" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01_basic/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="234">
+                <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+                <folding>
+                  <element signature="e#0#9#0" expanded="true" />
+                  <element signature="e#0#30#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="266">
-                <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+                <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/09_remote_ipython/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="718">
+                <caret line="133" selection-start-line="133" selection-end-line="133" />
               </first_editor>
               <second_editor />
             </state>
@@ -63,6 +103,7 @@
         <option value="$PROJECT_DIR$/01_basic/README.md" />
         <option value="$PROJECT_DIR$/10_docker/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/09_remote_ipython/README.md" />
       </list>
     </option>
   </component>
@@ -90,7 +131,12 @@
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-              <item name="01_basic" type="462c0819:PsiDirectoryNode" />
+              <item name="09_remote_ipython" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
+              <item name="10_docker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -146,28 +192,7 @@
       <workItem from="1562208281926" duration="438000" />
       <workItem from="1562231550850" duration="3681000" />
       <workItem from="1562647316718" duration="2413000" />
-      <workItem from="1562806086096" duration="73000" />
-    </task>
-    <task id="LOCAL-00116" summary="update on 6.24">
-      <created>1561354479739</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1561354479739</updated>
-    </task>
-    <task id="LOCAL-00117" summary="update on 6.24">
-      <created>1561354501612</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1561354501612</updated>
-    </task>
-    <task id="LOCAL-00118" summary="update on 6.24">
-      <created>1561354530631</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1561354530631</updated>
+      <workItem from="1562806086096" duration="1496000" />
     </task>
     <task id="LOCAL-00119" summary="update on 6.24">
       <created>1561376323530</created>
@@ -491,11 +516,32 @@
       <option name="project" value="LOCAL" />
       <updated>1562744385278</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="update on 20190711">
+      <created>1562806163814</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1562806163814</updated>
+    </task>
+    <task id="LOCAL-00166" summary="update on 20190711">
+      <created>1562806256710</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1562806256710</updated>
+    </task>
+    <task id="LOCAL-00167" summary="update on 20190711">
+      <created>1562814448422</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1562814448422</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51897000" />
+    <option name="totallyTimeSpent" value="53320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1892" y="54" width="1535" height="898" extended-state="0" />
@@ -528,7 +574,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 5.31" />
     <MESSAGE value="update on 6.3" />
     <MESSAGE value="update on 6.5" />
     <MESSAGE value="update on 6.6" />
@@ -553,7 +598,8 @@
     <MESSAGE value="update on 20190708" />
     <MESSAGE value="update on 20190709" />
     <MESSAGE value="update on 20190710" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190710" />
+    <MESSAGE value="update on 20190711" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190711" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -588,10 +634,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_remote_ipython/README.md">
+    <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-544" />
+          <first_editor relative-caret-position="171">
+            <caret line="139" selection-start-line="139" selection-end-line="139" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -610,21 +658,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10_docker/README.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2276">
-            <caret line="371" lean-forward="true" selection-start-line="371" selection-end-line="371" />
+          <first_editor relative-caret-position="266">
+            <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/09_remote_ipython/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="266">
-            <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+          <first_editor relative-caret-position="718">
+            <caret line="133" selection-start-line="133" selection-end-line="133" />
           </first_editor>
           <second_editor />
         </state>

@@ -126,3 +126,8 @@ jupyter contrib nbextension install --user --skip-running-check
 
 # jupyter_notebook启动错误总结
 
+[Jupyter Notebook "signal only works in main thread"](https://blog.csdn.net/loovelj/article/details/82184223)<br>
+查询了很多网站，最后发现是两个包版本安装不对，重新安装这两个包就就可以了<br>
+```shell
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple "pyzmq==17.0.0" "ipykernel==4.8.2"
+```
