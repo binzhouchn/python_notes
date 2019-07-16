@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,28 +10,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="471">
+              <first_editor relative-caret-position="452">
                 <caret line="362" column="11" selection-start-line="362" selection-start-column="11" selection-end-line="362" selection-end-column="11" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/01_basic/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="254">
-                <caret line="925" column="31" selection-start-line="925" selection-start-column="31" selection-end-line="925" selection-end-column="31" />
-                <folding>
-                  <element signature="e#0#9#0" expanded="true" />
-                  <element signature="e#0#30#0" expanded="true" />
-                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -75,10 +57,10 @@
         <option value="$PROJECT_DIR$/10.docker/README.md" />
         <option value="$PROJECT_DIR$/03_pandas/README.md" />
         <option value="$PROJECT_DIR$/07_database/README.md" />
-        <option value="$PROJECT_DIR$/01_basic/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/09_remote_ipython/README.md" />
         <option value="$PROJECT_DIR$/10_docker/README.md" />
+        <option value="$PROJECT_DIR$/01_basic/README.md" />
       </list>
     </option>
   </component>
@@ -96,6 +78,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,7 +105,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,13 +156,7 @@
       <workItem from="1562647316718" duration="2413000" />
       <workItem from="1562806086096" duration="2099000" />
       <workItem from="1562828166711" duration="1321000" />
-    </task>
-    <task id="LOCAL-00121" summary="update on 6.25">
-      <created>1561441650960</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1561441650960</updated>
+      <workItem from="1563170404458" duration="107000" />
     </task>
     <task id="LOCAL-00122" summary="update on 6.25">
       <created>1561441711744</created>
@@ -518,17 +494,24 @@
       <option name="project" value="LOCAL" />
       <updated>1562920914657</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="update on 20190715">
+      <created>1563170413604</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1563170413604</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55244000" />
+    <option name="totallyTimeSpent" value="55351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1892" y="54" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12659076" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12793034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -555,7 +538,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 6.5" />
     <MESSAGE value="update on 6.6" />
     <MESSAGE value="update on 6.12" />
     <MESSAGE value="update on 6.13" />
@@ -580,7 +562,8 @@
     <MESSAGE value="update on 20190710" />
     <MESSAGE value="update on 20190711" />
     <MESSAGE value="update on 20190712" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190712" />
+    <MESSAGE value="update on 20190715" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190715" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -635,25 +618,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10_docker/README.md">
+    <entry file="file://$PROJECT_DIR$/01_basic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="471">
-            <caret line="362" column="11" selection-start-line="362" selection-start-column="11" selection-end-line="362" selection-end-column="11" />
+          <first_editor relative-caret-position="642">
+            <caret line="983" column="3" selection-start-line="983" selection-start-column="3" selection-end-line="983" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_basic/README.md">
+    <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="254">
-            <caret line="925" column="31" selection-start-line="925" selection-start-column="31" selection-end-line="925" selection-end-column="31" />
-            <folding>
-              <element signature="e#0#9#0" expanded="true" />
-              <element signature="e#0#30#0" expanded="true" />
-            </folding>
+          <first_editor relative-caret-position="452">
+            <caret line="362" column="11" selection-start-line="362" selection-start-column="11" selection-end-line="362" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
