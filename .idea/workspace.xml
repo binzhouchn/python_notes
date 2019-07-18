@@ -10,12 +10,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="452">
                 <caret line="362" column="11" selection-start-line="362" selection-start-column="11" selection-end-line="362" selection-end-column="11" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01_basic/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="129">
+                <caret line="954" column="9" selection-start-line="954" selection-start-column="9" selection-end-line="954" selection-end-column="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -91,16 +103,6 @@
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
               <item name="01_basic" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-              <item name="09_remote_ipython" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-              <item name="10_docker" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -157,13 +159,7 @@
       <workItem from="1562806086096" duration="2099000" />
       <workItem from="1562828166711" duration="1321000" />
       <workItem from="1563170404458" duration="107000" />
-    </task>
-    <task id="LOCAL-00122" summary="update on 6.25">
-      <created>1561441711744</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1561441711744</updated>
+      <workItem from="1563239248204" duration="280000" />
     </task>
     <task id="LOCAL-00123" summary="update on 6.25">
       <created>1561441764649</created>
@@ -501,17 +497,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563170413604</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="update on 20190716">
+      <created>1563239274934</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1563239274934</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55351000" />
+    <option name="totallyTimeSpent" value="55631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1892" y="54" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12793034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12926993" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -538,7 +541,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 6.6" />
     <MESSAGE value="update on 6.12" />
     <MESSAGE value="update on 6.13" />
     <MESSAGE value="update on 6.14" />
@@ -563,7 +565,8 @@
     <MESSAGE value="update on 20190711" />
     <MESSAGE value="update on 20190712" />
     <MESSAGE value="update on 20190715" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190715" />
+    <MESSAGE value="update on 20190716" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190716" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -618,21 +621,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_basic/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="642">
-            <caret line="983" column="3" selection-start-line="983" selection-start-column="3" selection-end-line="983" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="452">
             <caret line="362" column="11" selection-start-line="362" selection-start-column="11" selection-end-line="362" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_basic/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="129">
+            <caret line="954" column="9" selection-start-line="954" selection-start-column="9" selection-end-line="954" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
