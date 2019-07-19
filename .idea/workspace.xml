@@ -14,7 +14,7 @@
         <entry file="file://$PROJECT_DIR$/10_docker/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="452">
+              <first_editor relative-caret-position="6878">
                 <caret line="362" column="11" selection-start-line="362" selection-start-column="11" selection-end-line="362" selection-end-column="11" />
               </first_editor>
               <second_editor />
@@ -26,8 +26,8 @@
         <entry file="file://$PROJECT_DIR$/01_basic/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="129">
-                <caret line="954" column="9" selection-start-line="954" selection-start-column="9" selection-end-line="954" selection-end-column="9" />
+              <first_editor relative-caret-position="410">
+                <caret line="970" column="22" selection-start-line="970" selection-start-column="22" selection-end-line="970" selection-end-column="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -77,8 +77,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1892" />
-    <option name="y" value="54" />
+    <option name="x" value="1782" />
+    <option name="y" value="24" />
     <option name="width" value="1535" />
     <option name="height" value="898" />
   </component>
@@ -90,7 +90,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,6 +106,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,13 +160,7 @@
       <workItem from="1562828166711" duration="1321000" />
       <workItem from="1563170404458" duration="107000" />
       <workItem from="1563239248204" duration="280000" />
-    </task>
-    <task id="LOCAL-00123" summary="update on 6.25">
-      <created>1561441764649</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1561441764649</updated>
+      <workItem from="1563437410484" duration="206000" />
     </task>
     <task id="LOCAL-00124" summary="update on 6.25">
       <created>1561447466814</created>
@@ -504,17 +498,23 @@
       <option name="project" value="LOCAL" />
       <updated>1563239274934</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="update on 20190718">
+      <created>1563437419629</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1563437419629</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55631000" />
+    <option name="totallyTimeSpent" value="55837000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1892" y="54" width="1535" height="898" extended-state="0" />
-    <editor active="true" />
+    <frame x="1782" y="24" width="1535" height="898" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12926993" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13060951" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -541,7 +541,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 6.12" />
     <MESSAGE value="update on 6.13" />
     <MESSAGE value="update on 6.14" />
     <MESSAGE value="update on 6.16" />
@@ -566,7 +565,8 @@
     <MESSAGE value="update on 20190712" />
     <MESSAGE value="update on 20190715" />
     <MESSAGE value="update on 20190716" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190716" />
+    <MESSAGE value="update on 20190718" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190718" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -624,7 +624,7 @@
     <entry file="file://$PROJECT_DIR$/10_docker/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="452">
+          <first_editor relative-caret-position="6878">
             <caret line="362" column="11" selection-start-line="362" selection-start-column="11" selection-end-line="362" selection-end-column="11" />
           </first_editor>
           <second_editor />
@@ -634,8 +634,8 @@
     <entry file="file://$PROJECT_DIR$/01_basic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="129">
-            <caret line="954" column="9" selection-start-line="954" selection-start-column="9" selection-end-line="954" selection-end-column="9" />
+          <first_editor relative-caret-position="410">
+            <caret line="970" column="22" selection-start-line="970" selection-start-column="22" selection-end-line="970" selection-end-column="22" />
           </first_editor>
           <second_editor />
         </state>
