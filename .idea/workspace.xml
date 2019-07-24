@@ -29,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/01_basic/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="657">
-                <caret line="984" column="13" selection-start-line="984" selection-start-column="13" selection-end-line="984" selection-end-column="13" />
+              <first_editor relative-caret-position="2485">
+                <caret line="364" lean-forward="true" selection-start-line="364" selection-end-line="364" />
               </first_editor>
               <second_editor />
             </state>
@@ -52,6 +52,8 @@
       <find>保存</find>
       <find>画图</find>
       <find>logging</find>
+      <find>正则</find>
+      <find>re模块</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,14 +167,8 @@
       <workItem from="1563239248204" duration="280000" />
       <workItem from="1563437410484" duration="206000" />
       <workItem from="1563502505701" duration="113000" />
-      <workItem from="1563760013077" duration="13000" />
-    </task>
-    <task id="LOCAL-00125" summary="update on 6.26">
-      <created>1561511019386</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1561511019387</updated>
+      <workItem from="1563760013077" duration="392000" />
+      <workItem from="1563961144074" duration="164000" />
     </task>
     <task id="LOCAL-00126" summary="update on 6.26">
       <created>1561513104771</created>
@@ -510,17 +506,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563502518504</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="update on 20190722">
+      <created>1563760036373</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1563760036373</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55963000" />
+    <option name="totallyTimeSpent" value="56506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1782" y="24" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13328868" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13462827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -547,7 +550,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 6.14" />
     <MESSAGE value="update on 6.16" />
     <MESSAGE value="update on 6.17" />
     <MESSAGE value="update on 6.19" />
@@ -572,7 +574,8 @@
     <MESSAGE value="update on 20190716" />
     <MESSAGE value="update on 20190718" />
     <MESSAGE value="update on 20190719" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190719" />
+    <MESSAGE value="update on 20190722" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190722" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -640,8 +643,8 @@
     <entry file="file://$PROJECT_DIR$/01_basic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="657">
-            <caret line="984" column="13" selection-start-line="984" selection-start-column="13" selection-end-line="984" selection-end-column="13" />
+          <first_editor relative-caret-position="2485">
+            <caret line="364" lean-forward="true" selection-start-line="364" selection-end-line="364" />
           </first_editor>
           <second_editor />
         </state>
