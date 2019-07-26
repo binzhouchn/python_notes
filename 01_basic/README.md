@@ -977,7 +977,7 @@ def function(func): #定义了一个闭包
 @function
 def test(a,b): #定义一个函数
 	return a+b #返回实参的和
-print(test(3, 4)))
+print(test(3, 4))
 # 这里是需要装饰的内容，就是需要添加的内容
 # 7
 ```
