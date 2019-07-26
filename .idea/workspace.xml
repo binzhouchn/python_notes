@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_basic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01_basic/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +26,8 @@
         <entry file="file://$PROJECT_DIR$/01_basic/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2485">
-                <caret line="364" lean-forward="true" selection-start-line="364" selection-end-line="364" />
+              <first_editor relative-caret-position="281">
+                <caret line="248" column="3" lean-forward="true" selection-start-line="248" selection-start-column="3" selection-end-line="248" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -82,8 +79,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1782" />
-    <option name="y" value="24" />
+    <option name="x" value="1864" />
+    <option name="y" value="76" />
     <option name="width" value="1535" />
     <option name="height" value="898" />
   </component>
@@ -168,14 +165,7 @@
       <workItem from="1563437410484" duration="206000" />
       <workItem from="1563502505701" duration="113000" />
       <workItem from="1563760013077" duration="392000" />
-      <workItem from="1563961144074" duration="164000" />
-    </task>
-    <task id="LOCAL-00126" summary="update on 6.26">
-      <created>1561513104771</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1561513104771</updated>
+      <workItem from="1563961144074" duration="200000" />
     </task>
     <task id="LOCAL-00127" summary="update on 6.26">
       <created>1561513268811</created>
@@ -513,14 +503,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563760036373</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="update on 20190724">
+      <created>1563961313624</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1563961313624</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56506000" />
+    <option name="totallyTimeSpent" value="56542000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1782" y="24" width="1535" height="898" extended-state="0" />
+    <frame x="1864" y="76" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13462827" />
@@ -550,7 +547,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 6.16" />
     <MESSAGE value="update on 6.17" />
     <MESSAGE value="update on 6.19" />
     <MESSAGE value="update on 6.20" />
@@ -575,7 +571,8 @@
     <MESSAGE value="update on 20190718" />
     <MESSAGE value="update on 20190719" />
     <MESSAGE value="update on 20190722" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190722" />
+    <MESSAGE value="update on 20190724" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190724" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -643,8 +640,8 @@
     <entry file="file://$PROJECT_DIR$/01_basic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2485">
-            <caret line="364" lean-forward="true" selection-start-line="364" selection-end-line="364" />
+          <first_editor relative-caret-position="281">
+            <caret line="248" column="3" lean-forward="true" selection-start-line="248" selection-start-column="3" selection-end-line="248" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
