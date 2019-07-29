@@ -989,4 +989,4 @@ python -m http.server 7777
 ```
 
 ### 
-working on kg extraction
+working on kg jibing recoginition
