@@ -26,8 +26,8 @@
         <entry file="file://$PROJECT_DIR$/01_basic/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="619">
-                <caret line="991" column="33" selection-start-line="991" selection-start-column="33" selection-end-line="991" selection-end-column="33" />
+              <first_editor relative-caret-position="638">
+                <caret line="992" column="31" selection-start-line="992" selection-start-column="31" selection-end-line="992" selection-end-column="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -79,8 +79,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1864" />
-    <option name="y" value="76" />
+    <option name="x" value="1879" />
+    <option name="y" value="55" />
     <option name="width" value="1535" />
     <option name="height" value="898" />
   </component>
@@ -92,6 +92,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,7 +109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,13 +168,7 @@
       <workItem from="1563961144074" duration="200000" />
       <workItem from="1564104564308" duration="317000" />
       <workItem from="1564364879547" duration="69000" />
-    </task>
-    <task id="LOCAL-00130" summary="update on 6.26">
-      <created>1561518790678</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1561518790678</updated>
+      <workItem from="1564534118707" duration="97000" />
     </task>
     <task id="LOCAL-00131" summary="update on 6.26">
       <created>1561520198418</created>
@@ -512,16 +506,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564364912922</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="update on 20190731">
+      <created>1564534136208</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1564534136208</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56928000" />
+    <option name="totallyTimeSpent" value="57025000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1864" y="76" width="1535" height="898" extended-state="0" />
+    <frame x="1879" y="55" width="1535" height="898" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13730744" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13864702" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -548,7 +550,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 6.20" />
     <MESSAGE value="update on 6.21" />
     <MESSAGE value="update on 6.23" />
     <MESSAGE value="update on 6.24" />
@@ -573,7 +574,8 @@
     <MESSAGE value="update on 20190724" />
     <MESSAGE value="update on 20190725" />
     <MESSAGE value="update on 20190729" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190729" />
+    <MESSAGE value="update on 20190731" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190731" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -641,8 +643,8 @@
     <entry file="file://$PROJECT_DIR$/01_basic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="619">
-            <caret line="991" column="33" selection-start-line="991" selection-start-column="33" selection-end-line="991" selection-end-column="33" />
+          <first_editor relative-caret-position="638">
+            <caret line="992" column="31" selection-start-line="992" selection-start-column="31" selection-end-line="992" selection-end-column="31" />
           </first_editor>
           <second_editor />
         </state>
