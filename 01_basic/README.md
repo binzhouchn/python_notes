@@ -992,3 +992,4 @@ python -m http.server 7777
 working on kg jibing recoginition
 working on kg jibing extraction
 修复bug
+增加版式识别模型
