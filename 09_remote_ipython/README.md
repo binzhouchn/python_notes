@@ -121,7 +121,7 @@ c.NotebookApp.port = 8888
 ```
 然后用命令行启动
 ```shell
-
+nohup jupyter notebook --config=jupyter_config.py
 ```
 
 ---
