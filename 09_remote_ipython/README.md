@@ -112,6 +112,18 @@ nohup ipython notebook --config=/root/.ipython/profile_nbserver/ipython_notebook
 登录ipython notebook:
 ```
 
+或者建一个jupyter_config.py文件然后输入(http访问)<br>
+```python
+c.NotebookApp.password = u'sha1:ebf4c635f6b6:7d6824aa8f863ffbe7c264b28854ec2acf1a0961'
+c.NotebookApp.ip = '*'
+c.NotebookApp.open_browser = False
+c.NotebookApp.port = 8888
+```
+然后用命令行启动
+```shell
+
+```
+
 ---
 
 Jupyter Notebook 添加目录插件<br>
