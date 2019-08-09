@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/01_basic/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="638">
+              <first_editor relative-caret-position="18886">
                 <caret line="994" column="8" selection-start-line="994" selection-start-column="8" selection-end-line="994" selection-end-column="8" />
               </first_editor>
               <second_editor />
@@ -41,8 +41,8 @@
         <entry file="file://$PROJECT_DIR$/09_remote_ipython/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="524">
-                <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
+              <first_editor relative-caret-position="676">
+                <caret line="152" selection-start-line="152" selection-end-line="152" />
               </first_editor>
               <second_editor />
             </state>
@@ -191,21 +191,8 @@
       <workItem from="1564534118707" duration="97000" />
       <workItem from="1564623255232" duration="40000" />
       <workItem from="1564969542533" duration="105000" />
-      <workItem from="1565058458392" duration="563000" />
-    </task>
-    <task id="LOCAL-00133" summary="update on 6.26">
-      <created>1561526004834</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1561526004834</updated>
-    </task>
-    <task id="LOCAL-00134" summary="update on 6.26">
-      <created>1561526233930</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1561526233930</updated>
+      <workItem from="1565058458392" duration="1319000" />
+      <workItem from="1565338368505" duration="217000" />
     </task>
     <task id="LOCAL-00135" summary="update on 6.26">
       <created>1561528074764</created>
@@ -536,17 +523,31 @@
       <option name="project" value="LOCAL" />
       <updated>1564969618880</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="update on 20190806">
+      <created>1565077673110</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1565077673110</updated>
+    </task>
+    <task id="LOCAL-00183" summary="update on 20190806">
+      <created>1565078044401</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1565078044401</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57733000" />
+    <option name="totallyTimeSpent" value="58706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="32" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14266577" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14400536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -573,7 +574,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 6.24" />
     <MESSAGE value="update on 6.25" />
     <MESSAGE value="update on 6.26" />
     <MESSAGE value="update on 6.27" />
@@ -598,7 +598,8 @@
     <MESSAGE value="update on 20190731" />
     <MESSAGE value="update on 20190801" />
     <MESSAGE value="update on 20190805" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190805" />
+    <MESSAGE value="update on 20190806" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190806" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -656,7 +657,7 @@
     <entry file="file://$PROJECT_DIR$/01_basic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="638">
+          <first_editor relative-caret-position="18886">
             <caret line="994" column="8" selection-start-line="994" selection-start-column="8" selection-end-line="994" selection-end-column="8" />
           </first_editor>
           <second_editor />
@@ -666,8 +667,8 @@
     <entry file="file://$PROJECT_DIR$/09_remote_ipython/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="524">
-            <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
+          <first_editor relative-caret-position="676">
+            <caret line="152" selection-start-line="152" selection-end-line="152" />
           </first_editor>
           <second_editor />
         </state>

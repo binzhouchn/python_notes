@@ -6,6 +6,8 @@
 
 [**4. jupyter notebook启动错误总结**](#jupyter_notebook启动错误总结)
 
+[**4. 添加Anaconda虚拟环境**](#添加anaconda虚拟环境)
+
 # pycharm远程配置
 
 pycharm远程配置： <br>
@@ -143,3 +145,8 @@ jupyter contrib nbextension install --user --skip-running-check
 ```shell
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple "pyzmq==17.0.0" "ipykernel==4.8.2"
 ```
+
+# 添加anaconda虚拟环境
+
+把anaconda3整个文件夹拷贝到anaconda3/envs下，然后取名为比如tf-gpu<br>
+然后可以把这个文件夹下的包的版本可以自行替换比如把tf2.0替换成tf1.14（注：不要删除，会有问题）<br>
