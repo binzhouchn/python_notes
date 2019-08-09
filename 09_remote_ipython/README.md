@@ -150,3 +150,10 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple "pyzmq==17.0.0" "ipykern
 
 把anaconda3整个文件夹拷贝到anaconda3/envs下，然后取名为比如tf-gpu<br>
 然后可以把这个文件夹下的包的版本可以自行替换比如把tf2.0替换成tf1.14（注：不要删除，会有问题）<br>
+然后在jupyter notebook添加Anaconda虚拟环境的python kernel
+```shell
+source activate tf-gpu # 激活tf-gpu环境
+conda install ipykernel # 安装ipykernel模块(如果是虚拟机没联网，可以去https://anaconda.org/conda-forge/ipykernel/files下载)
+python -m ipykernel install --user --name tf-gpu --display-name "tf-gpu" # 进行配置
+jupyter notebook # 启动jupyter notebook，然后在"新建"中就会有py3这个kernel了 
+```
