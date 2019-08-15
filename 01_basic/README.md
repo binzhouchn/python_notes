@@ -989,7 +989,7 @@ python -m http.server 7777
 ```
 
 ### 
-working on kg jibing recoginition
-working on kg jibing extraction
-修复bug
-增加版式识别模型
+working on bert
+working on bert 单句分类
+working on bert NER
+working on bert 两句输入分类或其他

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_remote_ipython/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/09_remote_ipython/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/09_remote_ipython/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="676">
-                <caret line="152" selection-start-line="152" selection-end-line="152" />
+              <first_editor relative-caret-position="429">
+                <caret line="148" column="16" selection-start-line="148" selection-start-column="16" selection-end-line="148" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -94,7 +93,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="145" />
     <option name="y" value="32" />
     <option name="width" value="1535" />
     <option name="height" value="898" />
@@ -107,7 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,6 +127,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,21 +191,8 @@
       <workItem from="1564623255232" duration="40000" />
       <workItem from="1564969542533" duration="105000" />
       <workItem from="1565058458392" duration="1319000" />
-      <workItem from="1565338368505" duration="217000" />
-    </task>
-    <task id="LOCAL-00135" summary="update on 6.26">
-      <created>1561528074764</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1561528074764</updated>
-    </task>
-    <task id="LOCAL-00136" summary="update on 6.27">
-      <created>1561598969254</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1561598969254</updated>
+      <workItem from="1565338368505" duration="981000" />
+      <workItem from="1565430661093" duration="22000" />
     </task>
     <task id="LOCAL-00137" summary="update on 6.28">
       <created>1561692897992</created>
@@ -537,17 +523,30 @@
       <option name="project" value="LOCAL" />
       <updated>1565078044401</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="update on 20190809">
+      <created>1565338590862</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1565338590862</updated>
+    </task>
+    <task id="LOCAL-00185" summary="update on 20190809">
+      <created>1565338754938</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1565338754938</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58706000" />
+    <option name="totallyTimeSpent" value="59492000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="32" width="1535" height="898" extended-state="0" />
-    <editor active="true" />
+    <frame x="145" y="32" width="1535" height="898" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14400536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14601474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -574,7 +573,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 6.25" />
     <MESSAGE value="update on 6.26" />
     <MESSAGE value="update on 6.27" />
     <MESSAGE value="update on 6.28" />
@@ -599,7 +597,8 @@
     <MESSAGE value="update on 20190801" />
     <MESSAGE value="update on 20190805" />
     <MESSAGE value="update on 20190806" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190806" />
+    <MESSAGE value="update on 20190809" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190809" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -667,8 +666,8 @@
     <entry file="file://$PROJECT_DIR$/09_remote_ipython/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="676">
-            <caret line="152" selection-start-line="152" selection-end-line="152" />
+          <first_editor relative-caret-position="429">
+            <caret line="148" column="16" selection-start-line="148" selection-start-column="16" selection-end-line="148" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
