@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_basic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01_basic/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_sklearn/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/04_sklearn/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,12 +25,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01_basic/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="619">
+              <first_editor relative-caret-position="1344">
                 <caret line="995" column="16" selection-start-line="995" selection-start-column="16" selection-end-line="995" selection-end-column="16" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/04_sklearn/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="411">
+                <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
               </first_editor>
               <second_editor />
             </state>
@@ -78,6 +90,7 @@
         <option value="$PROJECT_DIR$/10_docker/README.md" />
         <option value="$PROJECT_DIR$/09_remote_ipython/README.md" />
         <option value="$PROJECT_DIR$/01_basic/README.md" />
+        <option value="$PROJECT_DIR$/04_sklearn/README.md" />
       </list>
     </option>
   </component>
@@ -95,7 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,12 +123,18 @@
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
+              <item name="04_sklearn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
               <item name="09_remote_ipython" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,14 +201,8 @@
       <workItem from="1565338368505" duration="981000" />
       <workItem from="1565430661093" duration="22000" />
       <workItem from="1565837293201" duration="1282000" />
-      <workItem from="1565930892141" duration="17000" />
-    </task>
-    <task id="LOCAL-00138" summary="update on 6.28">
-      <created>1561700879740</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1561700879740</updated>
+      <workItem from="1565930892141" duration="64000" />
+      <workItem from="1565931878065" duration="137000" />
     </task>
     <task id="LOCAL-00139" summary="update on 7.1">
       <created>1561944046406</created>
@@ -528,17 +540,24 @@
       <option name="project" value="LOCAL" />
       <updated>1565837343553</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="update on 20190816">
+      <created>1565930919327</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1565930919327</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60791000" />
+    <option name="totallyTimeSpent" value="60975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1845" y="123" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15003349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15204287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -565,7 +584,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 6.27" />
     <MESSAGE value="update on 6.28" />
     <MESSAGE value="update on 7.1" />
     <MESSAGE value="update on 20190703" />
@@ -590,7 +608,8 @@
     <MESSAGE value="update on 20190806" />
     <MESSAGE value="update on 20190809" />
     <MESSAGE value="update on 20190815" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190815" />
+    <MESSAGE value="update on 20190816" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190816" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -658,8 +677,18 @@
     <entry file="file://$PROJECT_DIR$/01_basic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="619">
+          <first_editor relative-caret-position="1344">
             <caret line="995" column="16" selection-start-line="995" selection-start-column="16" selection-end-line="995" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04_sklearn/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="411">
+            <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
           </first_editor>
           <second_editor />
         </state>

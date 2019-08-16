@@ -8,6 +8,7 @@
 
  - [抽样方法一](#抽样方法一)
  - [抽样方法二](#抽样方法二)
+ - [抽样方法三](#抽样方法三)
 
 [**3. 对结果进行评判，混淆矩阵**](#对结果进行评判用混淆矩阵)
 
@@ -26,6 +27,14 @@ def train_test_sep(X, test_size = 0.25, stratify = None, random_state = 1001):
 ### 对数据集进行随机抽样
 
 #### 抽样方法一
+
+```python
+from sklearn.model_selection import train_test_split
+#cat是在df中的某一个属性列
+X_train, X_test = train_test_split(df, test_size=0.3, stratify=df.cat)
+```
+
+#### 抽样方法二
 ```python
 df.sample(n=None, frac=None, replace=False, weights=None, random_state=None, axis=None)
 
@@ -36,7 +45,7 @@ df.sample(n=None, frac=None, replace=False, weights=None, random_state=None, axi
 - random_state这个在之前的文章已经介绍过了。
 - axis是选择抽取数据的行还是列。axis=0的时是抽取行，axis=1时是抽取列（也就是说axis=1时，在列中随机抽取n列，在axis=0时，在行中随机抽取n行）
 ```
-#### 抽样方法二
+#### 抽样方法三
 ```python
 import random
 random_num_test = random.sample(np.arange(0,len(df)),200)
