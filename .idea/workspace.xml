@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_pycharm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/08_pycharm/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,12 +13,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="448">
-                <caret line="266" column="90" selection-start-line="266" selection-start-column="90" selection-end-line="266" selection-end-column="90" />
+              <first_editor relative-caret-position="524">
+                <caret line="270" selection-start-line="270" selection-end-line="270" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/08_pycharm/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="676">
+                <caret line="46" selection-start-line="46" selection-end-line="46" />
               </first_editor>
               <second_editor />
             </state>
@@ -66,6 +79,7 @@
         <option value="$PROJECT_DIR$/01_basic/README.md" />
         <option value="$PROJECT_DIR$/04_sklearn/README.md" />
         <option value="$PROJECT_DIR$/03_pandas/README.md" />
+        <option value="$PROJECT_DIR$/08_pycharm/README.md" />
       </list>
     </option>
   </component>
@@ -93,12 +107,7 @@
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-              <item name="03_pandas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-              <item name="09_remote_ipython" type="462c0819:PsiDirectoryNode" />
+              <item name="08_pycharm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -173,14 +182,8 @@
       <workItem from="1565837293201" duration="1282000" />
       <workItem from="1565930892141" duration="64000" />
       <workItem from="1565931878065" duration="744000" />
-      <workItem from="1565937255073" duration="133000" />
-    </task>
-    <task id="LOCAL-00140" summary="update on 20190703">
-      <created>1562116919519</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1562116919519</updated>
+      <workItem from="1565937255073" duration="212000" />
+      <workItem from="1566466616282" duration="54000" />
     </task>
     <task id="LOCAL-00141" summary="update on 20190703">
       <created>1562117074808</created>
@@ -518,17 +521,24 @@
       <option name="project" value="LOCAL" />
       <updated>1565932029383</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="update on 20190816">
+      <created>1565937409106</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1565937409106</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61715000" />
+    <option name="totallyTimeSpent" value="61848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1875" y="91" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15405224" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15606162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -658,8 +668,18 @@
     <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="448">
-            <caret line="266" column="90" selection-start-line="266" selection-start-column="90" selection-end-line="266" selection-end-column="90" />
+          <first_editor relative-caret-position="524">
+            <caret line="270" selection-start-line="270" selection-end-line="270" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08_pycharm/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="676">
+            <caret line="46" selection-start-line="46" selection-end-line="46" />
           </first_editor>
           <second_editor />
         </state>

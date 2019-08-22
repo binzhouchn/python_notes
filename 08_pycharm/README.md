@@ -41,3 +41,7 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
 ![pycharm_remote3.png](pic/pycharm_remote3.png)<br>
 ![pycharm_remote4.png](pic/pycharm_remote4.png)<br>
 ![pycharm_remote5.png](pic/pycharm_remote5.png)<br>
+
+# 3. pycharm中遇到的一些问题
+
+1. pycharm运行app.py需要在configuration->Environment variables中加入 LANG=en_US.utf-8;LC_ALL=en_US.utf-8
