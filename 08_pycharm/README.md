@@ -45,4 +45,3 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
 # 3. pycharm中遇到的一些问题
 
 1. pycharm运行app.py需要在configuration->Environment variables中加入 LANG=en_US.utf-8;LC_ALL=en_US.utf-8
-
