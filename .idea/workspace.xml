@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="" />
+    <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_flask_sanic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/06_flask_sanic/README.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,13 +12,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08_pycharm/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="638">
-                <caret line="48" selection-start-line="48" selection-end-line="48" />
+              <first_editor relative-caret-position="182">
+                <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/06_flask_sanic/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="420">
+                <caret line="139" column="4" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
+                <folding>
+                  <element signature="e#80#89#0" expanded="true" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -65,6 +83,7 @@
         <option value="$PROJECT_DIR$/04_sklearn/README.md" />
         <option value="$PROJECT_DIR$/03_pandas/README.md" />
         <option value="$PROJECT_DIR$/08_pycharm/README.md" />
+        <option value="$PROJECT_DIR$/06_flask_sanic/README.md" />
       </list>
     </option>
   </component>
@@ -82,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -93,12 +111,13 @@
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
-              <item name="08_pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="06_flask_sanic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,13 +189,8 @@
       <workItem from="1565937255073" duration="212000" />
       <workItem from="1566466616282" duration="102000" />
       <workItem from="1566782478604" duration="37000" />
-    </task>
-    <task id="LOCAL-00143" summary="update on 20190703">
-      <created>1562117703138</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1562117703138</updated>
+      <workItem from="1567390485163" duration="35000" />
+      <workItem from="1568266232947" duration="69000" />
     </task>
     <task id="LOCAL-00144" summary="update on 20190703">
       <created>1562117754441</created>
@@ -514,17 +528,24 @@
       <option name="project" value="LOCAL" />
       <updated>1566782498583</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="update on 20190902">
+      <created>1567390499036</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1567390499036</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61933000" />
+    <option name="totallyTimeSpent" value="62037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1875" y="91" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.158071" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16208975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -551,7 +572,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 20190703" />
     <MESSAGE value="update on 20190705" />
     <MESSAGE value="update on 20190707" />
     <MESSAGE value="update on 20190708" />
@@ -576,7 +596,8 @@
     <MESSAGE value="update on 20190816" />
     <MESSAGE value="update on 20190822" />
     <MESSAGE value="update on 20190826" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190826" />
+    <MESSAGE value="update on 20190902" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190902" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -664,8 +685,21 @@
     <entry file="file://$PROJECT_DIR$/08_pycharm/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="638">
-            <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <first_editor relative-caret-position="182">
+            <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_flask_sanic/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="420">
+            <caret line="139" column="4" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
+            <folding>
+              <element signature="e#80#89#0" expanded="true" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
