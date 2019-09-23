@@ -29,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/07_database/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="304">
-                <caret line="76" column="60" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
+              <first_editor relative-caret-position="305">
+                <caret line="98" column="53" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="53" />
               </first_editor>
               <second_editor />
             </state>
@@ -85,8 +85,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1875" />
-    <option name="y" value="91" />
+    <option name="x" value="1976" />
+    <option name="y" value="94" />
     <option name="width" value="1535" />
     <option name="height" value="898" />
   </component>
@@ -193,21 +193,7 @@
       <workItem from="1566782478604" duration="37000" />
       <workItem from="1567390485163" duration="35000" />
       <workItem from="1568266232947" duration="213000" />
-      <workItem from="1569237649665" duration="456000" />
-    </task>
-    <task id="LOCAL-00149" summary="update on 20190703">
-      <created>1562124683870</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1562124683870</updated>
-    </task>
-    <task id="LOCAL-00150" summary="update on 20190703">
-      <created>1562208162669</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1562208162669</updated>
+      <workItem from="1569237649665" duration="772000" />
     </task>
     <task id="LOCAL-00151" summary="update on 20190705">
       <created>1562289337053</created>
@@ -538,14 +524,28 @@
       <option name="project" value="LOCAL" />
       <updated>1569238081337</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="update on 20190923">
+      <created>1569238156092</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1569238156092</updated>
+    </task>
+    <task id="LOCAL-00199" summary="update on 20190923">
+      <created>1569238181694</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1569238181694</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62637000" />
+    <option name="totallyTimeSpent" value="62953000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1875" y="91" width="1535" height="898" extended-state="0" />
+    <frame x="1976" y="94" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16409913" />
@@ -701,8 +701,8 @@
     <entry file="file://$PROJECT_DIR$/07_database/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="76" column="60" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
+          <first_editor relative-caret-position="305">
+            <caret line="98" column="53" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="53" />
           </first_editor>
           <second_editor />
         </state>
