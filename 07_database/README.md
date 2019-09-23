@@ -65,6 +65,13 @@ redis_conf.hgetall('hash1')
 ```
 
 ## 3. pymongo(docker version)
+
+以插入腾讯词向量为例
+
+
+pymongo搭建：<br>
+
+
 ```
 # 启动mongodb命令
 docker run -p 27017:27017 -v $PWD/mongo_db:/data/mongo_db -d mongo:4.0.10
