@@ -71,7 +71,10 @@ redis_conf.hgetall('hash1')
 ```shell
 启动mongo: mongodb -f mongodb.conf
 关闭mongo: mongod -f mongodb.conf  --shutdown
-
+# 命令行登录mongodb: mongo
+# 添加用户名密码
+use admin
+db.createUser({user: "root", pwd: "xxxxxx", roles:["root"]})
 ```
 
 
@@ -95,7 +98,7 @@ db.runoob.find()
 ```python
 import pymongo
 # 连接
-client = pymongo.MongoClient(host='xx.xx.xx.xx', port=27017, username='test', password='123456')
+client = pymongo.MongoClient(host='xx.xx.xx.xx', port=27017, username='root', password='xxxxxx')
 # client = pymongo.MongoClient('mongodb://root:password@localhost:27017/')
 # 读取数据库（如果没有的话自动创建）
 db = client.tencent_wv
