@@ -66,10 +66,11 @@ redis_conf.hgetall('hash1')
 
 ## 3. pymongo(docker version)
 
-以插入腾讯词向量为例
+1. 把[腾讯词向量](https://ai.tencent.com/ailab/nlp/embedding.html)存入mongodb中，需先[安装mongodb](https://blog.csdn.net/weixin_29026283/article/details/82252941)<br>
+2. mongodb搭建后创建用户名密码<br>
 
 
-pymongo搭建：<br>
+
 
 
 ```

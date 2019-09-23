@@ -29,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/07_database/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="352">
-                <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+              <first_editor relative-caret-position="269">
+                <caret line="72" selection-start-line="72" selection-end-line="72" />
               </first_editor>
               <second_editor />
             </state>
@@ -193,21 +193,7 @@
       <workItem from="1566782478604" duration="37000" />
       <workItem from="1567390485163" duration="35000" />
       <workItem from="1568266232947" duration="213000" />
-      <workItem from="1569237649665" duration="43000" />
-    </task>
-    <task id="LOCAL-00145" summary="update on 20190703">
-      <created>1562118586299</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1562118586299</updated>
-    </task>
-    <task id="LOCAL-00146" summary="update on 20190703">
-      <created>1562119003409</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1562119003409</updated>
+      <workItem from="1569237649665" duration="352000" />
     </task>
     <task id="LOCAL-00147" summary="update on 20190703">
       <created>1562119663971</created>
@@ -538,11 +524,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568266308975</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="update on 20190923">
+      <created>1569237698452</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1569237698452</updated>
+    </task>
+    <task id="LOCAL-00195" summary="update on 20190923">
+      <created>1569237974726</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1569237974726</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62224000" />
+    <option name="totallyTimeSpent" value="62533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1875" y="91" width="1535" height="898" extended-state="0" />
@@ -575,7 +575,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 20190707" />
     <MESSAGE value="update on 20190708" />
     <MESSAGE value="update on 20190709" />
     <MESSAGE value="update on 20190710" />
@@ -600,7 +599,8 @@
     <MESSAGE value="update on 20190826" />
     <MESSAGE value="update on 20190902" />
     <MESSAGE value="update on 20190912" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20190912" />
+    <MESSAGE value="update on 20190923" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20190923" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -701,8 +701,8 @@
     <entry file="file://$PROJECT_DIR$/07_database/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="352">
-            <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+          <first_editor relative-caret-position="269">
+            <caret line="72" selection-start-line="72" selection-end-line="72" />
           </first_editor>
           <second_editor />
         </state>
