@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="711ae6ff-05a5-4644-a7f5-7bcda5ba5efd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_database/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/07_database/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_pandas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/03_pandas/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,24 +13,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/08_pycharm/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="182">
-                <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/07_database/README.md">
+        <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="305">
-                <caret line="98" column="53" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="53" />
+              <first_editor relative-caret-position="344">
+                <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -77,16 +65,16 @@
         <option value="$PROJECT_DIR$/09_remote_ipython/README.md" />
         <option value="$PROJECT_DIR$/01_basic/README.md" />
         <option value="$PROJECT_DIR$/04_sklearn/README.md" />
-        <option value="$PROJECT_DIR$/03_pandas/README.md" />
         <option value="$PROJECT_DIR$/08_pycharm/README.md" />
         <option value="$PROJECT_DIR$/06_flask_sanic/README.md" />
         <option value="$PROJECT_DIR$/07_database/README.md" />
+        <option value="$PROJECT_DIR$/03_pandas/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1976" />
-    <option name="y" value="94" />
+    <option name="x" value="1963" />
+    <option name="y" value="70" />
     <option name="width" value="1535" />
     <option name="height" value="898" />
   </component>
@@ -98,12 +86,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_notes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_notes" type="462c0819:PsiDirectoryNode" />
+              <item name="03_pandas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_notes" type="b2602c69:ProjectViewProjectNode" />
@@ -119,7 +113,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,14 +186,9 @@
       <workItem from="1566782478604" duration="37000" />
       <workItem from="1567390485163" duration="35000" />
       <workItem from="1568266232947" duration="213000" />
-      <workItem from="1569237649665" duration="772000" />
-    </task>
-    <task id="LOCAL-00151" summary="update on 20190705">
-      <created>1562289337053</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1562289337053</updated>
+      <workItem from="1569237649665" duration="1225000" />
+      <workItem from="1569306818066" duration="28000" />
+      <workItem from="1570678159763" duration="271000" />
     </task>
     <task id="LOCAL-00152" summary="update on 20190707">
       <created>1562510205656</created>
@@ -538,17 +526,24 @@
       <option name="project" value="LOCAL" />
       <updated>1569238181694</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <task id="LOCAL-00200" summary="update on 20190923">
+      <created>1569238459561</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1569238459562</updated>
+    </task>
+    <option name="localTasksCounter" value="201" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62953000" />
+    <option name="totallyTimeSpent" value="63705000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1976" y="94" width="1535" height="898" extended-state="0" />
+    <frame x="1963" y="70" width="1535" height="898" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16409913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16811788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -655,26 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_basic/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="695">
-            <caret line="995" column="16" selection-start-line="995" selection-start-column="16" selection-end-line="995" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="524">
-            <caret line="270" selection-start-line="270" selection-end-line="270" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/06_flask_sanic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -688,11 +663,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/08_pycharm/README.md">
+    <entry file="file://$PROJECT_DIR$/02_numpy/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="182">
-            <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <first_editor relative-caret-position="334">
+            <caret line="40" column="35" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_basic/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="4178">
+            <caret line="995" column="16" selection-start-line="995" selection-start-column="16" selection-end-line="995" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
@@ -701,8 +686,28 @@
     <entry file="file://$PROJECT_DIR$/07_database/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="305">
+          <first_editor relative-caret-position="296">
             <caret line="98" column="53" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="53" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08_pycharm/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="437">
+            <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="344">
+            <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
