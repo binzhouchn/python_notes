@@ -277,4 +277,8 @@ df.loc[df.A < 4,'A'] = [100,120,140]
 df.loc[df.content_id=='x6mbO2rHfU3hTej4','sentiment_tmp'] = 1
 ```
 
-### 
+### dataframe表格填充
+
+```python
+df.fillna(method='ffill', axis=1).fillna(method='ffill')
+```
