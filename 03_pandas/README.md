@@ -283,4 +283,3 @@ df.loc[df.content_id=='x6mbO2rHfU3hTej4','sentiment_tmp'] = 1
 df.fillna(method='ffill', axis=1).fillna(method='ffill')
 ```
 
-### 
