@@ -904,6 +904,15 @@ list(chain(*input))
 # list(chain.from_iterable(input))
 ```
 
+3. 方法三
+```python
+import functools
+import operator
+#使用functools內建模块 
+def functools_reduce(a): 
+    return functools.reduce(operator.concat, a) 
+```
+
 ### 读取百度百科词向量
 
 ```python
