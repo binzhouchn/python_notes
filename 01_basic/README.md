@@ -506,6 +506,17 @@ with open('../data/medical.json','w',encoding='utf-8') as fp:
         json.dump(i,fp, ensure_ascii=False)
         fp.write('\n')
 fp.close()
+
+# 使用pickle(保存)
+data = (x_train, y_train, x_test)
+f_data = open('./data_doc2vec_25.pkl', 'wb')
+pickle.dump(data, f_data)
+f_data.close()
+# 使用pickle(读取)
+f = open('./data_doc2vec_25.pkl', 'rb')
+x_train, _, x_test = pickle.load(f)
+f.close()
+
 ```
 
 ### 保存模型

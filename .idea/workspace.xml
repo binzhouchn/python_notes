@@ -17,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2277">
+              <first_editor relative-caret-position="5282">
                 <caret line="278" selection-start-line="278" selection-end-line="278" />
               </first_editor>
               <second_editor />
@@ -29,10 +29,11 @@
         <entry file="file://$PROJECT_DIR$/01_basic/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="557">
-                <caret line="912" column="48" selection-start-line="912" selection-start-column="48" selection-end-line="912" selection-end-column="48" />
+              <first_editor relative-caret-position="568">
+                <caret line="516" column="34" lean-forward="true" selection-start-line="516" selection-start-column="34" selection-end-line="516" selection-end-column="34" />
                 <folding>
                   <element signature="e#0#16#0" expanded="true" />
+                  <element signature="e#0#30#0" expanded="true" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -59,6 +60,7 @@
       <find>re模块</find>
       <find>列表</find>
       <find>列表展开</find>
+      <find>保存数据</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,8 +94,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="1923" />
     <option name="y" value="39" />
-    <option name="width" value="1535" />
-    <option name="height" value="898" />
+    <option name="width" value="1628" />
+    <option name="height" value="951" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -103,6 +105,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,7 +132,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,14 +208,8 @@
       <workItem from="1569237649665" duration="1225000" />
       <workItem from="1569306818066" duration="28000" />
       <workItem from="1570678159763" duration="2030000" />
-      <workItem from="1571126937927" duration="98000" />
-    </task>
-    <task id="LOCAL-00158" summary="update on 20190709">
-      <created>1562653671829</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1562653671829</updated>
+      <workItem from="1571126937927" duration="121000" />
+      <workItem from="1571988442269" duration="147000" />
     </task>
     <task id="LOCAL-00159" summary="update on 20190709">
       <created>1562653718740</created>
@@ -551,17 +547,24 @@
       <option name="project" value="LOCAL" />
       <updated>1570757814660</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="update on 20191015">
+      <created>1571127040688</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1571127040688</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65562000" />
+    <option name="totallyTimeSpent" value="65732000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1923" y="39" width="1535" height="898" extended-state="0" />
+    <frame x="1923" y="39" width="1628" height="951" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17012726" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16204287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -588,7 +591,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update on 20190709" />
     <MESSAGE value="update on 20190710" />
     <MESSAGE value="update on 20190711" />
     <MESSAGE value="update on 20190712" />
@@ -613,7 +615,8 @@
     <MESSAGE value="update on 20190912" />
     <MESSAGE value="update on 20190923" />
     <MESSAGE value="update on 20191010" />
-    <option name="LAST_COMMIT_MESSAGE" value="update on 20191010" />
+    <MESSAGE value="update on 20191015" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on 20191015" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/6_flask_sanic/README.md" />
@@ -728,7 +731,7 @@
     <entry file="file://$PROJECT_DIR$/03_pandas/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2277">
+          <first_editor relative-caret-position="5282">
             <caret line="278" selection-start-line="278" selection-end-line="278" />
           </first_editor>
           <second_editor />
@@ -738,10 +741,11 @@
     <entry file="file://$PROJECT_DIR$/01_basic/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="557">
-            <caret line="912" column="48" selection-start-line="912" selection-start-column="48" selection-end-line="912" selection-end-column="48" />
+          <first_editor relative-caret-position="568">
+            <caret line="516" column="34" lean-forward="true" selection-start-line="516" selection-start-column="34" selection-end-line="516" selection-end-column="34" />
             <folding>
               <element signature="e#0#16#0" expanded="true" />
+              <element signature="e#0#30#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
