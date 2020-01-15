@@ -53,6 +53,6 @@ channel.basic_publish(exchange='', routing_key='hello', body='Hello World!')
 print(" [x] Sent 'Hello World!'")
 connection.close()
 ```
-send.py每发一次，receive.py那边会打印一次发送的body信息
+send.py每发一次，receive.py那边会打印出发送的body信息
 
 
