@@ -18,6 +18,7 @@ receive.py<br>
 ```python
 #!/usr/bin/env python
 import pika
+import json
 
 connection = pika.BlockingConnection(
     pika.ConnectionParameters(host='localhost'))
@@ -27,7 +28,8 @@ channel.queue_declare(queue='hello')
 
 
 def callback(ch, method, properties, body):
-    print(" [x] Received %r" % body)
+    vec = json.loads(body)
+    print(" [x] Received ", vec)
 
 
 channel.basic_consume(
@@ -42,6 +44,7 @@ send.py<br>
 ```python
 #!/usr/bin/env python
 import pika
+import json
 
 connection = pika.BlockingConnection(
     pika.ConnectionParameters(host='localhost'))
@@ -49,7 +52,7 @@ channel = connection.channel()
 
 channel.queue_declare(queue='hello')
 
-channel.basic_publish(exchange='', routing_key='hello', body='Hello World!')
+channel.basic_publish(exchange='', routing_key='hello', body=json.dumps([1.2,0.99,5.5]))
 print(" [x] Sent 'Hello World!'")
 connection.close()
 ```
