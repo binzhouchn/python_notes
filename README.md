@@ -2,7 +2,7 @@
 [![Analytics](https://ga-beacon.appspot.com/GA-80121379-2/notes-python)](https://github.com/binzhouchn/feature_engineering)
 
 # python笔记
-> 版本：0.0.4<br>
+> 版本：0.0.5<br>
 > 作者：binzhou<br>
 > 邮件：binzhouchn@gmail.com<br>
 
