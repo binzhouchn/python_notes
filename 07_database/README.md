@@ -216,6 +216,8 @@ res = esclient.search(index=answer_index,body={'query':{'match':{'schoolName':'�
 esclient.search(index='baidu_answer',body={'query':{'ids':{'values':'10'}}})
 ```
 
+[ES查询大于10000条数据方法](https://blog.csdn.net/xsdxs/article/details/72876703)
+
 ## 5. neo4j图数据库(docker version)
 ```
 # docker启动neo4j服务
