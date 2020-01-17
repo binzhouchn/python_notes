@@ -74,6 +74,8 @@
 
 [**37. 本地用python起http服务**](#本地用python起http服务)
 
+[**38. cache**](#cache)
+
 ---
 ```python
 %reload_ext autoreload
@@ -1007,6 +1009,33 @@ print(test(3, 4))
 ```shell
 python -m http.server 7777
 ```
+
+### cache
+
+[好用的cache包](https://github.com/tkem/cachetools)<br>
+```python
+from cachetools import cached, LRUCache, TTLCache
+
+# speed up calculating Fibonacci numbers with dynamic programming
+@cached(cache={})
+def fib(n):
+    return n if n < 2 else fib(n - 1) + fib(n - 2)
+
+# cache least recently used Python Enhancement Proposals
+@cached(cache=LRUCache(maxsize=32))
+def get_pep(num):
+    url = 'http://www.python.org/dev/peps/pep-%04d/' % num
+    with urllib.request.urlopen(url) as s:
+        return s.read()
+
+# cache weather data for no longer than ten minutes
+@cached(cache=TTLCache(maxsize=1024, ttl=600))
+def get_weather(place):
+    return owm.weather_at_place(place).get_weather()
+```
+加在函数之前，主要cache输入和返回的值，下次输入同样的值就会1ms内返回，可以设置cache策略和数据过期时间ttl
+
+
 
 ### 
 working on bert
