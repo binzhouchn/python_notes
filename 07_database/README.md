@@ -209,11 +209,14 @@ esclient.update(index=answer_index, id=7, doc_type=answer_type, body={'doc': new
 # 查询
 ### 根据id查找数据
 res = esclient.get(index=answer_index, doc_type=answer_type, id=7)
+### 根据id列表查找数据
+body = {'ids': id_lst} # id_lst=[3,6,120,9]
+res = esclient.mget(index=index, doc_type=doc_type, body=body)
 ### match：在schoolName中包含关键词的都会被搜索出来（这里的分词工具是ik）
 # res = esclient.search(index=answer_index,body={'query':{'match':{'schoolName':'春晖外'}}})
 res = esclient.search(index=answer_index,body={'query':{'match':{'schoolName':'春晖学校'}}})
-### ids：根据id值
-esclient.search(index='baidu_answer',body={'query':{'ids':{'values':'10'}}})
+### 根据restful api进行查询
+# [GET] http://localhost:9200/knowledge_qv/question_vec/20
 ```
 
 [ES查询大于10000条数据方法](https://blog.csdn.net/xsdxs/article/details/72876703)
