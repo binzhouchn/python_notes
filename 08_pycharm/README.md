@@ -26,8 +26,9 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
 最后友情提示，在GitHub上免费托管的Git仓库，任何人都可以看到喔（但只有你自己才能改）。所以，不要把敏感信息放进去。
 
 **第3步：** 如果想在pycharm中使用git可以先配置pycharm（以windows为例的话）<br>
-![pic1](pic/pycharm_git1.png)<br>
-![pic2](pic/pycharm_git2.png)<br>
+
+<img src="pic/pycharm_git1.png" width="640">
+<img src="pic/pycharm_git1.png" width="640">
 
 # 2. pycharm远程服务器生成项目及调试代码
 
@@ -36,11 +37,12 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
 3. Tools -> Deployment -> Configuration点击左上角的加号（取名字v2并选SFTP）
 4. Configuration中配置Connection和Mappings如下图所示
 
-![pycharm_remote1.png](pic/pycharm_remote1.png)<br>
-![pycharm_remote2.png](pic/pycharm_remote2.png)<br>
-![pycharm_remote3.png](pic/pycharm_remote3.png)<br>
-![pycharm_remote4.png](pic/pycharm_remote4.png)<br>
-![pycharm_remote5.png](pic/pycharm_remote5.png)<br>
+<img src="pic/pycharm_remote1.png" width="640">
+<img src="pic/pycharm_remote2.png" width="640">
+<img src="pic/pycharm_remote3.png" width="640">
+<img src="pic/pycharm_remote4.png" width="640">
+<img src="pic/pycharm_remote5.png" width="640">
+
 
 # 3. pycharm中遇到的一些问题
 
@@ -55,7 +57,7 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
  - 修改完成后，重启Pycharm，点击菜单栏中的 “Help” -> “Register”，输入激活码完成完成激活，这里的激活码与方法一种激活码不同
  - 查看有效期的步骤：点击：Help->About，这里可以看到你的pycharm有效期到2089年了，是不是soeasy
 
-<img src="pic/pycharm_activ.png" width="500">
+<img src="pic/pycharm_activ.png" width="640">
 
 # 5. xxx
 
