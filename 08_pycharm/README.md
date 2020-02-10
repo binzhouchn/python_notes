@@ -59,7 +59,4 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
 
 <img src="pic/pycharm_activ.png" width="640">
 
-# 5. xxx
-
-
- 
+# 5. xxx 
