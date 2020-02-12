@@ -55,7 +55,7 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
  - 在菜单栏Help中选择Edit Custom VM Options…       在弹框中选择Create
  - 在最后一行添加：-javaagent:/Applications/PyCharm.app/Contents/bin/jetbrains-agent.jar
  - 修改完成后，重启Pycharm，点击菜单栏中的 “Help” -> “Register”，输入永久激活码完成完成激活，这里的激活码与方法一种激活码不同
- - 查看有效期的步骤：点击：Help->About，这里可以看到你的pycharm有效期到2089年了，是不是soeasy
+ - 查看有效期的步骤：点击：Help->About，这里可以看到你的pycharm有效期到2089年了，cheers bro!
 
 <img src="pic/pycharm_activ.png" width="640">
 
