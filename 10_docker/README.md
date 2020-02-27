@@ -150,6 +150,11 @@ pandas sklearn jieba gensim tqdm flask requests PyMySQL redis pyahocorasick
 pymongo pyspark py2neo neo4j-driver==$PYTHON_DRIVER_VERSION
 ```
 
+2.13 拷贝本地文件到docker中
+```shell
+docker cp test.txt <container id>:/home
+```
+
 ## 3. docker镜像使用
 
 3.1 docker跑一个helloworld
