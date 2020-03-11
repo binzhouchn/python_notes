@@ -34,7 +34,7 @@ Environment="HTTPS_PROXY=https://proxy.example.com:443/" "NO_PROXY=localhost,127
 # 重新读取服务的配置文件
 systemctl daemon-reload
 # 重启Docker
-systemctl restart docker
+systemctl restart docker #或者sudo service docker restart
 # 验证是否已加载配置
 systemctl show --property=Environment docker
 ```
