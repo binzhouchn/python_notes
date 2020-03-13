@@ -83,10 +83,10 @@ docker exec -it <container_id> /bin/bash
 # 进去修改完后
 docker start <container_id>
 #------------------------------------------
-docker pull python:3.5
-docker run -t -i python:3.5 /bin/bash
+docker pull python:3.6
+docker run -it python:3.6 /bin/bash
 # 接下去进行一些pip install一些包等操作
-docker commit -m="has update" -a="binzhou" <container_id> binzhouchn/python35:v2
+docker commit -m="has update" -a="binzhouchn" <container_id> binzhouchn/python36:1.3
 ```
 
 2.5 docker保存和读取image（存成tar文件）
