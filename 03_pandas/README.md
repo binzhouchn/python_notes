@@ -142,6 +142,12 @@ spark_df['longitude'],spark_df['latitude'],(explode(split('address',','))).alias
 df.explode('col_b') #得到如下表
 ```
 
+||col_a|col_b
+|--|--|--
+|0|10|111
+|0|10|222
+|1|11|333
+|1|11|444
 
 
 ### sort用法
