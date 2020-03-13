@@ -111,7 +111,7 @@ data2.groupby('EID').agg({'month':'nunique'}).reset_index().rename(columns={'mon
 
 ### explode用法
 
-比如有个dataframe的结构如下
+**1. 比如有个dataframe的结构如下**
 
 ||city|community|longitude|latitude|address
 |--|--|--|--|--|--
@@ -130,6 +130,17 @@ spark_df['longitude'],spark_df['latitude'],(explode(split('address',','))).alias
 |1|上海|东方庭院|121.044|31.1332|复兴路88弄|
 |2|上海|东方庭院|121.044|31.1332|珠安路77弄|
 |3|上海|东方庭院|121.044|31.1332|浦祥路377弄|
+
+**2. pandas0.25版本以上有explode的函数**<br>
+||col_a|col_b
+|--|--
+|10|[111, 222]
+|11|[333, 444]
+```python
+df.explode('col_b')
+```
+
+
 
 ### sort用法
 
