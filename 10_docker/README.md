@@ -157,7 +157,8 @@ docker cp test.txt <container id>:/home
 
 2.14 根据镜像名定位到已经开启python:3.6镜像容器的id
 ```shell
-docker ps -a| grep python:3.6 | awk '{print $1}'
+docker ps -a| grep python:3.6 | awk '{print $1}' #方法一
+docker ps -aq --filter ancestor=python:3.6 #方法二
 # 停止和删除该容器操作
 docker stop `docker ps -a| grep python:3.6 | awk '{print $1}'`
 docker rm `docker ps -a| grep python:3.6 | awk '{print $1}'`
