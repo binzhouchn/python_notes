@@ -149,6 +149,25 @@ df.explode('col_b') #得到如下表
 |1|11|333
 |1|11|444
 
+**3. 一列json的数据变多列**<br>
+```python
+df = pd.DataFrame([[10,'0000003723','{"aa":"001","bb":"002","channel":"c1"}'],\
+                   [14,'0000003723','{"aa":"001","bb":"002","xxx":"c1"}'],\
+                   [11,'0092837434','{"aa":"003","bb":"004","cc":"010","channelDetails":{"channel":"c2"}}']],columns=['_idx','userno','detail'])
+# 分两步走
+# 第一步，单独处理json列
+def ff(row):
+    row = json.loads(row)
+    if not ('channel' in row or 'channelDetails' in row):
+        return []
+    res = [row['aa'],row['bb'],row['channel']] if 'channel' in row else [row['aa'],row['bb'],row['channelDetails']['channel']]
+    return res
+df['new_col'] = df.detail.apply(ff)
+# 第二步,，拼接
+df = df[df.new_col.map(lambda x : x!=[])].drop('detail',axis=1).reset_index(drop=True)
+df = pd.concat([df[['_idx','userno']], pd.DataFrame(df.new_col.tolist(),columns=['a','b','c'])],axis=1)
+```
+
 
 ### sort用法
 
