@@ -134,7 +134,7 @@ spark_df['longitude'],spark_df['latitude'],(explode(split('address',','))).alias
 **2. pandas0.25版本以上有explode的函数**<br>
 
 |col_a|col_b
-||--|--
+|--|--|--
 |0|10|[111, 222]
 |1|11|[333, 444]
 
