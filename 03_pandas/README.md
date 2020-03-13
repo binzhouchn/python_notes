@@ -132,10 +132,12 @@ spark_df['longitude'],spark_df['latitude'],(explode(split('address',','))).alias
 |3|上海|东方庭院|121.044|31.1332|浦祥路377弄|
 
 **2. pandas0.25版本以上有explode的函数**<br>
+
 ||col_a|col_b
 |--|--
 |10|[111, 222]
 |11|[333, 444]
+
 ```python
 df.explode('col_b')
 ```
