@@ -84,7 +84,8 @@ docker exec -it <container_id> /bin/bash
 docker start <container_id>
 #------------------------------------------
 docker pull python:3.6
-docker run -it python:3.6 /bin/bash
+docker run -it python:3.6 /bin/bash #启动镜像并进入到shell页面
+docker run -dit python:3.6 /bin/bash #如果只是想启动并后台运行
 # 接下去进行一些pip install一些包等操作
 docker commit -m="has update" -a="binzhouchn" <container_id> binzhouchn/python36:1.3
 ```
