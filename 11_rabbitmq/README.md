@@ -1,12 +1,13 @@
-# 消息队列
+## 消息队列
 
  - [1. 简单使用步骤](#简单使用步骤)
- - [xxx](#xx)
+ - [xxx](#xxx)
 
 
 [rabbitmq tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)<br>
 
-简单使用步骤<br>
+### 简单使用步骤
+
 1. [安装RabbitMQ Server](https://www.rabbitmq.com/download.html)<br>
 用docker安装即可
 
@@ -62,5 +63,4 @@ connection.close()
 ```
 send.py每发一次，receive.py那边会打印出发送的body信息
 
-
-
+### xxx
