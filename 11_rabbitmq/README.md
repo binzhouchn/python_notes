@@ -69,3 +69,39 @@ send.py每发一次，receive.py那边会打印出发送的body信息
 
 
 ### rabbitmq实现一台服务器同时给所有的消费者发送消息
+
+开了docker版的rabbitmq服务以后，在多台机器上先运行消费者server.py<br>
+```python
+#!/usr/bin/env python
+import pika
+
+connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+channel = connection.channel()
+#创建exchange的名称为logs，指定类型为fanout
+channel.exchange_declare(exchange='logs', exchange_type='fanout')
+#删除随机创建的消息队列
+queue_name = 'task_queue1' #每台机器上的名字最好不一样
+result = channel.queue_declare(queue=queue_name)
+channel.queue_bind(exchange='logs', queue=queue_name)
+print(' [*] Waiting for logs. To exit press CTRL+C')
+def callback(ch, method, properties, body):
+    print(" [x] %r" % body)
+channel.basic_consume(queue_name, callback)
+channel.start_consuming()
+```
+
+然后再用生产者client.py发送给消费者，这个时候这些消费者会同时接收到该消息<br>
+```python
+import pika
+import sys
+connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+channel = connection.channel()
+channel.exchange_declare(exchange='logs',exchange_type='fanout')
+message = ' '.join(sys.argv[1:]) or "info: Hello World!"
+#指定exchange的名称
+channel.basic_publish(exchange='logs', routing_key='', body=message)
+print(" [x] Sent %r" % message)
+connection.close()
+```
+
+### xxx
