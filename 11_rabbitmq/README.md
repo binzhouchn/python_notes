@@ -104,4 +104,6 @@ print(" [x] Sent %r" % message)
 connection.close()
 ```
 
+注：host都要写同一个服务器, rabbitmq服务开启的那台机器ip
+
 ### xxx
