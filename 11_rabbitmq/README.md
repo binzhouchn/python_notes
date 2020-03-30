@@ -1,8 +1,12 @@
 # 消息队列
 
+ - [1. 简单使用步骤](#简单使用步骤)
+ - [xxx](#xx)
+
+
 [rabbitmq tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)<br>
 
-**简单使用步骤：**<br>
+简单使用步骤<br>
 1. [安装RabbitMQ Server](https://www.rabbitmq.com/download.html)<br>
 用docker安装即可
 
@@ -12,7 +16,7 @@ docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-manag
 # port 5672
 ```
 
-3. 生产者和消费者代码(hello_world demo)<br>
+3. 生产者和消费者代码(hello_world basic demo)<br>
 
 receive.py<br>
 ```python
@@ -57,5 +61,6 @@ print(" [x] Sent 'Hello World!'")
 connection.close()
 ```
 send.py每发一次，receive.py那边会打印出发送的body信息
+
 
 
