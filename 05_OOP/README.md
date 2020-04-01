@@ -1,24 +1,47 @@
 ## 目录
 
-[**1. super函数使用基础**](#super函数使用基础)
+[**1. 继承**](#继承)
 
-[**2. super函数使用 以LR为例**](#super函数使用_以lr为例)
+[**2. super函数使用基础**](#super函数使用基础)
 
-[**3. 装饰器@**](#装饰器)
+[**3. super函数使用 以LR为例**](#super函数使用_以lr为例)
 
-[**4. 装饰器@property**](#装饰器property)
+[**4. 装饰器@**](#装饰器)
 
-[**5. python单例模式**](#单例模式)
+[**5. 装饰器@property**](#装饰器property)
 
-[**6. python deprecated warning**](#deprecationwarning)
+[**6. python单例模式**](#单例模式)
 
-[**7. 定制类**](#定制类)
+[**7. python deprecated warning**](#deprecationwarning)
 
-[**8. 网络编程**](#网络编程)
+[**8. 定制类**](#定制类)
+
+[**9. 网络编程**](#网络编程)
 
 [**各种模式待补充 看设计之禅(第2版)**](#设计模式)
 
 ---
+### 继承
+
+```python
+class FooParent(object):
+    def __init__(self):
+        self.parent = 'I\'m the parent.'
+        print ('Parent')
+    
+    def bar(self, message):
+        print ("{} from Parent".format(message))
+ 
+class FooChild(FooParent):
+    def __init__(self):
+        super(FooChild,self).__init__()    
+        print ('Child')
+        
+    def bar(self, message):
+        super(FooChild, self).bar(message)
+        print ('Child bar function')
+        print (self.parent)
+```
 
 ### super函数使用基础
 
@@ -121,7 +144,9 @@ BB(1,2,3).a, BB(1,2,3).b, BB(1,2,3).c
 　　5. 混用super类和非绑定的函数是一个危险行为，这可能导致应该调用的父类函数没有调用或者一
        个父类函数被调用多次。
 ```
+
 ### super函数使用_以LR为例
+
 ```python
 from sklearn.linear_model import LogisticRegression
 
@@ -289,6 +314,7 @@ print(a.age)
 ```
 
 ### 单例模式
+
 ```python
 # 使用__new__方法
 #写法一
