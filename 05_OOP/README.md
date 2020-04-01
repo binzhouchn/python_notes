@@ -10,13 +10,13 @@
 
 [**5. python单例模式**](#单例模式)
 
-[**各种模式待补充**]()
+[**6. python deprecated warning**](#deprecationwarning)
 
-[**7. python deprecated warning**](#deprecationwarning)
+[**7. 定制类**](#定制类)
 
-[**8. 定制类**](#定制类)
+[**8. 网络编程**](#网络编程)
 
-[**9. 网络编程**](#网络编程)
+[**各种模式待补充 看设计之禅(第2版)**](#设计模式)
 
 ---
 
