@@ -195,11 +195,17 @@ return n
 删除所有的节点和关系
 match(n) match(n)-[r]-() delete n,r
 
-删除相关的节点及和这些节点相连的边
+删除相关的节点及和这些节点相连的边（一阶）
 match(cc:Customer)
 *detach* delete cc
 或者
 match(cc:Customer) match(cc)-[r]-() delete cc,r
+
+删除产品及上下游相连关系和节点，（递归），除3款产品外
+match r=(n:Product)-[*]->() where not n.raw_name in ["xx1","xx2","xx3"]  detach delete r
+
+删除孤立节点
+match (n) where not (n)–-() delete n
 
 ### 移除
 可以移除节点的属性
@@ -217,7 +223,10 @@ create(:Person{cd:'1223',xx:'er'})
 create(:Person{cd:'92223',xx:'iir'})
 create(:Person{cd:'6783',xx:'rrrr'})
 create(:Person{cd:'555903',xx:'ppppppppppr'})
+```
+
 **--test.csv:** (注:导入csv的时候会把所有的转成string格式)
+
 |col_one|col_two|col_three
 |--|--|--
 |555903|"桂勇"|"良"
@@ -230,6 +239,7 @@ match(n:Person) where n.cd = df.col_one
 set n.nm = df.col_two
 set n.credit = df.col_three
 
+```
 ### 排序
 match(n:Customer)
 return n.name, n.id, n.dob
