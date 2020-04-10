@@ -147,12 +147,14 @@ create (a)-[:sssssssssss]->(b)
 |Lily|丽丽|34|女
 |John|约翰|56|男
 |Mark|马克|99|男
+
 **phone.csv**
 |phone|id_p|
 |--|--
 |1223|0
 |3432|1
 |9011|2
+
 **关系.csv**
 |name|phone
 |--|--
@@ -160,11 +162,13 @@ create (a)-[:sssssssssss]->(b)
 |Lily|3432
 |John|9011
 |Mark|3432
+
+```
 cypher关系语句：
 load csv with headers from "file:///test.csv" as df
 match(a:Shop{name:df.name}),(b:Phone{phone:df.phone})
 create (a)-[:Call{phone_id:df.id_p}]->(b)
-
+```
 *注：neo4j中不能创建双向或者无向的关系，只能单向*
 
 ```
