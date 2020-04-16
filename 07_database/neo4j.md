@@ -22,7 +22,7 @@ from neo4j.v1 import GraphDatabase, basic_auth
 # py2neo操作
 test_graph = Graph(
     #"http://localhost:7474",
-    "bolt://localhost:7687"
+    "bolt://localhost:7687",
     username="neo4j",
     password="z123456789"
 )
