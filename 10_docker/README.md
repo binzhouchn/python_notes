@@ -151,9 +151,12 @@ pandas sklearn jieba gensim tqdm flask requests PyMySQL redis pyahocorasick
 pymongo pyspark py2neo neo4j-driver==$PYTHON_DRIVER_VERSION
 ```
 
-2.13 拷贝本地文件到docker中
+2.13 拷贝宿主机本地文件到docker中，和从docker中拷贝到宿主机
 ```shell
+#1
 docker cp test.txt <container id>:/home
+#2
+docker cp <container id>:/home/xx.txt /opt
 ```
 
 2.14 根据镜像名定位到已经开启python:3.6镜像容器的id
@@ -164,6 +167,8 @@ docker ps -aq --filter ancestor=python:3.6 #方法二
 docker stop `docker ps -a| grep python:3.6 | awk '{print $1}'`
 docker rm `docker ps -a| grep python:3.6 | awk '{print $1}'`
 ```
+
+2.15 
 
 ## 3. docker镜像使用
 
