@@ -76,6 +76,8 @@
 
 [**38. cache**](#cache)
 
+[**39. 创建文件**](#创建文件)
+
 ---
 ```python
 %reload_ext autoreload
@@ -1037,6 +1039,13 @@ def get_weather(place):
 ```
 加在函数之前，主要cache输入和返回的值，下次输入同样的值就会1ms内返回，可以设置cache策略和数据过期时间ttl
 
+### 创建文件
+
+如果文件不存在则创建
+```python
+from pathlib import Path
+Path(OUT_DIR).mkdir(exist_ok=True)
+```
 
 
 ### 
