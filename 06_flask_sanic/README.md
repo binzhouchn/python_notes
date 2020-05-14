@@ -120,6 +120,18 @@ if __name__ == '__main__':
 port='5000')
 ```
 
+## 解决flask跨域问题
+
+```python
+# pip install flask-cors
+from flask_cors import CORS
+app = Flask(__name__,)
+# r'/*' 是通配符，让本服务器所有的URL 都允许跨域请求
+CORS(app, resources=r'/*')
+```
+
+---
+
 # sanic 
 ```python
 # sanic get和post方法
