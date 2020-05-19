@@ -139,9 +139,10 @@ docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -aq)
 docker image inspect --format='{{.RepoTags}} {{.Id}} {{.Parent}}' $(docker image ls -q --filter since=<image_id>)
 ```
 
-2.11 批量删除停止容器
+2.11 批量停止并容器
 ```shell
-docker rm $(sudo docker ps -a -q)
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 ```
 
 2.12 docker修改完镜像生成新的镜像以后貌似没看法删除旧的镜像
@@ -163,7 +164,7 @@ docker cp <container id>:/home/xx.txt /opt
 ```shell
 docker ps -a| grep python:3.6 | awk '{print $1}' #方法一
 docker ps -aq --filter ancestor=python:3.6 #方法二
-# 停止和删除该容器操作
+# 根据镜像名停止和删除容器
 docker stop `docker ps -a| grep python:3.6 | awk '{print $1}'`
 docker rm `docker ps -a| grep python:3.6 | awk '{print $1}'`
 ```
