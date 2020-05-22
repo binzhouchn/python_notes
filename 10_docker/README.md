@@ -175,7 +175,7 @@ docker rm `docker ps -a| grep python:3.6 | awk '{print $1}'`
 
 3.1 docker跑一个helloworld
 ```shell
-docker run  -v $PWD/myapp:/usr/src/myapp  -w /usr/src/myapp python:3.5 python helloworld.py
+docker run -v $PWD/myapp:/usr/src/myapp  -w /usr/src/myapp python:3.5 python helloworld.py
 # 本地需要建一个myapp文件夹，把helloworld.py文件放文件夹中，然后返回上一级cd ..
 命令说明：
 -v $PWD/myapp:/usr/src/myapp :将主机中当前目录下的myapp挂载到容器的/usr/src/myapp
