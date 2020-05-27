@@ -59,4 +59,6 @@ macOS存放密匙路径:  /Users/binzhou/.ssh/id_rs<br>
 
 <img src="pic/pycharm_activ.png" width="640">
 
+intellij idea也是同理激活，最后“Help” -> “Register”，license server激活方式输入https://fls.jet...
+
 # 5. xxx
