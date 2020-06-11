@@ -78,6 +78,8 @@
 
 [**39. 创建文件**](#创建文件)
 
+[**40. 字典转成对象（骚操作）**](#字典转成对象)
+
 ---
 ```python
 %reload_ext autoreload
@@ -1046,6 +1048,25 @@ def get_weather(place):
 from pathlib import Path
 Path(OUT_DIR).mkdir(exist_ok=True)
 ```
+
+### 字典转成对象
+
+```python
+class MyDict(dict):
+    __setattr__ = dict.__setitem__
+    __getattr__ = dict.__getitem__
+
+
+def dict_to_object(_d):
+    if not isinstance(_d, dict):
+        return _d
+    inst = MyDict()
+    for k, v in _d.items():
+        inst[k] = dict_to_object(v)  # 解决嵌套字典问题
+    return inst
+```
+
+
 
 
 ### 
