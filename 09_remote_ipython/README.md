@@ -138,6 +138,21 @@ jupyter contrib nbextension install --user --skip-running-check
 ```
 注意配置的时候要确保没有打开Jupyter Notebook
 
+# The installation of the Java Jupyter Kernel
+
+要求jdk11及以上，maven3.6.3及以上<br>
+```shell
+java --list-modules | grep "jdk.jshell"
+
+> jdk.jshell@12.0.1
+```
+```shell
+git clone https://github.com/frankfliu/IJava.git
+cd IJava/
+./gradlew installKernel
+```
+然后启动jupyter notebook即可，选java kernel的notebook
+
 # jupyter_notebook启动错误总结
 
 [Jupyter Notebook "signal only works in main thread"](https://blog.csdn.net/loovelj/article/details/82184223)<br>
