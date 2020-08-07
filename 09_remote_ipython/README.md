@@ -153,6 +153,13 @@ cd IJava/
 ```
 然后启动jupyter notebook即可，选java kernel的notebook
 
+### Run docker image
+
+```shell
+cd jupyter
+docker run -itd -p 127.0.0.1:8888:8888 -v $PWD:/home/jupyter deepjavalibrary/jupyter
+```
+
 # jupyter_notebook启动错误总结
 
 [Jupyter Notebook "signal only works in main thread"](https://blog.csdn.net/loovelj/article/details/82184223)<br>

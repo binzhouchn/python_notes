@@ -28,7 +28,7 @@
 
 [**14. global用法**](#global)
 
-[**15. 多进程之Process, Pool用法**](#pool)
+[**15. 多进程与多线程实现**](#多进程与多线程实现)
 
 [**16. CV的多进程实现**](#cv的多进程实现)
 
@@ -398,81 +398,51 @@ print(a)
 ```
 运行完f1()后，a还是None；运行完f2()后，a变成了10。一般规范global变量用大写
 
-### pool
+### 多进程与多线程实现
 
 ```python
-# Process用法（我用的比较多）
-from multiprocessing import Manager, Process
-
-mg = Manager()
-mg_list = mg.list()
-p_proc = []
-
-def ff(x,mg_list):
-    print('function f')
-    mg_list.append(x**3)
-    #return mg_list # 可以不加
-
-print('main line')
-for i in [1,2,3]:
-    p = Process(target=ff, args=(i,mg_list,))
-    p.start()
-    p_proc.append(p)
-[p.join() for p in p_proc]
-```
-
-```python
-# Pool用法
+# 多进程实现举例
 from multiprocessing import Pool
+import os
 import time
 
-def task(msg):
-    print ('hello, %s' % msg)
+def long_time_task(a, b):
+    print('Run task %s (%s)...' % (a, os.getpid()))
+    start = time.time()
     time.sleep(1)
+    end = time.time()
+    print('Task %s runs %0.2f seconds.' % (a, (end - start)))
+    return str(a) + '__pool__' + str(b)
+
 
 if __name__ == '__main__':
-    pool = Pool(processes=4)
 
-    for x in range(10):
-        pool.apply_async(task, args=(x,))
-
-    pool.close()
-    pool.join() # 加入主进程中，不然processes done会提前打印
-
-    print('processes done.')
+    print('Parent process %s.' % os.getpid())
+    p = Pool(10)
+    res = []
+    for i in range(10):
+        res.append(p.apply_async(long_time_task, args=(i, i+1)))
+    print('Waiting for all subprocesses done...')
+    p.close()
+    p.join()
+    print('All subprocesses done.')
+    # 拿到子进程返回的结果
+    for i in res:
+        print('xxx', i.get())
 ```
-结果是，四个四个差不多同时打印，因为设置了四个进程，四个进程之间的打印顺序是乱的
 ```python
-hello, 1
-hello, 3
-hello, 0
-hello, 2
-hello, 5
-hello, 4
-hello, 6
-hello, 7
-hello, 8
-hello, 9
-processes done.
-CPU times: user 32.5 ms, sys: 49.9 ms, total: 82.4 ms
-Wall time: 3.13 s
-```
-不加进程，单进程结果如下
-```python
-for x in range(10):
-    task(x)
-hello, 0
-hello, 1
-hello, 2
-hello, 3
-hello, 4
-hello, 5
-hello, 6
-hello, 7
-hello, 8
-hello, 9
-CPU times: user 45.5 ms, sys: 16.7 ms, total: 62.1 ms
-Wall time: 10 s
+# 多线程实现举例
+def func1(p1, p2, p3):
+    pass
+def func2(p1, p2):
+    pass
+from concurrent.futures import ThreadPoolExecutor, wait
+executor = ThreadPoolExecutor(max_workers=4)
+tasks = []
+tasks.append(executor.submit(func1, param1, param2, param3))
+tasks.append(executor.submit(func2, param1, param2))
+wait(tasks, return_when='ALL_COMPLETED')
+res1, res2 = (x.result() for x in tasks)
 ```
 
 ### cv的多进程实现
