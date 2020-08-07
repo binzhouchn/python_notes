@@ -418,7 +418,7 @@ def long_time_task(a, b):
 if __name__ == '__main__':
 
     print('Parent process %s.' % os.getpid())
-    p = Pool(10)
+    p = Pool(4)
     res = []
     for i in range(10):
         res.append(p.apply_async(long_time_task, args=(i, i+1)))
