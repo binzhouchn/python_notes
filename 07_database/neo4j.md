@@ -204,11 +204,16 @@ match(cc:Customer) match(cc)-[r]-() delete cc,r
 删除产品及上下游相连关系和节点，（递归），除3款产品外
 match r=(n:Product)-[*]->() where not n.raw_name in ["xx1","xx2","xx3"]  detach delete r
 
-删除孤立节点
+删除所有孤立节点
 match (n) where not (n)–-() delete n
 
 删除一阶孤立节点，比如保险责任->保险子责任(保险责任上游还有带产品的不删)
 match (n)-[r]-(m) where n.raw_name='保险责任' and not (n)–[]-(:Product) detach delete n,r,m;
+
+删除条款示例(需要执行三句话)
+match(n) where id(n)={id} detach delete n
+match (n)-[r]-(m) where n.raw_name='保险责任' and not (n)–[]-(:Product) detach delete n,r,m
+match (n) where not (n)–-() delete n
 
 ### 移除
 可以移除节点的属性
