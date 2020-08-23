@@ -37,4 +37,14 @@ localhost:5002页面显示BINZHOU TEST 2<br>
 负载均衡通过轮询方式 <br>
 172.17.0.5:5003这个端口并没有开启，会自动忽略 <br>
 
+4. 配置完后重启ngix
+
+```shell
+# 先进到ngix docker里面/etc/nginx/config.d中运行nginx -t看下是否success
+docker stop <container id>
+docker start <container id>
+```
+
+配置完nginx以及重启后，再访问<br>
+localhost:4030页面会显示BINZHOU TEST 1；再刷新(重载)会显示BINZHOU TEST 2；再刷新BINZHOU TEST 1
 
