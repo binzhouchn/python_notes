@@ -48,3 +48,4 @@ docker start <container id>
 配置完nginx以及重启后，再访问<br>
 localhost:4030页面会显示BINZHOU TEST 1；再刷新(重载)会显示BINZHOU TEST 2；再刷新BINZHOU TEST 1
 
+**说明nginx已经自动转到两个服务器去了**<br>
