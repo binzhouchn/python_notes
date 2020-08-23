@@ -22,7 +22,7 @@ docker run -d -p 5001:5001 -v $PWD/flask_nginx_test:/usr/src/flask_nginx_test  -
 docker run -d -p 5002:5002 -v $PWD/flask_nginx_test:/usr/src/flask_nginx_test  -w /usr/src/flask_nginx_test binzhouchn/python36:1.4 python test2.py
 ```
 
-开启以后单独访问<br>
+nginx配置前，开启以后单独访问<br>
 localhost:4030会进入nginx欢迎界面<br>
 localhost:5001页面显示BINZHOU TEST 1<br>
 localhost:5002页面显示BINZHOU TEST 2<br>
@@ -31,4 +31,10 @@ localhost:5002页面显示BINZHOU TEST 2<br>
 
 文件在/etc/nginx/nginx.conf，由于这个文件include /etc/nginx/conf.d/*.conf;所以直接到/etc/nginx/conf.d/下面更改default.conf即可<br>
 [更改后的default.conf](default.conf)
+
+注：
+这里172.17.0.3这些是docker虚拟ip地址，docker之间通信可以通过这个地址 <br>
+负载均衡通过轮询方式 <br>
+172.17.0.5:5003这个端口并没有开启，会自动忽略 <br>
+
 
