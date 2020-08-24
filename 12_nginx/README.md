@@ -49,3 +49,14 @@ docker start <container id>
 localhost:4030页面会显示BINZHOU TEST 1；再刷新(重载)会显示BINZHOU TEST 2；再刷新BINZHOU TEST 1
 
 **说明nginx已经自动转到两个服务器去了**<br>
+
+5. 配置文件扩展
+
+5.1 一台nginx服务器，通过指定不同端口(比如4030和4031)来达到访问不同应用的目的<br>
+```shell
+# docker开启nginx命令如下
+docker run --name=nginx -d -p 4030:4030 -p 4031:4031 nginx
+```
+[配置文件1](default1.conf)
+
+5.1 一台nginx服务器，
