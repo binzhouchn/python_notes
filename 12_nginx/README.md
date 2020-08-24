@@ -6,13 +6,13 @@
 
 ### nginx使用
 
-1. 第一步用安装docker nginx
+**1. 第一步用安装docker nginx**
 
 ```shell
 docker pull nginx:latest
 ```
 
-2. 开启nginx和两个flask服务(用来模拟多个服务器的)
+**2. 开启nginx和两个flask服务(用来模拟多个服务器的)**
 
 ```shell
 # 开启nginx
@@ -27,7 +27,7 @@ localhost:4030会进入nginx欢迎界面<br>
 localhost:5001页面显示BINZHOU TEST 1<br>
 localhost:5002页面显示BINZHOU TEST 2<br>
 
-3. 配置nginx配置文件
+**3. 配置nginx配置文件**
 
 文件在/etc/nginx/nginx.conf，由于这个文件include /etc/nginx/conf.d/*.conf;所以直接到/etc/nginx/conf.d/下面更改default.conf即可<br>
 [更改后的default.conf](default.conf)
@@ -37,7 +37,7 @@ localhost:5002页面显示BINZHOU TEST 2<br>
 负载均衡通过轮询方式 <br>
 172.17.0.5:5003这个端口并没有开启，会自动忽略 <br>
 
-4. 配置完后重启ngix
+**4. 配置完后重启ngix**
 
 ```shell
 # 先进到ngix docker里面/etc/nginx/config.d中运行nginx -t看下是否success
@@ -50,7 +50,7 @@ localhost:4030页面会显示BINZHOU TEST 1；再刷新(重载)会显示BINZHOU 
 
 **说明nginx已经自动转到两个服务器去了**<br>
 
-5. 配置文件扩展
+**5. 配置文件扩展**
 
 5.1 一台nginx服务器，通过指定不同端口(比如4030和4031)来达到访问不同应用的目的<br>
 ```shell
