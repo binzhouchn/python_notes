@@ -54,9 +54,21 @@ localhost:4030页面会显示BINZHOU TEST 1；再刷新(重载)会显示BINZHOU 
 
 5.1 一台nginx服务器，通过指定不同端口(比如4030和4031)来达到访问不同应用的目的<br>
 ```shell
-# docker开启nginx命令如下
+# docker开启nginx命令如下，映射两个端口
 docker run --name=nginx -d -p 4030:4030 -p 4031:4031 nginx
 ```
 [配置文件1](default1.conf)
 
-5.1 一台nginx服务器，
+5.2 一台nginx服务器，通过不同的路由(比如/guoge/)来达到访问不同应用的目的<br
+```shell
+# docker开启nginx命令如下，只映射一个端口
+docker run --name=nginx -d -p 4030:4030 nginx
+```
+```python
+# flask部分文件如下
+# 创建路由2
+@app.route('/guoge/')
+def custom():
+    return str(3 + 2)
+```
+[配置文件2](default2.conf)
