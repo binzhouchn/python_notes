@@ -1,5 +1,6 @@
 ## nginx
 
+[Nginx作为http服务器-静态页面的访问](https://www.cnblogs.com/xuyang94/p/12667844.html)<br>
 [docker nginx反向代理](https://www.cnblogs.com/dotnet261010/p/12596185.html)<br>
 [nginx负载均衡参考1](https://www.jianshu.com/p/4c250c1cd6cd)<br>
 [nginx负载均衡参考2](https://www.cnblogs.com/diantong/p/11208508.html)<br>
