@@ -68,7 +68,7 @@ docker run --name=nginx -d -p 4030:4030 nginx
 ```python
 # flask部分文件如下
 # 创建路由2
-@app.route('/guoge/')
+@app.route('/project/guoge')
 def custom():
     return str(3 + 2)
 ```
