@@ -60,7 +60,7 @@ docker run --name=nginx -d -p 4030:4030 -p 4031:4031 nginx
 ```
 [配置文件1](default1.conf)
 
-5.2 一台nginx服务器，通过不同的路由(比如/guoge/)来达到访问不同应用的目的<br
+5.2 一台nginx服务器，通过不同的路由(比如/project/guoge)来达到访问不同应用的目的<br
 ```shell
 # docker开启nginx命令如下，只映射一个端口
 docker run --name=nginx -d -p 4030:4030 nginx
