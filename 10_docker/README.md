@@ -90,10 +90,11 @@ docker run -dit python:3.6 /bin/bash #如果只是想启动并后台运行
 docker commit -m="has update" -a="binzhouchn" <container_id> binzhouchn/python36:1.3
 ```
 
-2.5 docker保存和读取image（存成tar文件）
+2.5 docker保存和读取image（存成tar.gz文件）
 ```shell
 # 保存
 docker save -o helloword_test.tar fce45eedd449(image_id)
+#或者docker save -o mydocker.tar.gz mydocker:1.0.0
 # 读取
 docker load -i helloword_test.tar
 ```
@@ -139,7 +140,7 @@ docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -aq)
 docker image inspect --format='{{.RepoTags}} {{.Id}} {{.Parent}}' $(docker image ls -q --filter since=<image_id>)
 ```
 
-2.11 批量停止并容器
+2.11 批量停止并删除容器
 ```shell
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
