@@ -6,7 +6,7 @@
 
 [**4. jupyter notebook启动错误总结**](#jupyter_notebook启动错误总结)
 
-[**4. 添加Anaconda虚拟环境**](#添加anaconda虚拟环境)
+[**5. 添加Anaconda虚拟环境**](#添加anaconda虚拟环境)
 
 # pycharm远程配置
 
@@ -174,6 +174,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple "pyzmq==17.0.0" "ipykern
 然后可以把这个文件夹下的包的版本可以自行替换比如把tf2.0替换成tf1.14（注：不要删除，会有问题）<br>
 然后在jupyter notebook添加Anaconda虚拟环境的python kernel
 ```shell
+conda create -n tf-gpu python=3.8 # 创建tf-gpu虚拟环境
 source activate tf-gpu # 激活tf-gpu环境
 conda install ipykernel # 安装ipykernel模块(如果是虚拟机没联网，可以去https://anaconda.org/conda-forge/ipykernel/files下载)
 python -m ipykernel install --user --name tf-gpu --display-name "tf-gpu" # 进行配置
