@@ -176,6 +176,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple "pyzmq==17.0.0" "ipykern
 ```shell
 conda create -n tf-gpu python=3.8 # 创建tf-gpu虚拟环境
 source activate tf-gpu # 激活tf-gpu环境
+conda deactivate # 退出虚拟环境
 conda install ipykernel # 安装ipykernel模块(如果是虚拟机没联网，可以去https://anaconda.org/conda-forge/ipykernel/files下载)
 python -m ipykernel install --user --name tf-gpu --display-name "tf-gpu" # 进行配置
 jupyter notebook # 启动jupyter notebook，然后在"新建"中就会有py3这个kernel了 
