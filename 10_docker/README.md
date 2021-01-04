@@ -173,7 +173,7 @@ docker rm `docker ps -a| grep python:3.6 | awk '{print $1}'`
 
 ## 3. docker镜像使用
 
-【工作中】<br>
+【3.0 工作中】<br>
 **方法一(环境和代码独立，代码放外面)**
 ```shell
 
