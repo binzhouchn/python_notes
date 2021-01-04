@@ -170,9 +170,31 @@ docker stop `docker ps -a| grep python:3.6 | awk '{print $1}'`
 docker rm `docker ps -a| grep python:3.6 | awk '{print $1}'`
 ```
 
-2.15 
 
 ## 3. docker镜像使用
+
+【工作中】<br>
+**方法一(环境和代码独立，代码放外面)**
+```shell
+
+ - 配置好环境镜像比如binzhouchn/python36:1.4
+ - docker run -d -p 5005:5005 -v $PWD/xx_service:/usr/src/xx_service -w /usr/src/xx_service binzhouchn/python36:1.4 gunicorn -b :5005 server:app
+```
+
+**方法二（代码放在镜像里面为一个整体）**<br>
+```shell
+#构建Dockerfile
+FROM binzhouchn/python36:1.4
+MAINTAINER zhoubin zhoubin@qq.com
+COPY target/xx_service /usr/src/xx_service
+WORKDIR /usr/src/xx_service
+ENTRYPOINT ["gunicorn", "-b", ":5005", "server:app"]
+#run dockerfile
+docker build -t binzhouchn/new_img:0.1 .
+#run image(后台run，5005映射出来)
+docker run -d -p 5005:5005 new_img:0.1
+```
+
 
 3.1 docker跑一个helloworld
 ```shell
