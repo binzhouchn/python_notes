@@ -191,7 +191,7 @@ WORKDIR /usr/src/xx_service
 ENTRYPOINT ["gunicorn", "-b", ":5005", "server:app"]
 #run dockerfile
 docker build -t binzhouchn/new_img:0.1 .
-#run image(后台run，5005映射出来)
+#run image(后台运行，5005映射出来)
 docker run -d -p 5005:5005 new_img:0.1
 ```
 
