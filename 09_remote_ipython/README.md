@@ -185,7 +185,7 @@ jupyter notebook # 启动jupyter notebook，然后在"新建"中就会有py3这�
 ```shell
 1. conda install jupyter notebook（如果不行，主环境的site-package整个拷贝到envs/下的虚拟环境）
 2. 虚拟环境安装jupyter_nbextensions_configurator（https://zodiac911.github.io/blog/jupyter-nbextensions-configurator.html）
-3. 虚拟环境conda install nb_conda/conda install nb_conda_kernels
+3. 虚拟环境conda install nb_conda
 4. 进到虚拟环境启动jupyter notebook以后，如果import包有问题则退出并运行conda install nomkl numpy scipy scikit-learn numexpr
 ```
 
