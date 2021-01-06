@@ -24,6 +24,7 @@
 ```shell
 pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com xx包
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xx包
+pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com xx包 --use-feature=2020-resolver #解决安装包时冲突问题
 ```
 ```
 临时使用示例：
