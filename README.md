@@ -2,7 +2,7 @@
 [![Analytics](https://ga-beacon.appspot.com/GA-80121379-2/notes-python)](https://github.com/binzhouchn/feature_engineering)
 
 # python笔记
-> 版本：0.2<br>
+> 版本：0.3<br>
 > 作者：binzhou<br>
 > 邮件：binzhouchn@gmail.com<br>
 
@@ -12,24 +12,23 @@
 
 ## 简介
 
-默认安装了 `Python 3.6`，以及相关的第三方包 `gensim`, `tqdm`, `flask`
+默认安装了 `Python 3.8`，以及相关的第三方包 `gensim`, `tqdm`, `flask`
 
 > life is short.use python.
 
 推荐使用[Anaconda](http://www.continuum.io/downloads)，这个IDE集成了大部分常用的包。
 
-### 以下两个镜像由于授权问题anaconda安装包下载已经不可用
-推荐下载[Anaconda-tsinghua](https://mirrors.tuna.tsinghua.edu.cn/)，清华镜像下载速度快。
-或者[USTC](https://mirrors.ustc.edu.cn/)科大
-
 ### python pip使用国内镜像
 
 [让python pip使用国内镜像](https://www.cnblogs.com/wqpkita/p/7248525.html)
-
+```shell
+pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com xx包
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xx包
 ```
-临时使用：
+```
+临时使用示例：
 pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com flask
-# 如果是公司电脑且有代理，本地进入docker python3.5后需要加个代理再安装相关的包
+# 如果是公司电脑且有代理，本地进入docker python3.6后需要加个代理再安装相关的包
 pip --proxy=proxyAddress:port install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com flask
 ```
 
