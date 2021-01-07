@@ -26,7 +26,7 @@ done!
 
 1. 打开ipython
 ```python
-from notebook.auth import passwd
+from IPython.lib import passwd
 In [2] : passwd() # 输入密码
 Enter password:
 Verify password:
