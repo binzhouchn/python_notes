@@ -80,6 +80,8 @@
 
 [**40. 字典转成对象（骚操作）**](#字典转成对象)
 
+[**41. lgb[gpu版本]安装**](#lgb安装)
+
 ---
 ```python
 %reload_ext autoreload
@@ -1036,6 +1038,18 @@ def dict_to_object(_d):
     return inst
 ```
 
+### lgb安装
+
+```shell
+
+sudo apt-get install libboost-all-dev  
+sudo apt install ocl-icd-opencl-dev
+sudo apt install cmake
+```
+```shell
+pip install --upgrade pip
+pip install lightgbm --install-option=--gpu
+```
 
 
 
