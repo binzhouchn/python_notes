@@ -80,7 +80,7 @@
 
 [**40. 字典转成对象（骚操作）**](#字典转成对象)
 
-[**41. lgb[gpu版本]安装**](#lgb安装)
+[**41. lgb[gpu版本]和xgb[gpu版本]安装**](#boost安装)
 
 ---
 ```python
@@ -1038,19 +1038,32 @@ def dict_to_object(_d):
     return inst
 ```
 
-### lgb安装
+### boost安装
 
 ```shell
-
 sudo apt-get install libboost-all-dev  
 sudo apt install ocl-icd-opencl-dev
-sudo apt install cmake
+sudo apt install cmake(可以去https://cmake.org/files下载比如cmake-3.14.0.tar.gz然后执行./bootstrap然后make然后make install)
 ```
+
+lgb gpu版安装<br>
 ```shell
 pip install --upgrade pip
 pip install lightgbm --install-option=--gpu
 ```
+xgb gpu版安装<br>
+```shell
+git clone --recursive https://github.com/dmlc/xgboost
+cd xgboost
+mkdir build
+cd build
+cmake .. -DUSE_CUDA=ON
+make(或者make -j4可能或报错)
 
+cd  ..
+cd python-package
+python setup.py install
+```
 
 
 ### 
