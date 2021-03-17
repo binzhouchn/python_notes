@@ -170,6 +170,14 @@ docker stop `docker ps -a| grep python:3.6 | awk '{print $1}'`
 docker rm `docker ps -a| grep python:3.6 | awk '{print $1}'`
 ```
 
+2.15 docker中python print不生效解决办法
+```shell
+#方法一 显式调用flush
+print("Hello www", flush=True)
+#方法二 使用 "-u" 参数执行 python 命令
+sudo nvidia-docker run -v $PWD/masr_bz:/workspace/masr_bz  -w /workspace/masr_bz binzhouchn/pytorch:1.7-cuda10.1-cudnn7-masr python -u train.py
+```
+
 
 ## 3. docker镜像使用
 
