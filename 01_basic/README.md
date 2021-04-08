@@ -82,6 +82,8 @@
 
 [**41. lgb[gpu版本]和xgb[gpu版本]安装**](#boost安装)
 
+[**42. tqdm**](#tqdm)
+
 ---
 ```python
 %reload_ext autoreload
@@ -1065,6 +1067,29 @@ cd python-package
 python setup.py install
 ```
 
+### tqdm
+
+[当Pytorch遇上tqdm](https://blog.csdn.net/dreaming_coder/article/details/113486645)<br>
+```python
+for epoch in range(epoch):
+        with tqdm(
+                iterable=train_loader,
+                bar_format='{desc} {n_fmt:>4s}/{total_fmt:<4s} {percentage:3.0f}%|{bar}| {postfix}',
+        ) as t:
+            start_time = datetime.now()
+            loss_list = []
+            for batch, data in enumerate(train_loader):
+                t.set_description_str(f"\33[36m【Epoch {epoch + 1:04d}】")
+                # 训练代码
+                time.sleep(1)
+                # 计算当前损失
+                loss = random()
+                loss_list.append(loss)
+                cur_time = datetime.now()
+                delta_time = cur_time - start_time
+                t.set_postfix_str(f"train_loss={sum(loss_list) / len(loss_list):.6f}， 执行时长：{delta_time}\33[0m")
+                t.update()
+```
 
 ### 
 working on bert
