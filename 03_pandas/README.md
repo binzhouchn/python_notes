@@ -40,6 +40,8 @@
 
 [**20. dataframe表格填充**](#dataframe表格填充)
 
+[**21. 加快dataframe读取**](#加快dataframe读取)
+
 ---
 
 ### pandas_dataframe手动创建
@@ -321,4 +323,18 @@ df.loc[df.content_id=='x6mbO2rHfU3hTej4','sentiment_tmp'] = 1
 df.fillna(method='ffill', axis=1).fillna(method='ffill')
 ```
 
+### 加快dataframe读取
 
+方式一：cpu多线程多进程读取（推荐）<br>
+```python
+#安装datatable==0.11.1
+import datatable as dtable
+train = dtable.fread(path+'train.csv').to_pandas()
+```
+
+方式二：gpu读取<br>
+```python
+#安装cudf(稍微有点麻烦)
+import cudf
+train = cudf.read_csv(path+'train.csv').to_pandas()
+```
