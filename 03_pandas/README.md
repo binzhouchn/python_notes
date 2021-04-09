@@ -325,7 +325,7 @@ df.fillna(method='ffill', axis=1).fillna(method='ffill')
 
 ### 加快dataframe读取
 
-方式一：cpu多线程多进程读取（推荐）<br>
+方式一：cpu多线程读取（推荐）<br>
 ```python
 #安装datatable==0.11.1
 import datatable as dtable
