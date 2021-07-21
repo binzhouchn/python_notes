@@ -597,6 +597,21 @@ import pandas as pd
 pd.get_dummies(data.categ_id)
 ```
 
+方法三<br
+```python
+# 比如4个类别转成onehot形式
+from sklearn import preprocessing
+le = preprocessing.MultiLabelBinarizer()    #获取一个MultiLabelBinarizer
+data = [['a','b'],['a'],['b','c'],['d']]
+le = le.fit(data)      
+res = le.transform(data)
+#array([[1, 1, 0, 0],
+#       [1, 0, 0, 0],
+#       [0, 1, 1, 0],
+#       [0, 0, 0, 1]])
+```
+
+
 ### 列表推导式中使用if_else
 
 两种方式：<br>
