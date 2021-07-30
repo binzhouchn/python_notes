@@ -19,7 +19,7 @@
 推荐使用[Anaconda](http://www.continuum.io/downloads)，这个IDE集成了大部分常用的包。
 
 <details>
-<summary>python pip使用国内镜像<\summary>
+<summary>python pip使用国内镜像</summary>
 
 [让python pip使用国内镜像](https://www.cnblogs.com/wqpkita/p/7248525.html)
 ```shell
@@ -34,10 +34,10 @@ pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com flas
 pip --proxy=proxyAddress:port install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com flask
 ```
 
-<\details>
+</details>
 
 <details>
-<summary>pip镜像配置<\summary>
+<summary>pip镜像配置</summary>
 
 pip install镜像配置（Linux）
 ```
@@ -59,4 +59,4 @@ index-url = http://mirrors.aliyun.com/pypi/simple/
 [install]
 trusted-host = mirrors.aliyun.com
 ```
-<\details>
+</details>
