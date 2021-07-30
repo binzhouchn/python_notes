@@ -18,8 +18,8 @@
 
 推荐使用[Anaconda](http://www.continuum.io/downloads)，这个IDE集成了大部分常用的包。
 
-<details>
-<summary>python pip使用国内镜像</summary>
+<details open>
+<summary>pip使用国内镜像</summary>
 
 [让python pip使用国内镜像](https://www.cnblogs.com/wqpkita/p/7248525.html)
 ```shell
@@ -36,7 +36,7 @@ pip --proxy=proxyAddress:port install -i http://pypi.douban.com/simple --trusted
 
 </details>
 
-<details>
+<details open>
 <summary>pip镜像配置</summary>
 
 pip install镜像配置（Linux）
