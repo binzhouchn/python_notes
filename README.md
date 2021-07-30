@@ -2,7 +2,7 @@
 [![Analytics](https://ga-beacon.appspot.com/GA-80121379-2/notes-python)](https://github.com/binzhouchn/feature_engineering)
 
 # python笔记
-> 版本：0.3<br>
+> 版本：0.4<br>
 > 作者：binzhou<br>
 > 邮件：binzhouchn@gmail.com<br>
 
@@ -18,7 +18,8 @@
 
 推荐使用[Anaconda](http://www.continuum.io/downloads)，这个IDE集成了大部分常用的包。
 
-### python pip使用国内镜像
+<details>
+<summary>python pip使用国内镜像<\summary>
 
 [让python pip使用国内镜像](https://www.cnblogs.com/wqpkita/p/7248525.html)
 ```shell
@@ -33,7 +34,10 @@ pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com flas
 pip --proxy=proxyAddress:port install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com flask
 ```
 
-### pip镜像配置
+<\details>
+
+<details>
+<summary>pip镜像配置<\summary>
 
 pip install镜像配置（Linux）
 ```
@@ -55,3 +59,4 @@ index-url = http://mirrors.aliyun.com/pypi/simple/
 [install]
 trusted-host = mirrors.aliyun.com
 ```
+<\details>
