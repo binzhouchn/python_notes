@@ -84,6 +84,8 @@
 
 [**42. tqdm**](#tqdm)
 
+[**43. joblib Parallel并行**](#joblib_parallel)
+
 ---
 ```python
 %reload_ext autoreload
@@ -735,7 +737,7 @@ df = df.merge(df_aggr, how='left', on='personid').fillna(0)
 ```
 
 ### python画图显示中文
-f
+
 ```python
 ## 显示中文解决方法
 # 解决方法一
@@ -1106,9 +1108,17 @@ for epoch in range(epoch):
                 t.update()
 ```
 
-### 
-working on bert
-working on bert 单句分类
-working on bert NER
-working on bert 两句输入分类或其他
-working on 多分类任务
+### joblib_parallel
+
+```python
+from joblib import Parallel, delayed
+from math import sqrt
+def ff(num):
+    return [sqrt(n ** 3) for n in range(num)]
+#不使用并行 7.5s
+res = []
+for i in range(10,7000):
+    res.append(ff(i))
+#使用并行 2.75s
+res = Parallel(n_jobs = -1, verbose = 1)(delayed(ff)(i) for i in range(10,7000))
+```
