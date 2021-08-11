@@ -1122,3 +1122,5 @@ for i in range(10,7000):
 #使用并行 2.75s
 res = Parallel(n_jobs = -1, verbose = 1)(delayed(ff)(i) for i in range(10,7000))
 ```
+
+###
