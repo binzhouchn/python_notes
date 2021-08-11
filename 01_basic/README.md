@@ -87,6 +87,9 @@
 [**43. joblib Parallel并行**](#joblib_parallel)
 
 ---
+<details close>
+<summary>点击展开</summary>
+
 ```python
 %reload_ext autoreload
 %autoreload 2
@@ -1126,3 +1129,5 @@ res = Parallel(n_jobs = -1, verbose = 1)(delayed(ff)(i) for i in range(10,7000))
 ```
 
 ###
+
+</details>
