@@ -1115,7 +1115,7 @@ for epoch in range(epoch):
 
 
 ```python
-#此方法可用于多个文件数据并行读取
+#Parallel for loop 此方法可用于多个文件数据并行读取
 from joblib import Parallel, delayed
 from math import sqrt
 def ff(num):
