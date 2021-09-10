@@ -86,6 +86,8 @@
 
 [**43. joblib Parallel并行**](#joblib_parallel)
 
+[**44. 调试神器 - 丢弃print**](#调试神器)
+
 ---
 <details close>
 <summary>点击展开</summary>
@@ -1128,6 +1130,28 @@ for i in range(10,7000):
 res = Parallel(n_jobs = -1, verbose = 1)(delayed(ff)(i) for i in range(10,7000))
 ```
 
-###
+### 调试神器
+
+```python
+#pip install pysnooper
+import os
+os.environ['pysnooper'] = '1' # 开关
+
+from pysnooper import snoop
+#如果为0，则重新定义snoop然后这个修饰啥都不干
+if os.environ['pysnooper'] == '0':
+    import wrapt
+    def snoop(*args, **kwargs):
+        @wrapt.decorator
+        def wrapper(wrapped, instance, args, kwargs):
+            return wrapped(*args, **kwargs)
+        return wrapper
+```
+
+###  
+
+
+
+
 
 </details>
