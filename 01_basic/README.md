@@ -88,6 +88,8 @@
 
 [**44. 调试神器 - 丢弃print**](#调试神器)
 
+[**45. 分组计算均值并填充**](#分组计算均值并填充)
+
 ---
 <details close>
 <summary>点击展开</summary>
@@ -1148,7 +1150,30 @@ if os.environ['pysnooper'] == '0':
         return wrapper
 ```
 
-###  
+### 分组计算均值并填充
+
+```python
+def pad_mean_by_group(df, gp_col='stock_id'):
+    # 只留下需要处理的列
+    cols = [col for col in df.columns if col not in["stock_id", "time_id", "target", "row_id"]]
+    # 查询nan的列
+    df_na = df[cols].isna()
+    # 根据分组计算平均值
+    df_mean = df.groupby(gp_col)[cols].mean()
+
+    # 依次处理每一列
+    for col in cols:
+        na_series = df_na[col]
+        names = list(df.loc[na_series,gp_col])     
+
+        t = df_mean.loc[names,col]
+        t.index = df.loc[na_series,col].index
+
+        # 相同的index进行赋值     
+        df.loc[na_series,col] = t
+    return df
+train_pca = pad_mean_by_group(train_pca)
+```
 
 
 
