@@ -419,6 +419,26 @@ docker pull stardog/stardog:latest
 docker run -v ~/stardog-6.2.2/:/var/opt/stardog -e STARDOG_SERVER_JAVA_ARGS="-Xmx8g -Xms8g -XX:MaxDirectMemorySize=2g" stardog/stardog:latest
 
 ```
+
+3.8 容器云k8s
+
+Kubernetes是什么？Kubernetes是一个全新的基于容器技术的分布式架构解决方案，是Google开源的一个容器集群管理系统，Kubernetes简称K8S。Kubernetes 提供了完善的管理工具，这些工具涵盖了开发、部署测试、运维监控在内的各个环节。<br>
+
+Kubernetes特性<br>
+    - 自我修复：在节点故障时，重新启动失败的容器，替换和重新部署，保证预期的副本数量；杀死健康检查失败的容器，并且在未准备好之前不会处理用户的请求，确保线上服务不中断。
+    - 弹性伸缩：使用命令、UI或者基于CPU使用情况自动快速扩容和缩容应用程序实例，保证应用业务高峰并发时的高可用性；业务低峰时回收资源，以最小成本运行服务。
+    - 自动部署和回滚：K8S采用滚动更新策略更新应用，一次更新一个Pod，而不是同时删除所有Pod，如果更新过程中出现问题，将回滚更改，确保升级不影响业务。
+    - 服务发现和负载均衡：K8S为多个容器提供一个统一访问入口（内部IP地址和一个DNS名称），并且负载均衡关联的所有容器，使得用户无需考虑容器IP问题。
+    - 机密和配置管理：管理机密数据和应用程序配置，而不需要把敏感数据暴露在镜像里，提高敏感数据安全性。并可以将一些常用的配置存储在K8S中，方便应用程序使用。
+    - 存储编排：挂载外部存储系统，无论是来自本地存储，公有云，还是网络存储，都作为集群资源的一部分使用，极大提高存储使用灵活性。
+    - 批处理：提供一次性任务，定时任务；满足批量数据处理和分析的场景。
+    
+[Kubernetes 深入学习（一） —— 入门和集群安装部署](https://www.cnblogs.com/chiangchou/p/k8s-1.html#_label0_0)<br>
+[Kubernetes(一) 跟着官方文档从零搭建K8S](https://juejin.cn/post/6844903943051411469)<br>
+
+
+
+
 [RDF入门](https://blog.csdn.net/txlCandy/article/details/50959358)<br>
 [OWL语言](https://blog.csdn.net/zycxnanwang/article/details/86557350)<br>
 
