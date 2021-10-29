@@ -435,7 +435,7 @@ Kubernetes特性<br>
     
 [Kubernetes 深入学习（一） —— 入门和集群安装部署](https://www.cnblogs.com/chiangchou/p/k8s-1.html#_label0_0)<br>
 [Kubernetes(一) 跟着官方文档从零搭建K8S](https://juejin.cn/post/6844903943051411469)<br>
-
+[kubeadm部署k8s集群最全最详细](https://blog.csdn.net/Doudou_Mylove/article/details/103901732)<br>
 
 
 
