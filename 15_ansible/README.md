@@ -1,4 +1,4 @@
-# ansible
+# ansible笔记
 
 ```shell
 在/etc/ansible/ansible.cfg下配置[model]
