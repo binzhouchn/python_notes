@@ -63,3 +63,4 @@ ansible model -m fetch -a "src=/home/zhoubin/test.txt dest=./ force=yes backup=y
 ### 附录
 
 [超简单ansible2.4.2.0与playbook入门教程](https://blog.csdn.net/qq_45206551/article/details/105004233)<br>
+[ansible-命令使用说明](https://www.cnblogs.com/scajy/p/11353825.html)<br>
