@@ -44,6 +44,10 @@
 
 [**21. 加快dataframe读取**](#加快dataframe读取)
 
+[**22. df热力图**](#df热力图)
+
+
+
 ---
 
 ### pandas_dataframe手动创建
@@ -339,4 +343,10 @@ train = dtable.fread(path+'train.csv').to_pandas()
 #安装cudf(稍微有点麻烦)
 import cudf
 train = cudf.read_csv(path+'train.csv').to_pandas()
+```
+
+### df热力图
+
+```python
+df.corr().style.background_gradient(cmap='coolwarm').set_precision(2)
 ```
