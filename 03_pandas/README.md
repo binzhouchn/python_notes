@@ -46,6 +46,8 @@
 
 [**22. df热力图**](#df热力图)
 
+[**23. df热力地图**](#df热力地图)
+
 
 
 ---
@@ -349,4 +351,27 @@ train = cudf.read_csv(path+'train.csv').to_pandas()
 
 ```python
 df.corr().style.background_gradient(cmap='coolwarm').set_precision(2)
+```
+
+### df热力地图
+
+结合pyecharts将各省市高校上榜数量进行地图可视化<br>
+```python
+from pyecharts import options as opts
+from pyecharts.charts import Map
+#省份
+list1 = ['北京','江苏','上海','广东','湖北','陕西','浙江','四川','湖南','山东','安徽','辽宁','重庆','福建','天津','吉林','河南','黑龙江','江西','甘肃','云南','河北']
+#省份对应的高效数量
+list2 = [18, 15, 10, 9, 7, 7, 4, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1]
+c = (
+    Map()
+    .add('', [list(z) for z in zip(list1,list2)], "china",is_map_symbol_show=False)
+    .set_global_opts(
+        title_opts=opts.TitleOpts(title="排名前100高校各省市占比"),
+        visualmap_opts=opts.VisualMapOpts(max_=20),
+       
+
+    )
+)
+c.render_notebook()
 ```
