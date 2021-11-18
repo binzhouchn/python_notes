@@ -48,7 +48,7 @@
 
 [**23. df热力地图**](#df热力地图)
 
-
+[**24. 2个pandas EDA插件**](#eda插件)
 
 ---
 
@@ -374,4 +374,17 @@ c = (
     )
 )
 c.render_notebook()
+```
+
+### eda插件
+
+```python
+#插件一
+! pip install pandas_profiling
+import pandas_profiling
+pandas_profiling.ProfileReport(df)
+#插件二
+import sweetviz as sv
+report = sv.analyze(df)
+report.show_html()
 ```
