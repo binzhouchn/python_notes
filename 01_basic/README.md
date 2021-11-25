@@ -334,6 +334,9 @@ data[data.msg_from.apply(len)==10]
 ```
 
 ### re模块
+
+[常用正则表达式速查手册，Python文本处理必备](https://mp.weixin.qq.com/s/ySsgcrSnkguO2c8D-SQNxw)<br>
+
 ```python
 # 1. 将一个问题中的网址、邮箱、手机号、身份证、日期、价格提出来
 
