@@ -90,6 +90,8 @@
 
 [**45. 分组计算均值并填充**](#分组计算均值并填充)
 
+[**46. python日期处理**](#python日期处理)
+
 ---
 <details close>
 <summary>点击展开</summary>
@@ -1179,7 +1181,9 @@ def pad_mean_by_group(df, gp_col='stock_id'):
 train_pca = pad_mean_by_group(train_pca)
 ```
 
+### python日期处理
 
+[80个例子，彻底掌握Python日期时间处理](https://mp.weixin.qq.com/s/2bJUZBfWS_8ULGrb9tRpmw)<br>
 
 
 
