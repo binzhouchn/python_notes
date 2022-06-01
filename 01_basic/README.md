@@ -390,6 +390,103 @@ re.findall(r'^\d+(?![\d*小时*]|[\d*种*])[\u4e00-\u9fa5]+', s)
 
 # 匹配只留下中文、英文和数字
 re.sub(r'[^\u4E00-\u9FA5\s0-9a-zA-Z]+', '', s)
+
+# 日期解析202206
+import cn2an #version 0.5.14
+import datetime
+import re
+def getYearMonth(s):
+    '''
+    【格式说明】
+    今年上个月/上月/前一个月/前个月 -> 202204
+    今年当月/该月/这月/这个月/本月 -> 202205
+    去年5月/去年五月/2021年五月/2021五月/二零二一五月/二零二一 五月 -> 202105
+    前年5月/前年五月/2020年五月/2020五月/二零二零五月/二零二零 五月 -> 202005
+    2021年7月/二零二一年7月 -> 202107
+    5月/五月份 -> 202205
+    2021.6/2021.06/2021-6/2021-06/2021 - 6月/2021 ---6月/2021 . 6月/2021...6月, -> 202106
+    2021 4月/2021 04 -> 202104
+    如果没有提到时间 -> 202205(默认今年当月)
+    如果输入的时间有误或月份有误比如输入2021 23， -> 202205(默认今年当月)
+    如果输入时间超过当前时间 -> 202205(默认今年当月)
+    如果输入时间早于2020年1月 -> 202205(默认今年当月)
+    '''
+    cur_date = datetime.datetime.now().strftime('%Y%m')
+    try:
+        DATE_REG1 = '(?:[一二三四五六七八九零十0-9]{1,4}年[一二三四五六七八九零十0-9]{1,2}月)|(?:去年[一二三四五六七八九零十0-9]+月)|(?:前年[一二三四五六七八九零十0-9]+月)|(?:[一二三四五六七八九零十0-9]+年[一二三四五六七八九零十0-9]+月)|(?:[一二三四五六七八九零十0-9]{1,2}月)|(?:[一二三四五六七八九零十0-9]+年)|(?:[一二三四五六七八九零十0-9]+月)'
+        thism_lst = ['当月', '该月', '这个月', '本月']
+        lastm_lst = ['上月', '上个月', '前一个月', '前个月']
+        date = ''
+        def helper(s, pattern):
+            date = ''
+            s = cn2an.transform(s, "cn2an")  # 转换成阿拉伯数字
+            res = re.findall(pattern, s)
+            if res:
+                res = res[0]  # 如果有多个就取第一个
+                year = '2022' #需要人工维护当年，还有过去两年的一个判断；每年要手动更新这部分
+                if '去年' in res or '21年' in res:
+                    year = '2021'
+                elif '前年' in res or '20年' in res:
+                    year = '2020'
+                month = re.findall('(?:([0-9]+)月)', res)
+                if month:
+                    month = int(month[0])
+                    if month > 0 and month < 13:
+                        if month < 10:
+                            month = '0' + str(month)
+                        else:
+                            month = str(month)
+                    else:
+                        return ''
+                    date = year + month
+                else:
+                    date = year + str(datetime.datetime.now().month)
+            return date
+        six_d = re.findall(r'2\d{5}', s) #直接识别6位日期比如202110
+        if six_d:
+            date = six_d[0]
+        if not date:
+            # 针对2021 4月/2021.6/2021.06/2021-6/2021-06/2021 - 6月/2021 ---6月/2021 . 6月/2021...6月这些情况
+            DATE_REG3 = r'(?:\d{4}\s*\.+\s*\d{1,2})|(?:\d{4}\s*-+\s*\d{1,2})|(?:\d{4}\s*_+\s*\d{1,2})|(?:\d{4}\s+\d{1,2})'
+            six_d2 = re.findall(DATE_REG3, s)
+            if six_d2:
+                _six_d2 = six_d2[0]
+                try:
+                    int(_six_d2[-2])
+                    _six_d2_m = _six_d2[-2:]
+                except:
+                    _six_d2_m = _six_d2[-1]
+                s = _six_d2[:4]+'年'+_six_d2_m+'月'
+        s = s.replace(' ', '')
+        if not date:
+            for i in thism_lst:
+                if i in s:
+                    date = cur_date
+                    break
+        if not date:
+            for i in lastm_lst:
+                if i in s:
+                    date = (datetime.datetime.now() - datetime.timedelta(days=30, hours=23)).strftime('%Y%m')
+                    break
+        if not date:
+            # 判断2021五月这种情况
+            DATE_REG2 = '(?:[一二三四五六七八九零十0-9]{4}[一二三四五六七八九零十]{1,2}月)'
+            res = re.findall(DATE_REG2, s)
+            if res:
+                s = res[0][:4]+'年'+res[0][4:]
+                date = helper(s, DATE_REG1)
+            else:
+                date = ''
+        if not date:  
+            date = helper(s, DATE_REG1)
+        if not date:
+            date = cur_date
+        #corner case再判断下，处理下边界问题
+        if date < '202001' or date[-2:] > '12':
+            date = cur_date
+    except:
+        date = cur_date
+    return date
 ```
 
 ### eval
