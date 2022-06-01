@@ -14,6 +14,8 @@
 
 默认安装了 `Python 3.8`，以及相关的第三方包 `gensim`, `tqdm`, `flask`
 
+anaconda 虚拟环境创建python版本降级命令：conda create -n tableqa python=3.7
+
 > life is short.use python.
 
 推荐使用[Anaconda](http://www.continuum.io/downloads)，这个IDE集成了大部分常用的包。
