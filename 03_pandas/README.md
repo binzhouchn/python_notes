@@ -2,6 +2,8 @@
 
 [pandas进阶修炼300题](https://www.heywhale.com/mw/project/6146c0318447b8001769ff20)<br>
 
+[可以替代pandas比较好用的数据平行处理包](#数据平行处理)
+
 [**1. pandas并行包**](#pandas并行包)
 
 [**2. pandas dataframe手动创建**](#pandas_dataframe手动创建)
@@ -51,6 +53,12 @@
 [**24. 2个pandas EDA插件**](#eda插件)
 
 ---
+
+### 数据平行处理
+
+[polar](https://pola-rs.github.io/polars-book/user-guide/quickstart/intro.html)<br>
+[pandarallel](https://nalepae.github.io/pandarallel/)<br>
+
 
 ### pandas_dataframe手动创建
 
