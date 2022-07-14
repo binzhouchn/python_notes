@@ -56,7 +56,10 @@
 
 ### 数据平行处理
 
-[polar](https://pola-rs.github.io/polars-book/user-guide/quickstart/intro.html)<br>
+[polar]<br>
+https://pola-rs.github.io/polars-book/user-guide/quickstart/intro.html <br>
+https://pola-rs.github.io/polars/py-polars/html/reference <br>
+
 [pandarallel](https://nalepae.github.io/pandarallel/)<br>
 
 
