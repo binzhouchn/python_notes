@@ -380,7 +380,7 @@ c.render_notebook()
 
 ```python
 #插件一
-! pip install pandas_profiling
+#!pip install pandas_profiling
 import pandas_profiling
 pandas_profiling.ProfileReport(df)
 #插件二
