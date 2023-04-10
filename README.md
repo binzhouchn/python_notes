@@ -62,3 +62,12 @@ index-url = http://mirrors.aliyun.com/pypi/simple/
 trusted-host = mirrors.aliyun.com
 ```
 </details>
+
+# 使用conda升级到python3.8
+
+https://qa.1r1g.com/sf/ask/4099772281/)<br>
+```shell
+conda update -n base -c defaults conda
+conda install -c anaconda python=3.8
+#然后再重新安装下依赖包
+```
