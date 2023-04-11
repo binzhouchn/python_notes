@@ -8,13 +8,15 @@
 
 `Github`加载`ipynb`的速度较慢，建议在 [Nbviewer](http://nbviewer.ipython.org/github/lijin-THU/notes-python/blob/master/index.ipynb) 中查看该项目。
 
+[python各版本下载仓库](https://www.python.org/ftp/python/)<br>
+
 ---
 
 ## 简介
 
-默认安装了 `Python 3.8`，以及相关的第三方包 `gensim`, `tqdm`, `flask`
+默认安装了 `Python 3.9`，以及相关的第三方包 `gensim`, `tqdm`, `flask`
 
-anaconda 虚拟环境创建python版本降级命令：conda create -n tableqa python=3.7
+anaconda 虚拟环境创建python版本降级命令：conda create -n tableqa python=3.8
 
 > life is short.use python.
 
