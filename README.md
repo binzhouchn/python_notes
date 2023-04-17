@@ -67,9 +67,19 @@ trusted-host = mirrors.aliyun.com
 
 ## 使用conda升级到python3.8
 
+方法一<br>
 https://qa.1r1g.com/sf/ask/4099772281/)<br>
 ```shell
 conda update -n base -c defaults conda
 conda install -c anaconda python=3.8
 #然后再重新安装下依赖包
+
+方法二(或使用虚拟环境)<br>
+$ conda create -p /your_path/env_name python=3.8
+# 激活环境
+$ source activate /your_path/env_name
+# 关闭环境
+$ source deactivate /your_path/env_name
+# 删除环境
+$ conda env remove -p  /your_path/env_name
 ```
