@@ -73,8 +73,9 @@ https://qa.1r1g.com/sf/ask/4099772281/)<br>
 conda update -n base -c defaults conda
 conda install -c anaconda python=3.8
 #然后再重新安装下依赖包
-
+```
 方法二(或使用虚拟环境)<br>
+```
 $ conda create -p /your_path/env_name python=3.8
 # 激活环境
 $ source activate /your_path/env_name
