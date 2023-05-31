@@ -7,7 +7,7 @@
 [docker docs for mac](https://docs.docker.com/docker-for-mac/)<br>
 
 1.2 linux下安装<br>
-TODO
+[Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
 1.3 配置docker镜像站<br>
 [docker镜像站网址](https://www.daocloud.io/mirror#accelerator-doc)<br>
