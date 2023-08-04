@@ -560,6 +560,81 @@ tasks.append(executor.submit(func2, param1, param2))
 wait(tasks, return_when='ALL_COMPLETED')
 res1, res2 = (x.result() for x in tasks)
 ```
+```python
+# 多进程优化版（推荐用这个）
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import functools
+from concurrent.futures import ProcessPoolExecutor
+from tqdm import tqdm
+import time
+
+class Pipe(object):
+    """I am very like a linux pipe"""
+
+    def __init__(self, function):
+        self.function = function
+        functools.update_wrapper(self, function)
+
+    def __ror__(self, other):
+        return self.function(other)
+
+    def __call__(self, *args, **kwargs):
+        return Pipe(
+            lambda iterable, *args2, **kwargs2: self.function(
+                iterable, *args, *args2, **kwargs, **kwargs2
+            )
+        )
+    
+@Pipe
+def xProcessPoolExecutor(iterable, func, max_workers=5, desc="Processing", unit="it"):
+    if max_workers > 1:
+        total = len(iterable) if hasattr(iterable, '__len__') else None
+
+        with ProcessPoolExecutor(max_workers) as pool, tqdm(total=total, desc=desc, unit=unit) as pbar:
+            for i in pool.map(func, iterable):
+                yield i
+                pbar.update()
+
+    else:
+        return map(func, iterable)
+
+xtuple, xlist, xset = Pipe(tuple), Pipe(list), Pipe(set)
+
+def ff(x):
+    for i in range(x):
+        a = 1
+    return x+2
+
+if __name__ == '__main__':
+    dfs = []
+    arr = [100000000,200000000,300000000,400000000]
+    #without multiprocess
+    for i in arr:
+        dfs.append(ff(i))
+    #with multiprocess
+    dfs = arr | xProcessPoolExecutor(ff, 16) | xlist #这里的16是进程数，一般cpu有N核就起N-1个进程
+    print(dfs)
+```
+```python
+# 多进程(yuanjie封装meutils) 以多进程读取data下pdf文件为例
+from meutils.pipe import *
+os.environ['LOG_PATH'] = 'pdf.log'
+from meutils.log_utils import *
+location = 'output' #pdf文件处理后保存的文件夹
+@diskcache(location=location)
+def func(file_path):
+    try:
+        df = pdf_layout(str(file_path)) #解析成字典 详见https://github.com/binzhouchn/deep_learning/blob/master/4_llm/1_%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93/es/es.py 中的body字典
+        with open(f'{location}/{file_path.stem}.txt', 'w', encoding='utf8') as f:
+            json.dump(df, f, ensure_ascii=False)
+    except Exception as e:
+        logger.debug(f"{file_path}: {e}")
+        logger.debug(f"{file_path}: {traceback.format_exc().strip()}")
+if __name__ == '__main__':
+    ps = Path('./data/').glob('*.pdf') | xlist #将所有pdf文件都列出来
+    dfs = ps | xProcessPoolExecutor(func, 16) | xlist #这里的16是进程数，一般cpu有N核就起N-1个进程
+```
 
 ### cv的多进程实现
 
