@@ -84,3 +84,7 @@ $ source deactivate /your_path/env_name
 # 删除环境
 $ conda env remove -p  /your_path/env_name
 ```
+
+## 其他python仓库推荐
+
+[All algorithms implemented in Python - for education](https://github.com/TheAlgorithms/Python/)<br>
