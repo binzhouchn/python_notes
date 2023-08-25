@@ -92,6 +92,8 @@
 
 [**46. python日期处理**](#python日期处理)
 
+[**47. dataclass**](#dataclass)
+
 ---
 <details close>
 <summary>点击展开</summary>
@@ -1364,7 +1366,43 @@ train_pca = pad_mean_by_group(train_pca)
 
 [80个例子，彻底掌握Python日期时间处理](https://mp.weixin.qq.com/s/2bJUZBfWS_8ULGrb9tRpmw)<br>
 
+### dataclass
 
+dataclass 提供一个简便的方式创建数据类, 默认实现__init__(),  __repr__(),  __eq__()方法 <br>
+dataclass支持数据类型的嵌套<br>
+支持将数据设置为不可变：@dataclass(frozen=True) <br>
 
+不用dataclass<br>
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+p = Person('test', 18)
+q = Person('test', 18)
+#<__main__.Person at 0x7ff4ade66f40>
+str(p)
+repr(p)
+#'<__main__.Person object at 0x7ff4ade66f40>'
+p == q
+#False
+```
+```python
+from typing import Any
+from dataclasses import dataclass
+@dataclass
+class Person:
+    name: Any
+    age: Any = 18
+p = Person('test', 18)
+q = Person('test', 18)
+#Person(name='test', age=18)
+str(p)
+repr(p)
+#"Person(name='test', age=18)"
+p == q
+#True
+```
 
 </details>
