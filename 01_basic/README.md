@@ -94,6 +94,8 @@
 
 [**47. dataclass**](#dataclass)
 
+[**48. md5 sha256**](#md5_sha256)
+
 ---
 <details close>
 <summary>点击展开</summary>
@@ -1403,6 +1405,25 @@ repr(p)
 #"Person(name='test', age=18)"
 p == q
 #True
+```
+
+### md5_sha256
+
+```python
+import hashlib
+
+def enc(s, ed='md5'):
+    if ed == 'md5':
+        hash_object = hashlib.md5(s.encode())
+    elif ed == 'sha256':
+        hash_object = hashlib.sha256(s.encode())
+    else:
+        raise ValueError('unsupport type!')
+    hash_hex = hash_object.hexdigest()
+    return hash_hex
+
+for i in ['13730973320','13802198853','17619520726']:
+    print(enc(i,'md5'))
 ```
 
 </details>
