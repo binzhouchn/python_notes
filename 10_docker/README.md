@@ -15,7 +15,8 @@
 1.4 配置docker代理<br>
 
  - windows中右击图标，选settings->Proxies
- - [mac/linux](https://www.cnblogs.com/EasonJim/p/9988154.html)
+ - [mac](https://www.cnblogs.com/EasonJim/p/9988154.html)
+ - [linux](https://blog.csdn.net/qq_30034989/article/details/132021346)
 
 ```shell
 # 如果使用HTTP代理服务器时，将为docker服务创建systemd插件目录
