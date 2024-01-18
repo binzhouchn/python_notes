@@ -147,11 +147,21 @@ docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
 
-2.12 docker修改完镜像生成新的镜像以后貌似没看法删除旧的镜像
+2.12 虚悬镜像
+
+上面的镜像列表中，还可以看到一个特殊的镜像，这个镜像既没有仓库名，也没有标签，均为 <none>。<br>
 ```shell
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy 
-pandas sklearn jieba gensim tqdm flask requests PyMySQL redis pyahocorasick  
-pymongo pyspark py2neo neo4j-driver==$PYTHON_DRIVER_VERSION
+<none>               <none>              00285df0df87        5 days ago          342 MB
+```<br>
+这个镜像原本是有镜像名和标签的，原来为 mongo:3.2，随着官方镜像维护，发布了新版本后，重新 docker pull mongo:3.2 时，mongo:3.2 这个镜像名被转移到了新下载的镜像身上，而旧的镜像上的这个名称则被取消，从而成为了 <none>。除了 docker pull 可能导致这种情况，docker build 也同样可以导致这种现象。由于新旧镜像同名，旧镜像名称被取消，从而出现仓库名、标签均为 <none> 的镜像。这类无标签镜像也被称为 虚悬镜像(dangling image) ，可以用下面的命令专门显示这类镜像：<br>
+```shell
+$ docker image ls -f dangling=true
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+<none>              <none>              00285df0df87        5 days ago          342 MB
+```<br>
+一般来说，虚悬镜像已经失去了存在的价值，是可以随意删除的，可以用下面的命令删除。<br>
+```shell
+$ docker image prune
 ```
 
 2.13 拷贝宿主机本地文件到docker中，和从docker中拷贝到宿主机
