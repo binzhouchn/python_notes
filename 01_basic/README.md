@@ -96,6 +96,10 @@
 
 [**48. md5 sha256**](#md5_sha256)
 
+[**49. 查看内存**](#查看内存)
+
+[**50. __slots__用法**](#slots用法)
+
 ---
 <details close>
 <summary>点击展开</summary>
@@ -1425,5 +1429,77 @@ def enc(s, ed='md5'):
 for i in ['13730973320','13802198853','17619520726']:
     print(enc(i,'md5'))
 ```
+
+### 查看内存 
+
+有几种方法可以在Python中获取对象的大小。可以使用sys.getsizeof()来获取对象的确切大小，使用objgraph.show_refs()来可视化对象的结构，或者使用psutil.Process().memory_info()。RSS获取当前分配的所有内存。
+
+```python
+>>> import numpy as np
+ >>> import sys
+ >>> import objgraph
+ >>> import psutil
+ >>> import pandas as pd
+ 
+ >>> ob = np.ones((1024, 1024, 1024, 3), dtype=np.uint8)
+ 
+ ### Check object 'ob' size
+ >>> sys.getsizeof(ob) / (1024 * 1024)
+ 3072.0001373291016
+ 
+ ### Check current memory usage of whole process (include ob and installed packages, ...)
+ >>> psutil.Process().memory_info().rss / (1024 * 1024)
+ 3234.19140625
+ 
+ ### Check structure of 'ob' (Useful for class object)
+ >>> objgraph.show_refs([ob], filename='sample-graph.png')
+ 
+ ### Check memory for pandas.DataFrame
+ >>> from sklearn.datasets import load_boston
+ >>> data = load_boston()
+ >>> data = pd.DataFrame(data['data'])
+ >>> print(data.info(verbose=False, memory_usage='deep'))
+ <class 'pandas.core.frame.DataFrame'>
+ RangeIndex: 506 entries, 0 to 505
+ Columns: 13 entries, 0 to 12
+ dtypes: float64(13)
+ memory usage: 51.5 KB
+   
+ ### Check memory for pandas.Series
+ >>> data[0].memory_usage(deep=True)   # deep=True to include all the memory used by underlying parts that construct the pd.Series
+ 4176
+```
+
+### slots用法
+
+```python
+#不使用__slots__时，可以很容易地添加一个额外的job属性
+class Author:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+ 
+ 
+ me = Author('Yang Zhou', 30)
+ me.job = 'Software Engineer'
+ print(me.job)
+ # Software Engineer
+
+# 在大多数情况下，我们不需要在运行时更改实例的变量或方法，并且__dict__不会（也不应该）在类定义后更改。所以Python为此提供了一个属性:__slots__
+class Author:
+    __slots__ = ('name', 'age')
+ 
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+ 
+ 
+ me = Author('Yang Zhou', 30)
+ me.job = 'Software Engineer'
+ print(me.job)
+ # AttributeError: 'Author' object has no attribute 'job'
+```
+
+
 
 </details>
