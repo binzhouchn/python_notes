@@ -1436,38 +1436,38 @@ for i in ['13730973320','13802198853','17619520726']:
 
 ```python
 >>> import numpy as np
- >>> import sys
- >>> import objgraph
- >>> import psutil
- >>> import pandas as pd
- 
- >>> ob = np.ones((1024, 1024, 1024, 3), dtype=np.uint8)
- 
- ### Check object 'ob' size
- >>> sys.getsizeof(ob) / (1024 * 1024)
- 3072.0001373291016
- 
- ### Check current memory usage of whole process (include ob and installed packages, ...)
- >>> psutil.Process().memory_info().rss / (1024 * 1024)
- 3234.19140625
- 
- ### Check structure of 'ob' (Useful for class object)
- >>> objgraph.show_refs([ob], filename='sample-graph.png')
- 
- ### Check memory for pandas.DataFrame
- >>> from sklearn.datasets import load_boston
- >>> data = load_boston()
- >>> data = pd.DataFrame(data['data'])
- >>> print(data.info(verbose=False, memory_usage='deep'))
- <class 'pandas.core.frame.DataFrame'>
- RangeIndex: 506 entries, 0 to 505
- Columns: 13 entries, 0 to 12
- dtypes: float64(13)
- memory usage: 51.5 KB
-   
- ### Check memory for pandas.Series
- >>> data[0].memory_usage(deep=True)   # deep=True to include all the memory used by underlying parts that construct the pd.Series
- 4176
+>>> import sys
+>>> import objgraph
+>>> import psutil
+>>> import pandas as pd
+
+>>> ob = np.ones((1024, 1024, 1024, 3), dtype=np.uint8)
+
+### Check object 'ob' size
+>>> sys.getsizeof(ob) / (1024 * 1024)
+3072.0001373291016
+
+### Check current memory usage of whole process (include ob and installed packages, ...)
+>>> psutil.Process().memory_info().rss / (1024 * 1024)
+3234.19140625
+
+### Check structure of 'ob' (Useful for class object)
+>>> objgraph.show_refs([ob], filename='sample-graph.png')
+
+### Check memory for pandas.DataFrame
+>>> from sklearn.datasets import load_boston
+>>> data = load_boston()
+>>> data = pd.DataFrame(data['data'])
+>>> print(data.info(verbose=False, memory_usage='deep'))
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 506 entries, 0 to 505
+Columns: 13 entries, 0 to 12
+dtypes: float64(13)
+memory usage: 51.5 KB
+
+### Check memory for pandas.Series
+>>> data[0].memory_usage(deep=True)   # deep=True to include all the memory used by underlying parts that construct the pd.Series
+4176
 ```
 
 ### slots用法
