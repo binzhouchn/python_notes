@@ -1479,7 +1479,6 @@ class Author:
         self.name = name
         self.age = age
  
- 
  me = Author('Yang Zhou', 30)
  me.job = 'Software Engineer'
  print(me.job)
@@ -1492,8 +1491,7 @@ class Author:
     def __init__(self, name, age):
         self.name = name
         self.age = age
- 
- 
+
  me = Author('Yang Zhou', 30)
  me.job = 'Software Engineer'
  print(me.job)
