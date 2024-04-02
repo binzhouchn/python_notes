@@ -7,10 +7,11 @@
 
 
 ---
-<details close>
-<summary>点击展开</summary>
 
 ### nginx入门使用
+
+<details close>
+<summary>点击展开</summary>
 
 **1. 第一步用安装docker nginx**
 
