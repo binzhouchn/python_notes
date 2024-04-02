@@ -1,11 +1,16 @@
 ## nginx
 
-[nginx作为http服务器-静态页面的访问](https://www.cnblogs.com/xuyang94/p/12667844.html)<br>
-[docker nginx反向代理](https://www.cnblogs.com/dotnet261010/p/12596185.html)<br>
-[nginx负载均衡参考1](https://www.jianshu.com/p/4c250c1cd6cd)<br>
-[nginx负载均衡参考2](https://www.cnblogs.com/diantong/p/11208508.html)<br>
+[**1. nginx入门使用**](#nginx入门使用)
 
-### nginx使用
+[**2. nginx正则使用1（2024.4.2更新）**](#nginx正则使用1)
+
+
+
+---
+<details close>
+<summary>点击展开</summary>
+
+### nginx入门使用
 
 **1. 第一步用安装docker nginx**
 
@@ -73,3 +78,19 @@ def custom():
     return str(3 + 2)
 ```
 [配置文件2](default2.conf)
+
+</details>
+
+### nginx正则使用1
+
+
+
+
+
+
+ - 参考资料
+
+[nginx作为http服务器-静态页面的访问](https://www.cnblogs.com/xuyang94/p/12667844.html)<br>
+[docker nginx反向代理](https://www.cnblogs.com/dotnet261010/p/12596185.html)<br>
+[nginx负载均衡参考1](https://www.jianshu.com/p/4c250c1cd6cd)<br>
+[nginx负载均衡参考2](https://www.cnblogs.com/diantong/p/11208508.html)<br>
