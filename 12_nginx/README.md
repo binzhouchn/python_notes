@@ -92,10 +92,10 @@ nginx -s reload
 ```
 [配置文件3](default3.conf)
 
-说明：本次使用正则的目的是当我访问<br>
-http://10.28.xx.xx:8000/aimanager_gpu/recsys/时，<br>
-正则匹配后转到http://localhost:10086，后面不加/aimanager_gpu/recsys路由<br>
-（如果不走正则那么转到http://localhost:10086后会自动拼接/aimanager_gpu/recsys）<br>
+说明：本次使用正则的目的是当我访问
+http://10.28.xx.xx:8000/aimanager_gpu/recsys/时，
+正则匹配后转到http://localhost:10086，后面不加/aimanager_gpu/recsys路由
+（如果不走正则那么转到http://localhost:10086后会自动拼接/aimanager_gpu/recsys）
 
 
 
