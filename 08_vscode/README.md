@@ -72,6 +72,7 @@ https://update.code.visualstudio.com/commit:903b1e9d8990623e3d7da1df3d33db3e42d8
 
 [vscode历史版本下载地址](https://code.visualstudio.com/updates/v1_86)<br>
 [vscode扩展应用市场vsix文件手动下载安装](https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categories&sortBy=Installs)<br>
+[vscode扩展应用市场vsix文件手动下载历史版本插件包](https://blog.csdn.net/qq_15054345/article/details/133884626)<br>
 [在VScode中添加Linux中的Docker容器中的Python解释器](https://blog.csdn.net/weixin_43268590/article/details/129244984)<br>
 [VSCode连不上远程服务器](https://blog.csdn.net/qq_42610612/article/details/132782965)<br>
 [无网机的vscode中怎么使用jupyter notebook](https://www.bilibili.com/read/cv34411972/?jump_opus=1)<br>
