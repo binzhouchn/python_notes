@@ -32,7 +32,7 @@ docker exec -it [容器ID] /bin/bash
 PubkeyAuthentication yes
 PermitRootLogin yes
 
-# 第四步 重启ssh服务
+# 第四步 重启ssh服务(好像每次停止容器后重启都需要运行下)
 /etc/init.d/ssh restart
 或 service ssh restart
 
