@@ -64,7 +64,7 @@ https://update.code.visualstudio.com/commit:903b1e9d8990623e3d7da1df3d33db3e42d8
 ```
 
 
-## 2. Debugging
+## 2. Debugging（自带，不需要额外安装插件）
 
 在Visual Studio Code(VSCode)中，[Debug Console](https://code.visualstudio.com/Docs/editor/debugging)是一个用于查看程序调试信息的窗口。它通常用于查看程序在调试过程中输出的日志信息、变量的值等。Debug Console提供了一个方便的方式来查看和分析程序的执行过程，帮助开发人员定位和解决代码中的问题。
 
