@@ -52,6 +52,8 @@
 
 [**24. 2个pandas EDA插件**](#eda插件)
 
+[**25. python批量插入mysql数据库**](#python批量插入mysql数据库)
+
 ---
 
 ### 数据平行处理
@@ -398,4 +400,32 @@ pandas_profiling.ProfileReport(df)
 import sweetviz as sv
 report = sv.analyze(df)
 report.show_html()
+```
+
+### python批量插入mysql数据库
+
+```python
+df.to_numpy()[:5].tolist()
+'''
+[['25_B', 25, 'B', 0.6, '2024-08-12'],
+ ['23_C', 23, 'C', 2.2, '2024-08-12'],
+ ['24_D', 24, 'D', 3.8, '2024-08-12'],
+ ['29_E', 29, 'E', 1.5, '2024-08-12'],
+ ['22_F', 22, 'F', 4.1, '2024-08-12']]
+'''
+
+import pymysql
+MYSQL_W_CONFIG = {'host':'10.xx.xxx.xx',
+                  'port':3306,
+                  'user':'user',
+                  'password':'passwd',
+                  'database':'mydatabase',
+                  'charset':'utf8'}
+conn = pymysql.connect(autocommit=True, **MYSQL_W_CONFIG)
+cursor = conn.cursor()
+sql = "insert into xx_table(id,cust_id,agcode,score,s_time) values(%s,%s,%s,%s,%s)"
+cursor.executemany(sql, df_final.to_numpy().tolist())
+conn.commit()
+conn.close()
+#1w条数据批量插入大概0.45s左右
 ```
