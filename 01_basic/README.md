@@ -86,19 +86,21 @@
 
 [**43. joblib Parallel并行**](#joblib_parallel)
 
-[**44. 调试神器 - 丢弃print**](#调试神器)
+[**44. 调试神器pysnooper - 丢弃print**](#调试神器pysnooper)
 
-[**45. 分组计算均值并填充**](#分组计算均值并填充)
+[**45. 调试神器debugpy**](#调试神器debugpy)
 
-[**46. python日期处理**](#python日期处理)
+[**46. 分组计算均值并填充**](#分组计算均值并填充)
 
-[**47. dataclass**](#dataclass)
+[**47. python日期处理**](#python日期处理)
 
-[**48. md5 sha256**](#md5_sha256)
+[**48. dataclass**](#dataclass)
 
-[**49. 查看内存**](#查看内存)
+[**49. md5 sha256**](#md5_sha256)
 
-[**50. __slots__用法**](#slots用法)
+[**50. 查看内存**](#查看内存)
+
+[**51. __slots__用法**](#slots用法)
 
 ---
 <details close>
@@ -1325,7 +1327,7 @@ for i in range(10,7000):
 res = Parallel(n_jobs = -1, verbose = 1)(delayed(ff)(i) for i in range(10,7000))
 ```
 
-### 调试神器
+### 调试神器pysnooper
 
 ```python
 #pip install pysnooper
@@ -1342,6 +1344,61 @@ if os.environ['pysnooper'] == '0':
             return wrapped(*args, **kwargs)
         return wrapper
 ```
+
+### 调试神器debugpy
+
+安装：pip install debugpy -U <br>
+在python代码里面（最前面加上这句话）<br>
+```python
+import debugpy
+try:
+    # 5678 is the default attach port in the VS Code debug configurations. Unless a host and port are specified, host defaults to 127.0.0.1
+    debugpy.listen(("localhost", 9501))
+    print("Waiting for debugger attach")
+    debugpy.wait_for_client()
+except Exception as e:
+    pass
+
+```
+
+在vscode软件中项目下新建一个.vscode目录，然后创建launch.json，看9501端口那个配置<br>
+```python
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "torchr_ex2",
+            "type": "python",
+            "request": "launch",
+            "program": "/Users/zb/anaconda3/envs/rag/bin/torchrun",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--nnodes",
+                "1",
+                "--nproc-per-node",
+                "2",
+                "${file}",
+                "--model_name_or_path",
+                "my_model_bz"
+            ]
+        },
+        {
+            "name": "sh_file_debug",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 9501
+            }
+        },
+    ]
+}
+```
+
 
 ### 分组计算均值并填充
 
