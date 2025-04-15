@@ -33,7 +33,7 @@ db.commit()
 
 ## 2. Redis(docker version)
 
-![redis](redis_pic.png)
+![redis](imgs/redis_pic.png)
 ```
 # 启动redis命令
 docker run --name docker-redis-test -p 6379:6379  -d redis:latest --requirepass "123456"
