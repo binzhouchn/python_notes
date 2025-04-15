@@ -2,7 +2,7 @@
 [![Analytics](https://ga-beacon.appspot.com/GA-80121379-2/notes-python)](https://github.com/binzhouchn/feature_engineering)
 
 # python笔记
-> 版本：0.4<br>
+> 版本：0.5<br>
 > 作者：binzhou<br>
 > 邮件：binzhouchn@gmail.com<br>
 
@@ -14,9 +14,9 @@
 
 ## 简介
 
-默认安装了 `Python 3.9`，以及相关的第三方包 `gensim`, `tqdm`, `flask`
+默认安装了 `Python 3.10`，以及相关的第三方包 `gensim`, `tqdm`, `flask`
 
-anaconda 虚拟环境创建python版本降级命令：conda create -n tableqa python=3.8
+anaconda 虚拟环境创建python版本降级命令：conda create -n tableqa python=3.9
 
 > life is short.use python.
 
@@ -65,18 +65,18 @@ trusted-host = mirrors.aliyun.com
 ```
 </details>
 
-## 使用conda升级到python3.8
+## 使用conda升级到python3.12
 
 方法一<br>
 https://qa.1r1g.com/sf/ask/4099772281/)<br>
 ```shell
 conda update -n base -c defaults conda
-conda install -c anaconda python=3.8
+conda install -c anaconda python=3.12
 #然后再重新安装下依赖包
 ```
 方法二(或使用虚拟环境)<br>
 ```
-$ conda create -p /your_path/env_name python=3.8
+$ conda create -p /your_path/env_name python=3.12
 # 激活环境
 $ source activate /your_path/env_name
 # 关闭环境
