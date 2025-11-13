@@ -5,7 +5,7 @@
 # 先下载镜像
 docker pull mysql:5.5
 # 运行容器 可以先把-v去掉
-docker run -p 3306:3306 --name mymysql -v $PWD/conf:/etc/mysql/conf.d -v $PWD/logs:/logs -v $PWD/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.5
+docker run -p 3306:3306 --name mymysql -v $PWD/conf:/etc/mysql/conf.d -v $PWD/logs:/logs -v $PWD/mysql_data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.5
 
 -p 3306:3306：将容器的 3306 端口映射到主机的 3306 端口。
 -v -v $PWD/conf:/etc/mysql/conf.d：将主机当前目录下的 conf/my.cnf 挂载到容器的 /etc/mysql/my.cnf。
@@ -36,7 +36,7 @@ db.commit()
 ![redis](imgs/redis_pic.png)
 ```
 # 启动redis命令
-docker run --name docker-redis-test -p 6379:6379  -d redis:latest --requirepass "123456"
+docker run --name docker-redis-test -p 6379:6379 -v redis_data:/data -d redis:latest --requirepass "123456"
 # redis客户端连接命令
 docker exec -it <container_id> redis-cli
 # 进去以后的操作
